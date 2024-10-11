@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: iss-thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+The style file: IEEEtran_ISS.bst
+Reallocating 'name_of_file' (item size: 1) to 5 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Database file #1: refs.bib
+Warning--entry type for "unknown" isn't style-file defined
+--line 175 of file refs.bib
+Warning--string name "august" is undefined
+--line 247 of file refs.bib
+-- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+
+Done.
+You've used 36 entries,
+            4186 wiz_defined-function locations,
+            1013 strings with 13946 characters,
+and the built_in function-call counts, 25615 in all, are:
+= -- 1949
+> -- 690
+< -- 185
++ -- 387
+- -- 140
+* -- 1184
+:= -- 3747
+add.period$ -- 80
+call.type$ -- 36
+change.case$ -- 36
+chr.to.int$ -- 471
+cite$ -- 36
+duplicate$ -- 1860
+empty$ -- 2199
+format.name$ -- 152
+if$ -- 5898
+int.to.chr$ -- 0
+int.to.str$ -- 36
+missing$ -- 343
+newline$ -- 139
+num.names$ -- 36
+pop$ -- 896
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 1949
+stack$ -- 0
+substring$ -- 1169
+swap$ -- 1438
+text.length$ -- 28
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 36
+warning$ -- 0
+while$ -- 105
+width$ -- 38
+write$ -- 344
+(There were 2 warnings)
