@@ -232,7 +232,7 @@
 \publishers{\normalsize
   \begin{minipage}[t]{.9\textwidth}
     \abstract
-		Anomaly detectors commonly struggle to accurately identify defective products due to variations in recording conditions, such as lighting, shadow, and random placement. These conditions can result in the erroneous classification of normal products as anomalies (false positives). This challenge arises from training anomaly detection tools on a limited dataset of optimal images, which does not represent the full spectrum of real-world scenarios. This master's thesis focuses on generating and evaluating synthetic test images to enhance the performance of these anomaly detectors in industrial contexts. Generative models, including Cycle-Consistent Generative Adversarial Network(CycleGAN) was used to generate synthetic images by transforming optimal setup images to include bad camera influences and Stable Diffusion(img2img) to generate synthetic images directly from real images. The quality and similarity of these synthetic images were evaluated through various metrics to ensure their effectiveness. The performance of the anomaly detector was evaluated through different training approaches.The results demonstrated a significant reduction in false positives when trained with images (both real and synthetic) that included those camera influences.
+Images captured in production environments exhibit various camera influences that the anomaly detector must learn to recognize. Without training on such diverse conditions, the detector is prone to misclassification and reduced performance. This master's thesis focuses on generating and evaluating synthetic test images to enhance the performance of these anomaly detectors in industrial contexts. Generative models, including Cycle-Consistent Generative Adversarial Network (CycleGAN) was used to generate synthetic images by transforming optimal setup images to include bad camera influences and Stable Diffusion to generate synthetic images directly from real images. The quality and similarity of these synthetic images were evaluated through various metrics to ensure their effectiveness. The performance of the anomaly detector was evaluated through different training approaches. The results demonstrated a significant reduction in false positives when trained with images (both real and synthetic) that included those camera influences.
   \end{minipage}
 }
 
@@ -301,15 +301,15 @@ The introduction provides a comprehensive overview of the significance of synthe
 
 \chapter{Theoretical Background}
 \label{chapter2}
-This section introduces key concepts essential for understanding the generation of synthetic data and its application in anomaly detection. It begins with deep learning, a powerful method that allows models to learn complex patterns from large datasets. A distinction is drawn between discriminative models, which classify data based on learned patterns, and generative models, which produce new data resembling the original dataset. Key generative approaches, such as Generative Adversarial Networks (GANs) and Diffusion Models, are covered, with a focus on CycleGAN (a conditional GAN) and Stable Diffusion, both of which are central to generating synthetic images. The significance of synthetic data in overcoming challenges related to data scarcity and variability is discussed, along with an overview of anomaly detection techniques, crucial for identifying deviations from expected patterns in industrial applications.
+This section introduces key concepts essential for understanding the generation of synthetic data and its application in anomaly detection. It begins with deep learning, a powerful method that allows models to learn complex patterns from large datasets. A distinction is drawn between discriminative models, which classify data based on learned patterns, and generative models, which produce new data resembling the original dataset. Key generative approaches, such as GANs and Diffusion Models, are covered, with a focus on CycleGAN (a conditional GAN) and Stable Diffusion, both of which are central to generating synthetic images. The significance of synthetic data in overcoming challenges related to data scarcity and variability is discussed, along with an overview of anomaly detection techniques, crucial for identifying deviations from expected patterns in industrial applications.
 \section{Deep Learning}
-Deep learning, a branch of machine learning, employs deep neural networks—multilayered architectures designed to emulate the intricate decision-making capabilities of the human brain. This approach underpins many of the artificial intelligence (AI) applications prevalent in today’s technology.
+Deep learning, a branch of machine learning, employs deep neural networks, which are multilayered architectures designed to emulate the intricate decision-making capabilities of the human brain. This approach underpins many of the artificial intelligence (AI) applications prevalent in today’s technology~\cite{wuttke2024}.
 
-Neural networks, or artificial neural networks (ANNs), are designed to mimic the human brain by using interconnected layers of nodes (neurons) that process information in a similar manner. These nodes are associated with weights and biases, which influence the input data to make accurate predictions or classifications. This structure allows neural networks to identify and interpret intricate patterns in data, making them versatile tools for various tasks involving detailed analysis and decision-making.
+Neural networks, or artificial neural networks (ANN), are designed to mimic the human brain by using interconnected layers of nodes (neurons) that process information in a similar manner. These nodes are associated with weights and biases, which influence the input data to make accurate predictions or classifications. This structure allows neural networks to identify and interpret intricate patterns in data, making them versatile tools for various tasks involving detailed analysis and decision-making~\cite{hardesty2017explained}.
 
-Deep neural networks (DNNs) consist of multiple layers, where each layer builds on the previous one to refine and optimize the predictions. This process, known as \textbf{forward propagation} , involves passing data through the input layer, where the deep learning model ingests the data, and through a series of hidden layers that apply transformations. The final output layer produces the prediction or classification. Each layer extracts progressively more abstract features from the data, enabling deep learning models to understand intricate patterns in images, such as shapes, textures, and complex structures.
+Deep neural networks (DNN) consist of multiple layers, where each layer builds on the previous one to refine and optimize the predictions. This process, known as \textbf{forward propagation} , involves passing data through the input layer, where the deep learning model ingests the data, and through a series of hidden layers that apply transformations~\cite{luhaniwal2019}. The final output layer produces the prediction or classification. Each layer extracts progressively more abstract features from the data, enabling deep learning models to understand intricate patterns in images, such as shapes, textures, and complex structures.
 
-To improve the model's accuracy, a process called \textbf{backpropagation} is used. Backpropagation calculates the error between the predicted output and the actual target value, using algorithms like gradient descent to adjust the weights and biases of the network. By iteratively updating these parameters through the layers, the model learns to minimize errors and improve performance. Over time, this combination of forward propagation and backpropagation enables the neural network to make increasingly accurate predictions.
+To improve the model's accuracy, a process called \textbf{backpropagation} is used. Backpropagation calculates the error between the predicted output and the actual target value, using algorithms like gradient descent to adjust the weights and biases of the network. By iteratively updating these parameters through the layers, the model learns to minimize errors and improve performance~\cite{rumelhart1986learning}. Over time, this combination of forward propagation and backpropagation enables the neural network to make increasingly accurate predictions.
 \section{Discriminative Vs. Generative Models}
 In machine learning, models are often categorized into two broad types: discriminative models and generative models. Understanding the distinction between these two approaches is crucial for selecting the appropriate model for specific tasks, such as classification or data generation.
 
@@ -321,9 +321,9 @@ In machine learning, models are often categorized into two broad types: discrimi
 \end{figure}
 
 \subsection{Discriminative Models}
-Given a training dataset consisting of data points \(X\) and their corresponding labels \(Y\), a discriminative model learns the conditional probability distribution \(P(Y | X)\). This model focuses on modelling the decision boundary between classes, directly learning the mapping from input data \(X\)  to the output labels \(Y\). The goal is to find the best function that can separate or classify the data points based on their features. By estimating \(P(Y | X)\), the model can predict the class of new data points by determining which class label has the highest probability given the input features.
+Given a training dataset consisting of data points \(X\) and their corresponding labels \(Y\), a discriminative model learns the conditional probability distribution \(P(Y | X)\)~\cite{deng2016deep}. This model focuses on modelling the decision boundary between classes, directly learning the mapping from input data \(X\)  to the output labels \(Y\). The goal is to find the best function that can separate or classify the data points based on their features. By estimating \(P(Y | X)\), the model can predict the class of new data points by determining which class label has the highest probability given the input features.
 
-Discriminative models are particularly useful in classification and regression tasks where the objective is to assign a label or a continuous value to each data point based on learned patterns and features. These models do not attempt to model the underlying distribution of the data but rather focus on the decision boundaries between different classes.
+Discriminative models are particularly useful in classification and regression tasks where the objective is to assign a label or a continuous value to each data point based on learned patterns and features~\cite{wikipedia2024}. These models do not attempt to model the underlying distribution of the data but rather focus on the decision boundaries between different classes.
 
 \begin{figure}
 	\centering
@@ -333,7 +333,7 @@ Discriminative models are particularly useful in classification and regression t
 \end{figure}
 
 \subsection{Generative Models}
-Generative models aim to learn the underlying distribution of a dataset in order to generate new data points that resemble the original data. Given a training dataset of data points \( X \) and their corresponding labels \( Y \), a generative model learns the joint probability distribution \( P(X, Y) \) or the conditional distribution \( P(Y|X) \). By modeling the data in this way, the model can generate new samples that share characteristics with the training data, which is useful for tasks like data augmentation and simulation. While generative models are primarily designed for tasks like data synthesis and simulation, they can also be used for discrimination by applying Bayes’ rule: 
+Generative models aim to learn the underlying distribution of a dataset in order to generate new data points that resemble the original data. Given a training dataset of data points \( X \) and their corresponding labels \( Y \), a generative model learns the joint probability distribution \( P(X, Y) \) or the conditional distribution \( P(Y|X) \)~\cite{deng2016deep}. By modeling the data in this way, the model can generate new samples that share characteristics with the training data, which is useful for tasks like data augmentation and simulation~\cite{zheng2023toward}. While generative models are primarily designed for tasks like data synthesis and simulation, they can also be used for discrimination by applying Bayes’ rule~\cite{ng2001discriminative}: 
 \begin{equation}
 P(Y|X) = \frac{P(X, Y)}{P(X)}
 \end{equation}
@@ -344,30 +344,30 @@ However, this approach is rarely employed in practice, as discriminative models 
 	\caption{Generative Model Workflow\cite{Nanda:2024}}
 	\label{gen}
 \end{figure}
-Generative models are particularly valuable in scenarios where the goal is to understand the underlying data distribution or to generate new data samples. Unlike discriminative models, which focus solely on predicting or classifying data points, generative models attempt to model how the data was generated. This approach enables the creation of realistic synthetic data and is useful in applications such as image synthesis, data augmentation, and anomaly detection. By capturing the full distribution of the data, generative models provide a more comprehensive understanding of the data and its variations.Given that this thesis centers on synthetic image generation, generative models are fundamental to accomplishing this goal.
+Generative models are particularly valuable in scenarios where the goal is to understand the underlying data distribution or to generate new data samples. Unlike discriminative models, which focus solely on predicting or classifying data points, generative models attempt to model how the data was generated. This approach enables the creation of realistic synthetic data and is useful in applications such as image synthesis, data augmentation, and anomaly detection. By capturing the full distribution of the data, generative models provide a more comprehensive understanding of the data and its variations. Given that this thesis centers on synthetic image generation, generative models are fundamental to accomplishing this goal.
 \section{Synthetic Image Generation}
-Synthetic data refers to data that is artificially generated to replicate the statistical properties and underlying patterns of real-world data. For training machine learning models, synthetic data is employed to augment or substitute real-world datasets, especially when obtaining real data is constrained by scarcity, cost, or privacy concerns. By utilizing advanced methods such as computer simulations and generative models, synthetic data can be produced in large volumes, encompassing a wide range of scenarios and variations. This approach not only facilitates the training and validation of models but also ensures that sensitive or proprietary information remains protected, while still providing the comprehensive and representative data needed for robust model performance.
+Synthetic data refers to data that is artificially generated to replicate the statistical properties and underlying patterns of real-world data~\cite{raghunathan2021synthetic}. For training machine learning models, synthetic data is employed to augment or substitute real-world datasets, especially when obtaining real data is constrained by scarcity, cost, or privacy concerns. By utilizing advanced methods such as computer simulations and generative models, synthetic data can be produced in large volumes, encompassing a wide range of scenarios and variations. This approach not only facilitates the training and validation of models but also ensures that sensitive or proprietary information remains protected, while still providing the comprehensive and representative data needed for robust model performance.
 \begin{figure}
 	\centering
 	\includegraphics[scale=.3]{../media/synthetic_data_image-1536x718.png}
 	\caption{The image shows two scatterplots: one of original data and one of synthetic data generated from the original data. The synthetic data retains the structure of the original data but is not the same. This is a common example of how generative models can be used to create new data that is similar to the original data, but not identical~\cite{Karen:2020}}
 	\label{synthetic_data}
 \end{figure}
-In the context of image generation, synthetic images play an essential role in enhancing model training, especially for deep learning applications such as object detection, classification, and anomaly detection. These images are generated to replicate specific features or conditions seen in real images but with the flexibility to introduce controlled variations. Synthetic images are commonly used to address challenges like data imbalance, variability in test conditions, or when acquiring real images is impractical or cost-prohibitive.
+In the context of image generation, synthetic images play an essential role in enhancing model training, especially for deep learning applications such as object detection, classification, and anomaly detection~\cite{anderson2022synthetic}. These images are generated to replicate specific features or conditions seen in real images but with the flexibility to introduce controlled variations. Synthetic images are commonly used to address challenges like data imbalance, variability in test conditions, or when acquiring real images is impractical or cost-prohibitive.
 
-Generative models, such as Generative Adversarial Networks, Diffusion Models, and Variational Autoencoders (VAEs), are instrumental in the generation of synthetic images. GANs utilize a generator and a discriminator network in a competitive setting to create highly realistic images. Diffusion Models work by progressively denoising random noise to generate coherent images, offering high fidelity and versatility. These models excel in generating high-quality synthetic images that closely mimic real data, which enhances model robustness and accuracy in handling varied scenarios. The following sections~\ref{sec:GANs_theory} and ~\ref{sec:diffusion_model_theory} will provide an in-depth examination of GANs and Diffusion Models, detailing their methodologies and applications in synthetic image generation.
+Generative models, such as Generative Adversarial Networks, Diffusion Models, and Variational Autoencoders (VAEs), are instrumental in the generation of synthetic images. GANs utilize a generator and a discriminator network in a competitive setting to create highly realistic images~\cite{schonfeld2022improving}. Diffusion Models work by progressively denoising random noise to generate coherent images, offering high fidelity and versatility~\cite{wang2023diffusion}. These models excel in generating high-quality synthetic images that closely mimic real data, which enhances model robustness and accuracy in handling varied scenarios. The following Chapters~\ref{sec:GANs_theory} and ~\ref{sec:diffusion_model_theory} will provide an in-depth examination of GANs and Diffusion Models, detailing their methodologies and applications in synthetic image generation.
 
-On the other hand, Variational Autoencoders are another type of generative model that can produce synthetic images. While VAEs are effective at learning a compact latent representation of data and generating diverse samples, they often struggle with producing high-quality images with fine details. The images generated by VAEs can sometimes appear blurred or less realistic compared to those produced by GANs or Diffusion Models. This limitation makes VAEs less suitable for tasks requiring high-resolution and detailed synthetic images.
-\section{Generative Adversarial Networks(GANs)}
+On the other hand, Variational Autoencoders are another type of generative model that can produce synthetic images. While VAEs are effective at learning a compact latent representation of data and generating diverse samples, they often struggle with producing high-quality images with fine details. The images generated by VAEs can sometimes appear blurred or less realistic compared to those produced by GANs or Diffusion Models. This limitation makes VAEs less suitable for tasks requiring high-resolution and detailed synthetic images~\cite{cai2019multi}.
+\section{Generative Adversarial Networks}
 \label{sec:GANs_theory}
-Generative Adversarial Networks, introduced by Goodfellow \textit{et al.} in 2014~\cite{goodfellow2014generative}, represent a powerful class of generative models. Central to GANs is the concept of \textbf{adversarial training}, which is inspired by Nash equilibrium in game theory. In this framework, two entities— the generator and the discriminator—engage in a competitive game. The generator's objective is to learn the distribution of real data and produce synthetic data that closely resembles it, while the discriminator's role is to distinguish between real and generated data. The game involves both entities continuously refining their strategies: the generator improves its ability to produce realistic data, and the discriminator enhances its accuracy in detecting fake data. This iterative process seeks to achieve a Nash equilibrium, where the generator's outputs are indistinguishable from real data according to the discriminator.
+Generative Adversarial Networks, introduced by Goodfellow \textit{et al.} in 2014~\cite{goodfellow2014generative}, represent a powerful class of generative models. Central to GANs is the concept of \textbf{adversarial training}, which is inspired by Nash equilibrium in game theory. In this framework, two entities, the generator and the discriminator, engage in a competitive game. The generator's objective is to learn the distribution of real data and produce synthetic data that closely resembles it, while the discriminator's role is to distinguish between real and generated data. The game involves both entities continuously refining their strategies: the generator improves its ability to produce realistic data, and the discriminator enhances its accuracy in detecting fake data. This iterative process seeks to achieve a Nash equilibrium, where the generator's outputs are indistinguishable from real data according to the discriminator.
 \begin{figure}
 	\centering
-	\includegraphics[scale=1.1]{../media/Structure of GAN.PNG}
-	\caption{Structure of GAN\cite{wang2017generative}}
+	\includegraphics[scale=0.7]{../media/structure of GAN1.PNG}
+	\caption{Structure of GAN~\cite{wang2017generative}}
 	\label{GAN_struct}
 \end{figure}
-The structure of GAN is shown in Figure~\ref{GAN_struct}. Any differentiable function can be used as the generator and the discriminator. Here, we use differentiable functions \( D \) and \( G \) to represent the discriminator and the generator, and their inputs are real data x and random variables z, respectively. To learn the generator's distribution \( p_g\) over the data \( x \), we start by defining a prior distribution \( p_z(z) \) on the input noise variables. We then represent a mapping from the noise space to the data space using \( G(z; \theta_g) \), where \( G \) is a differentiable function modeled as a multilayer perceptron with parameters \( \theta_g \). Alongside, we define a second multilayer perceptron \( D(x; \theta_d) \) that outputs a single scalar. \( D(x) \) estimates the probability that \( x \) originates from the real data distribution rather than from \( p_g \). The discriminator \( D \) is trained to maximize the probability of correctly classifying both real data examples and samples generated by \( G \). Simultaneously, the generator \( G \) is trained to minimize \( \log(1 - D(G(z))) \). 
+The structure of GAN is shown in Figure~\ref{GAN_struct}. Any differentiable function can be used as the generator and the discriminator. Here, we use differentiable functions \( D \) and \( G \) to represent the discriminator and the generator, and their inputs are real data x and random variables z, respectively. To learn the generator's distribution \( p_g\) over the data \( x \), we start by defining a prior distribution \( p_z(z) \) on the input noise variables. We then represent a mapping from the noise space to the data space using \( G(z; \theta_g) \), where \( G \) is a differentiable function modeled as a multilayer perceptron with parameters \( \theta_g \). Alongside, we define a second multilayer perceptron \( D(x; \theta_d) \) that outputs a single scalar. \( D(x) \) estimates the probability that \( x \) originates from the real data distribution rather than from \( p_g \). The discriminator \( D \) is trained to maximize the probability of correctly classifying both real data examples and samples generated by \( G \). Simultaneously, the generator \( G \) is trained to minimize \( \log(1 - D(G(z))) \)~\cite{wang2017generative}. 
 
 This setup creates a two-player minimax game with the following value function \( V(G, D) \):
 \begin{equation}
@@ -376,23 +376,23 @@ This setup creates a two-player minimax game with the following value function \
 
 Here, \( \mathbb{E} \) denotes the expectation over the respective distributions.
 
-This framework captures the essence of \textbf{unconditional GANs}, where the primary focus is on learning the data distribution solely from random noise. In these models, the generator creates data samples based solely on the input noise \( z \) without additional context or control over the specific characteristics of the generated data. As a result, unconditional GANs are adept at learning the overall data distribution but lack the capability to control the generation of specific modes or attributes within the data.
+This framework captures the essence of \textbf{unconditional GANs}, where the primary focus is on learning the data distribution solely from random noise. In these models, the generator creates data samples based solely on the input noise \( z \) without additional context or control over the specific characteristics of the generated data. As a result, unconditional GANs are adept at learning the overall data distribution but lack the capability to control the generation of specific modes or attributes within the data~\cite{lee2022generator}.
 
 To achieve more precise control over the generated data, \textbf{conditional GANs} utilize additional information to guide the data generation process. This approach, which enables targeted generation of data with specific attributes, will be discussed in the following section.
 
-Several prominent unconditional GAN variants have made substantial contributions to the development of generative techniques. The original GAN, introduced by Goodfellow \textit{et al.}~\cite{goodfellow2014generative}, laid the groundwork for using adversarial training to generate realistic data from noise. The \textbf{Deep Convolutional GAN (DCGAN)}~\cite{radford2015unsupervised} enhanced this by incorporating convolutional layers in both the generator and discriminator, leading to improved image quality. The \textbf{Wasserstein GAN (WGAN)}~\cite{arjovsky2017wasserstein} addressed training instability by employing the Wasserstein distance as a loss metric, providing more stable and reliable convergence. The \textbf{Least Squares GAN (LSGAN)}~\cite{mao2017least} introduced the use of least squares loss instead of binary cross-entropy, which helps in achieving more stable training and high-quality images. Additionally, the \textbf{Progressive Growing GAN (PGGAN)}~\cite{karras2017progressive} introduced a technique of progressively increasing image resolution during training, significantly improving the quality of generated images. These developments in unconditional GANs have set the stage for more advanced models, including those that incorporate additional controls over the data generation process.
+Several prominent unconditional GAN variants have made substantial contributions to the development of generative techniques. The original GAN, introduced by Goodfellow \textit{et al.}~\cite{goodfellow2014generative}, laid the groundwork for using adversarial training to generate realistic data from noise. The \textbf{Deep Convolutional GAN (DCGAN)}~\cite{radford2015unsupervised} enhanced this by incorporating convolutional layers in both the generator and discriminator, leading to improved image quality. The \textbf{Wasserstein GAN (WGAN)}~\cite{arjovsky2017wasserstein} addressed training instability by employing the Wasserstein distance as a loss metric, providing more stable and reliable convergence. The \textbf{Least Squares GAN (LSGAN)}~\cite{mao2017least} introduced the use of least squares loss instead of binary cross-entropy, which helps in achieving more stable training and high-quality images. Additionally, the \textbf{Progressive Growing GAN (PGGAN)}~\cite{karras2017progressive} introduced a technique of progressively increasing image resolution during training, significantly improving the quality of generated images. These developments in unconditional GANs have laid the foundation for more advanced models, including those that incorporate additional controls over the data generation process.
 
 \subsection{Conditional GANs}
 Conditional generative adversarial networks (cGANs) extend the traditional GAN architecture by conditioning both the generator and discriminator on additional information \( y \), which can include class labels, attributes, or other types of data. This conditioning allows the model to direct the generation process, enabling it to produce outputs that align with the given input condition. 
 \begin{figure}
 	\centering
 	\includegraphics[scale=.9]{../media/Conditional-GAN-architecture.png}
-	\caption{Conditional GAN architecture\cite{unknown}}
+	\caption{Conditional GAN architecture~\cite{eckerli2106generative}}
 	\label{cGAN}
 \end{figure}
 In this setup, the generator receives both a noise vector \( z \) and the condition \( y \), combining them into a joint hidden representation to generate data. Meanwhile, the discriminator is provided with both the real or generated data \( x \) and the condition \( y \), aiming to assess whether the generated data matches the given condition.
 
-The objective function of cGANs modifies the original GAN formulation as follows:
+The objective function of cGANs modifies the original GAN formulation as follows~\cite{gauthier2014conditional}:
 \begin{equation}
 \min_{G} \max_{D} V(D, G) = \mathbb{E}_{x \sim p_{\text{data}}(x)} [\log D(x|y)] + \mathbb{E}_{z \sim p_z(z)} [\log(1 - D(G(z|y)))]
 \end{equation}
@@ -401,7 +401,7 @@ The incorporation of conditional information significantly enhances the adaptabi
 
 One widely recognized cGAN for image-to-image translation is \textbf{Pix2Pix}, introduced by Isola \textit{et al.} in 2017\cite{isola2017image}. This model is specifically trained on paired datasets, where each input image has a corresponding target image in the other domain. By conditioning the GAN on the input image, Pix2Pix enables the generator to learn the mapping between two domains, effectively translating an image from one domain to its target counterpart. The generator in Pix2Pix aims to produce outputs that match the target image, while the discriminator evaluates whether the generated image is the true paired image or a synthesized one. Through this adversarial process, Pix2Pix is highly effective in a wide range of image translation tasks, such as converting sketches to photographs\cite{sangkloy2017scribbler}, grayscale to color images, or even transforming satellite imagery into maps. However, Pix2Pix relies heavily on having paired training data, which limits its applicability in cases where paired data is scarce or unavailable.
 \subsection{CycleGANs: Unpaired Image-to-Image Translation}
-\textbf{CycleGANs} (Cycle-Consistent Generative Adversarial Networks) were introduced by Zhu \textit{et al.} in 2017. CycleGANs extend the concept of GANs to situations where paired training data is not available by leveraging unpaired datasets\cite{zhu2017unpaired}.
+\textbf{Cycle-Consistent Generative Adversarial Networks} were introduced by Zhu \textit{et al.} in 2017. CycleGANs extend the concept of GANs to situations where paired training data is not available by leveraging unpaired datasets\cite{zhu2017unpaired}.
 
 Unlike Pix2Pix, which requires paired images \((x_i, y_i)\) where \(x_i\) is an image from Domain A and \(y_i\) is its corresponding image in Domain B, CycleGANs work with two sets of unpaired images \(\{x_i\}\) from Domain A and \(\{y_i\}\) from Domain B.
 \begin{figure}
@@ -455,7 +455,7 @@ L_{\text{id}}(G, F) = \mathbb{E}_{x \sim X} [\| G(x) - x \|_1] + \mathbb{E}_{y \
 This identity loss encourages the generators to output images similar to the input when the input is already from the desired domain, helping to maintain the original characteristics of the images.
 \section{Diffusion Models}
 \label{sec:diffusion_model_theory}
-The advent of diffusion models marks a major breakthrough in the domain of generative modeling, a field focused on learning the underlying data distribution and synthesizing new data points that resemble the original dataset. Early generative methods, such as Variational Autoencoders~\cite{VAE} and Generative Adversarial Networks~\cite{goodfellow2014generative}, laid the groundwork for modern generative approaches by leveraging probabilistic modeling and adversarial training, respectively. Despite their success, both VAEs and GANs exhibit limitations—VAEs often produce blurry outputs due to the variational approximation, while GANs are prone to issues such as mode collapse and instability during training. Diffusion models\cite{diffusion1,diffusion2} have emerged as a powerful alternative, offering a more stable and interpretable generative process. By modeling the data generation as a gradual denoising process, diffusion models can achieve high-quality sample generation with theoretically grounded stability, making them a robust alternative in modern generative tasks.
+The advent of diffusion models marks a major breakthrough in the domain of generative modeling, a field focused on learning the underlying data distribution and synthesizing new data points that resemble the original dataset. Early generative methods, such as Variational Autoencoders~\cite{VAE} and Generative Adversarial Networks~\cite{goodfellow2014generative}, laid the groundwork for modern generative approaches by leveraging probabilistic modeling and adversarial training, respectively. Despite their success, both VAEs and GANs exhibit limitations, VAEs often produce blurry outputs due to the variational approximation, while GANs are prone to issues such as mode collapse and instability during training. Diffusion models\cite{diffusion1,diffusion2} have emerged as a powerful alternative, offering a more stable and interpretable generative process. By modeling the data generation as a gradual denoising process, diffusion models can achieve high-quality sample generation with theoretically grounded stability, making them a robust alternative in modern generative tasks.
 
 The modern framework of diffusion models was formalized by Ho \textit{et al.} (2020) with the introduction of \textbf{Denoising Diffusion Probabilistic Models (DDPM)}~\cite{diffusion2}. DDPM models the generative process as a \textbf{Markov chain} that progressively adds Gaussian noise to data in a series of discrete timesteps, forming a \textbf{forward diffusion process}. In this process, a data point \(\mathbf{x}_0\) is gradually transformed into a highly noisy version \(\mathbf{x}_T\) over \(T\) steps, according to the following Gaussian transition:
 
@@ -468,7 +468,7 @@ where \(\alpha_t\) is a variance schedule controlling the amount of noise added 
 \begin{figure}
 	\centering
 	\includegraphics[scale=.9]{../media/diffusion_forward_process.png}
-	\caption{The forward diffusion process: gradual noise addition to transform an image \(\mathbf{x}_0\) into \(\mathbf{x}_T\).}
+	\caption{The forward diffusion process: gradual noise addition to transform an image \(\mathbf{x}_0\) into \(\mathbf{x}_T\)~\cite{yainnoware2022}.}
 	\label{forward}
 \end{figure}
 
@@ -483,7 +483,7 @@ where \(\mu_\theta(\mathbf{x}_t, t)\) and \(\Sigma_\theta(\mathbf{x}_t, t)\) rep
 \begin{figure}
 	\centering
 	\includegraphics[scale=.9]{../media/diffusion_reverse_process.png}
-	\caption{The reverse diffusion process: reconstructing the original image \(\mathbf{x}_0\) by denoising a noisy image \(\mathbf{x}_T\).}
+	\caption{The reverse diffusion process: reconstructing the original image \(\mathbf{x}_0\) by denoising a noisy image \(\mathbf{x}_T\)~\cite{diffusion2}.}
 	\label{reverse}
 \end{figure}
 
@@ -493,11 +493,11 @@ In early 2021, OpenAI introduced \textbf{DALL-E}~\cite{DALL_E} and \textbf{CLIP}
 \begin{figure}
 	\centering
 	\includegraphics[scale=.3]{../media/DallE-AvacadoArmchair_1208x459.jpg}
-	\caption{The famous Avocado chair (Prompt: ”an armchair in the shape of an avocado”)}
+	\caption{The famous Avocado chair (Prompt: ”an armchair in the shape of an avocado”)~\cite{openai2021}}
 	\label{AvacadoArmchair}
 \end{figure}
 
-In early 2021, Nichol \& Dhariwal introduced an improved variant of Denoising Diffusion Probabilistic Models (DDPMs), focusing on enhancing the model's efficiency and image quality by refining the noise scheduling process\cite{Improved_denoising_diffusion}. Their work introduced a better timestep scheduler that adjusted the density of steps, making them denser toward the final stages of the image generation process. This change allowed the model to recover finer details in the generated images, reducing the number of steps required for high-quality outputs.
+In early 2021, Nichol \& Dhariwal introduced an improved variant of Denoising Diffusion Probabilistic Models, focusing on enhancing the model's efficiency and image quality by refining the noise scheduling process\cite{Improved_denoising_diffusion}. Their work introduced a better timestep scheduler that adjusted the density of steps, making them denser toward the final stages of the image generation process. This change allowed the model to recover finer details in the generated images, reducing the number of steps required for high-quality outputs.
 
 Later that year, in September 2021, Google introduced another significant advancement with \textbf{"Classifier-Free Diffusion Guidance"}, proposed by Ho \& Salimans \cite{ho2022classifier}. This method eliminated the need for external classifiers during the diffusion process by training the model with and without auxiliary information (such as class labels or text descriptions). During generation, the model computes the difference in outputs from both conditions, guiding the process and providing greater flexibility and control over the generated images. Classifier-free guidance became a crucial tool in improving diffusion-based models, further pushing the boundaries of generative modeling.
 
@@ -515,13 +515,13 @@ Lastly, \textbf{Stable Diffusion}, developed by Stability AI in 2022, revolution
 
 \section{Anomaly Detection and Autoencoders}
 
-Anomaly detection involves identifying patterns or data points that significantly deviate from expected behavior. In industrial environments, this process is critical for maintaining operational efficiency, ensuring safety, and avoiding costly downtime. Anomalies can arise from equipment malfunctions, unexpected environmental conditions, or errors in the production process. Early detection of these irregularities enables prompt intervention, reducing the risk of severe disruptions and financial losses.
+Anomaly detection involves identifying patterns or data points that significantly deviate from expected behavior. In industrial environments, this process is critical for maintaining operational efficiency, ensuring safety, and avoiding costly downtime. Anomalies can arise from equipment malfunctions, unexpected environmental conditions, or errors in the production process. Early detection of these irregularities enables prompt intervention, reducing the risk of severe disruptions and financial losses~\cite{panza2023anomaly}.
 
-With modern industrial systems generating vast amounts of data through sensors, machinery, and monitoring tools, traditional statistical methods often prove inadequate for detecting anomalies in complex, high-dimensional datasets. Consequently, machine learning techniques have become increasingly important. Among these techniques, \textbf{autoencoders} have gained prominence due to their effectiveness in reconstructing input data and identifying deviations.
+With modern industrial systems generating vast amounts of data through sensors, machinery, and monitoring tools, traditional statistical methods often prove inadequate for detecting anomalies in complex, high-dimensional datasets. Consequently, machine learning techniques have become increasingly important. Among these techniques, \textbf{autoencoders} have gained prominence due to their effectiveness in reconstructing input data and identifying deviations~\cite{torabi2023practical}.
 \begin{figure}
 	\centering
 	\includegraphics[scale=.55]{../media/autoencoder-architecture.png}
-	\caption{Architecture of an autoencoder, consisting of an encoder that compresses the input data into a lower-dimensional latent representation and a decoder that reconstructs the input from this latent space\cite{Khandelwal:2021}}
+	\caption{Architecture of an autoencoder, consisting of an encoder that compresses the input data into a lower-dimensional latent representation and a decoder that reconstructs the input from this latent space~\cite{Khandelwal:2021}}
 	\label{autoencoder}
 \end{figure}
 
@@ -570,7 +570,7 @@ The Nuts dataset includes both OK and NOK images, captured under different setup
 
 \textbf{Optimal Setup:}
 
-The images captured under the optimal setup were taken with consistent lighting and environmental conditions, ensuring high image quality. This setup provides a clear representation of both OK and NOK nuts, free from any camera-induced variations.
+The images captured under the optimal setup as shown in Figure~\ref{fig:optimal_setup} were taken with consistent lighting and environmental conditions, ensuring high image quality. This setup provides a clear representation of both OK and NOK Nuts, free from any camera-induced variations.
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
@@ -586,7 +586,7 @@ The images captured under the optimal setup were taken with consistent lighting 
         \caption{NOK nut under optimal setup}
         \label{fig:nut_nok}
     \end{subfigure}
-    \caption{Examples of nuts captured under optimal setup conditions. (a) OK nut, exhibiting clear features essential for quality assessment. (b) NOK nut, showing characteristics that indicate defects. Both images are essential for training and evaluating the anomaly detection system, as they provide a clear baseline of acceptable and unacceptable product qualities.}
+    \caption{Examples of Nuts captured under optimal setup conditions. (a) OK Nut, exhibiting clear features essential for quality assessment. (b) NOK Nut, showing characteristics that indicate defects. Both images are essential for training and evaluating the anomaly detection system, as they provide a clear baseline of acceptable and unacceptable product qualities.}
     \label{fig:optimal_setup}
 \end{figure}
 
@@ -595,7 +595,7 @@ The images captured under the optimal setup were taken with consistent lighting 
 In this setup, images were captured under conditions that introduced various camera-induced variations, simulating real-world challenges. The following influences were documented:
 
 \begin{enumerate}
-	\item \textbf{Shadow Effect:} Shadows occur due to uneven lighting conditions, leading to the formation of dark areas on the nuts. This influence can pose a challenge for the anomaly detection system, as the detector might misclassify images with shadows as anomalies if not adequately trained on such variations. The goal is for the anomaly detector to correctly classify genuine NOK images as anomalies while recognizing that OK images affected by shadows should not be labeled as such.
+	\item \textbf{Shadow Effect:} Shadows occur due to uneven lighting conditions, leading to the formation of dark areas on the Nuts. This influence as shown in Figure~\ref{fig:shadow_effect} can pose a challenge for the anomaly detection system, as the detector might misclassify images with shadows as anomalies if not adequately trained on such variations. The goal is for the anomaly detector to correctly classify genuine NOK images as anomalies while recognizing that OK images affected by shadows should not be labeled as such.
 
     \begin{figure}
         \centering
@@ -610,12 +610,12 @@ In this setup, images were captured under conditions that introduced various cam
             \includegraphics[scale=0.15]{../media/Nuts-influence-shadow-NOK.png}
             \caption{NOK nut affected by shadow effect}
         \end{subfigure}
-        \caption{Examples of nuts affected by shadow effects. (a) OK nut and (b) NOK nut.}
+        \caption{Examples of Nuts affected by shadow effects. (a) OK Nut and (b) NOK Nut.}
         \label{fig:shadow_effect}
     \end{figure}
-	\item \textbf{Random Object Placement:} Random object placement refers to the misalignment of the nuts within the image frame, where the items are not centered or are positioned at varying angles. This can affect the anomaly detection system’s evaluation, as the model might mistakenly identify the irregular positioning as a defect.
+	\item \textbf{Random Object Placement:} Random object placement refers to the misalignment of the Nuts within the image frame, where the items are not centered or are positioned at varying angles. This can affect the anomaly detection system’s evaluation, as the model might mistakenly identify the irregular positioning as a defect.
 
-	To illustrate this influence, the following images in Figure~\ref{fig:random_object_placement} depict both OK and NOK nuts affected by random object placement.
+	To illustrate this influence, the following images in Figure~\ref{fig:random_object_placement} depict both OK and NOK Nuts affected by random object placement.
 
 	\begin{figure}
 		\centering
@@ -630,7 +630,7 @@ In this setup, images were captured under conditions that introduced various cam
 			\includegraphics[scale=0.15]{../media/Nuts-influence-random-NOK.png}
 			\caption{NOK nut with random object placement}
 		\end{subfigure}
-		\caption{Examples of nuts affected by random object placement. (a) OK nut, and (b) NOK nut.}
+		\caption{Examples of Nuts affected by random object placement. (a) OK Nut, and (b) NOK Nut.}
 		\label{fig:random_object_placement}
 	\end{figure}
 	\item \textbf{High Gain Factor:} A high gain factor is applied to increase the sensitivity of the camera sensor, particularly in low-light conditions. While this adjustment can enhance the visibility of the nuts, it also amplifies any inherent noise in the image, resulting in a grainy appearance. This noise can obscure critical features, complicating the evaluation process for the anomaly detection system. If the model is not adequately trained to recognize and differentiate between noise and actual defects, it may mistakenly classify images with high gain as anomalies, leading to inaccurate assessments.
@@ -649,12 +649,12 @@ In this setup, images were captured under conditions that introduced various cam
 			\includegraphics[scale=0.15]{../media/Nuts-influence-highGain-NOK.png}
 			\caption{NOK nut with high gain factor}
 		\end{subfigure}
-		\caption{Examples of nuts affected by a high gain factor. (a) OK nut, and (b) NOK nut.}
+		\caption{Examples of nuts affected by a high gain factor. (a) OK Nut, and (b) NOK Nut.}
 		\label{fig:high_gain_factor}
 	\end{figure}
 	\item \textbf{Plexiglas Effect:} The presence of plexiglass can introduce reflections and distortions in the images, affecting the visibility of the nuts. These distortions can complicate the evaluation process for the anomaly detection system, as it may misinterpret the reflections as defects in the product.
 
-	Figure~\ref{fig:plexiglass_effect} showcases examples of both OK and NOK nuts affected by the plexiglass effect.
+	Figure~\ref{fig:plexiglass_effect} showcases examples of both OK and NOK Nuts affected by the plexiglass effect.
 
 	\begin{figure}
 		\centering
@@ -669,7 +669,7 @@ In this setup, images were captured under conditions that introduced various cam
 			\includegraphics[scale=0.15]{../media/Nuts-influence-plexiglas-NOK.png}
 			\caption{NOK nut affected by plexiglass effect}
 		\end{subfigure}
-		\caption{Examples of nuts affected by the plexiglass effect. (a) OK nut, and (b) NOK nut.}
+		\caption{Examples of Nuts affected by the plexiglass effect. (a) OK Nut, and (b) NOK Nut.}
 		\label{fig:plexiglass_effect}
 	\end{figure}
 \end{enumerate}
@@ -696,7 +696,7 @@ The Candles dataset consists of both OK and NOK images, captured under two diffe
 
 \textbf{Optimal Setup:}
 
-The images captured under the optimal setup were taken with consistent lighting and environmental conditions, ensuring high image quality. This setup provides a clear representation of both OK and NOK candles. OK candles typically exhibit a round shape, with no dents in the holder or scratches on the candle surface, or absence of the candle or thread in the holder. In contrast, NOK candles display these irregularities as Figure~\ref{fig:optimal_setup_candles} (b) .
+The images captured under the optimal setup were taken with consistent lighting and environmental conditions, ensuring high image quality. This setup provides a clear representation of both OK and NOK Candles. OK Candles as shown in Figure~\ref{fig:optimal_setup_candles} (a) typically exhibit a round shape, with no dents in the holder or scratches on the candle surface, or absence of the candle or thread in the holder. In contrast, NOK Candles display these irregularities as Figure~\ref{fig:optimal_setup_candles} (b) .
 
 \begin{figure}
     \centering
@@ -713,16 +713,16 @@ The images captured under the optimal setup were taken with consistent lighting 
         \caption{NOK candle under optimal setup}
         \label{fig:candle_nok}
     \end{subfigure}
-    \caption{Examples of candles captured under optimal setup conditions. (a) OK candle, showing smooth and uniform features. (b) NOK candle, showing defects like dents or scratches.}
+    \caption{Examples of Candles captured under optimal setup conditions. (a) OK Candle, showing smooth and uniform features. (b) NOK Candle, showing defects like dents or scratches.}
     \label{fig:optimal_setup_candles}
 \end{figure}
 
 \textbf{Setup with bad influences:}
 
-In this setup, images of candles were taken under conditions that led to various camera-induced variations, mimicking the challenges encountered in practical scenarios. The following influences were observed:
+In this setup, images of Candles were taken under conditions that led to various camera-induced variations, mimicking the challenges encountered in practical scenarios. The following influences were observed:
 
 \begin{enumerate}
-    \item \textbf{Scattered Sunlight:} This influence arises when sunlight is diffused or reflected by surrounding objects, leading to uneven illumination on the candles. The resulting highlights and shadows can obscure important features, potentially complicating the visual evaluation of the candles quality.
+    \item \textbf{Scattered Sunlight:} This influence arises when sunlight is diffused or reflected by surrounding objects, leading to uneven illumination on the Candles as shown in Figure~\ref{fig:scattered_sunlight}. The resulting highlights and shadows can obscure important features, potentially complicating the visual evaluation of the Candles quality.
 
     \begin{figure}
         \centering
@@ -737,12 +737,12 @@ In this setup, images of candles were taken under conditions that led to various
             \includegraphics[scale=0.15]{../media/Candles-influence-sunlight-NOK.png}
             \caption{NOK candle affected by scattered sunlight}
         \end{subfigure}
-        \caption{Examples of candles affected by scattered sunlight. (a) OK candle and (b) NOK candle, which shows an absence of the candle in the holder}
+        \caption{Examples of Candles affected by scattered sunlight. (a) OK Candle and (b) NOK Candle, which shows an absence of the candle in the holder}
         \label{fig:scattered_sunlight}
     \end{figure}
-	\item \textbf{Random Object Placement:} Random object placement occurs when candles are not centered within the image frame or are positioned at various angles. This misalignment can lead to confusion in the evaluation process, as the irregular positioning might be interpreted as a defect rather than a mere arrangement issue.
+	\item \textbf{Random Object Placement:} Random object placement occurs when Candles are not centered within the image frame or are positioned at various angles. This misalignment can lead to confusion in the evaluation process, as the irregular positioning might be interpreted as a defect rather than a mere arrangement issue.
 	
-	To illustrate this influence, Figure~\ref{fig:random_object_placement_candles} presents examples of both OK and NOK candles demonstrating random object placement
+	To illustrate this influence, Figure~\ref{fig:random_object_placement_candles} presents examples of both OK and NOK Candles demonstrating random object placement
 	
 	\begin{figure}
 		\centering
@@ -757,12 +757,12 @@ In this setup, images of candles were taken under conditions that led to various
 			\includegraphics[scale=0.15]{../media/Candles-influence-random-NOK.png}
 			\caption{NOK candle with random object placement}
 		\end{subfigure}
-		\caption{Examples of candles affected by random object placement. (a) OK candle and (b) NOK candle, which shows the absence of the thread on the candle.}
+		\caption{Examples of Candles affected by random object placement. (a) OK Candle and (b) NOK Candle, which shows the absence of the thread on the candle.}
 		\label{fig:random_object_placement_candles}
 	\end{figure}
-	\item \textbf{Camera Elevation (Down):} This setup involves positioning the camera 1 cm down, leading to larger and brighter images of the candles. 
+	\item \textbf{Camera Elevation (Down):} This setup involves positioning the camera 1 cm down, leading to larger and brighter images of the Candles. 
 
-	To illustrate this influence, the following images in Figure~\ref{fig:camera_elevation_down} depict both OK and NOK candles affected by this camera elevation.
+	To illustrate this influence, the following images in Figure~\ref{fig:camera_elevation_down} depict both OK and NOK Candles affected by this camera elevation.
 
 	\begin{figure}
 		\centering
@@ -777,12 +777,12 @@ In this setup, images of candles were taken under conditions that led to various
 			\includegraphics[scale=0.15]{../media/Candles-influence-camera-down-NOK.png}
 			\caption{NOK candle with camera elevation down}
 		\end{subfigure}
-		\caption{Examples of candles affected by camera elevation down. (a) OK candle and (b) NOK candle with dents on the candle holder.}
+		\caption{Examples of Candles affected by camera elevation down. (a) OK Candle and (b) NOK Candle with dents on the candle holder.}
 		\label{fig:camera_elevation_down}
 	\end{figure}
-	\item \textbf{Camera Elevation (Up):} This setup involves positioning the camera 1 cm up, leading to smaller and darker images of the candles. 
+	\item \textbf{Camera Elevation (Up):} This setup involves positioning the camera 1 cm up, leading to smaller and darker images of the Candles. 
 
-	To illustrate this influence, the following images in Figure~\ref{fig:camera_elevation_up} depict both OK and NOK candles affected by this camera elevation.
+	To illustrate this influence, the following images in Figure~\ref{fig:camera_elevation_up} depict both OK and NOK Candles affected by this camera elevation.
 
 	\begin{figure}
 		\centering
@@ -797,7 +797,7 @@ In this setup, images of candles were taken under conditions that led to various
 			\includegraphics[scale=0.15]{../media/Candles-influence-camera-up-NOK.png}
 			\caption{NOK candle with camera elevation up}
 		\end{subfigure}
-		\caption{Examples of candles affected by camera elevation up. (a) OK candle and (b) NOK candle.}
+		\caption{Examples of Candles affected by camera elevation up. (a) OK Candle and (b) NOK Candle.}
 		\label{fig:camera_elevation_up}
 	\end{figure}
 \end{enumerate}
@@ -979,16 +979,15 @@ Figure~\ref{fig:pcb_combined} illustrates the PCB images: (a) and (b) presents t
 \subsection{Model Selection}
 To improve the performance of the anomaly detection system, it was essential to train the model on a dataset that included various camera-induced influences such as shadow effects, lighting variations, plexiglas reflections, and random placement of objects. While real data under both optimal and influenced conditions were collected, the need arose to synthetically generate additional images that captured these artifacts. This was necessary to ensure that the anomaly detector could generalize effectively to the variations in the production environment.
 
-Given the nature of this task, an image-to-image translation approach was selected as the most suitable method for generating these synthetic artifacts. While Pix2Pix~\cite{isola2017image} is a popular model for image translation tasks, it relies on paired datasets, which were unavailable in this case. Therefore, \textbf{CycleGAN}, introduced by Jun-Yan Zhu \textit{et al.} (2017) in their paper~\cite{zhu2017unpaired}, was chosen for its ability to perform unpaired image translation. A detailed explanation of CycleGAN is provided in~\ref{sec:cyclegan}.
+Given the nature of this task, an image-to-image translation approach was selected as the most suitable method for generating these synthetic artifacts. While Pix2Pix~\cite{isola2017image} is a popular model for image translation tasks, it relies on paired datasets, which were unavailable in this case. Therefore, \textbf{CycleGAN}, introduced by Jun-Yan Zhu \textit{et al.} (2017)~\cite{zhu2017unpaired}, was chosen for its ability to perform unpaired image translation. A detailed explanation of CycleGAN is provided in Chapter~\ref{sec:cyclegan}.
 
-Additionally, \textbf{Stable Diffusion} was used to enhance the generation of synthetic images. Stable Diffusion, a more recent deep learning model based on diffusion processes, was employed for its ability to generate highly realistic images with a broader range of variations in image quality. This model allowed for the refinement of synthetic images by controlling the level of noise and generating realistic variations under influenced conditions. The methodology and technical details of Stable Diffusion are covered in~\ref{sec:stable_diffusion}.
+Additionally, \textbf{Stable Diffusion} was used to enhance the generation of synthetic images. Stable Diffusion, a more recent deep learning model based on diffusion processes, was employed for its ability to generate highly realistic images with a broader range of variations in image quality. This model allowed for the refinement of synthetic images by controlling the level of noise and generating realistic variations under influenced conditions. The methodology and technical details of Stable Diffusion are covered in Chapter~\ref{sec:stable_diffusion}.
 \subsection{CycleGAN Method}
 \label{sec:cyclegan}
+The CycleGAN architecture consists of two generator models and two discriminator models, following a similar architecture as described in the original paper~\cite{zhu2017unpaired}, facilitating the translation of images between two distinct domains: Domain-A and Domain-B. This subsection details the overall workflow, including data loading and preprocessing, data augmentation, model architecture, and training procedure.
 
+\textbf{Data Loading and Preprocessing}
 
-The CycleGAN architecture consists of two generator models and two discriminator models, following a similar architecture as described in the original paper by Zhu \textit{et al.} (2017), facilitating the translation of images between two distinct domains: Domain-A and Domain-B. This subsection details the overall workflow, including data loading and preprocessing, data augmentation, model architecture, and training procedure.
-
-\subsubsection{Data Loading and Preprocessing}
 For the CycleGAN model implementation, the datasets chosen were the Nuts and Candles datasets, as they provide a sufficiently large number of images compared to the BNI and PCB datasets. Only the OK images from these datasets were utilized for training the CycleGAN model, while the NOK images will be employed later in the evaluation phase using the anomaly detection model.
 
 The Nuts Dataset consists of 457 OK images, comprising:
@@ -1004,7 +1003,9 @@ The Candles Dataset includes 279 OK images, with:
 \end{itemize}
 
 Images were originally in Bitmap (BMP) format with a resolution of 1280x960. The generator and discriminator models used in this work are particularly large, with the generator containing approximately \textasciitilde 35 million parameters and the discriminator consisting of around \textasciitilde 2.8 million parameters. To handle such computational demands efficiently, the images were resized to 256x256 pixels and converted to Portable Network Graphics (PNG) format, ensuring compatibility with the input requirements of the models while optimizing memory usage and processing speed. The experiments were primarily conducted on the Nuts dataset due to its well-defined influences, allowing for more precise image translation.
-\subsubsection{Data Augmentation}
+
+\textbf{Data Augmentation}
+
 The CycleGAN model utilized for this task contained approximately 38 million parameters, which posed the risk of overfitting, given the relatively small dataset size. To mitigate this, standard data augmentation techniques were applied using \texttt{ImageDataGenerator}~\cite{tensorflow_imagedatagenerator}. The following augmentations were implemented:
 
 \begin{enumerate}
@@ -1034,12 +1035,12 @@ The CycleGAN model utilized for this task contained approximately 38 million par
 Figure~\ref{fig:nut_comparison} shows an example of an original nut image alongside its augmented version, where a horizontal flip has been applied.
 These transformations were selected to ensure that they would not adversely affect the translation task. However, despite these augmentation strategies, the performance remained unaffected. It is crucial to note that the transformations only modify the geometry of the images without impacting the underlying information, which may limit the model's ability to learn effective translations.
 
-\subsubsection{Model Architecture}
+\textbf{Model Architecture}
 
 \begin{enumerate}
     \item \textbf{Generator Models}:
     \begin{itemize}
-        \item \textbf{Generator-A}: This generator is responsible for creating images in Domain-A(Optimal). It takes images from Domain-B as input, performing image translation conditioned on these images. The architecture follows an encoder-decoder framework, starting with a convolutional layer that downscales the input. This is followed by a series of \textbf{nine residual blocks} for 256×256 input images, consisting two convolutional layers with 3×3 filters. Each layer uses Instance Normalization to standardize the inputs, helping the model generalize better to different domains. The stride is set to 1×1, ensuring that the spatial dimensions of the input are preserved. The input to each residual block is added back to the output, creating a skip connection that allows the network to retain low-level features while learning more complex ones. Importantly, the second convolutional layer does not use a ReLU activation, following the official CycleGAN paper~\cite{zhu2017unpaired} implementation for better image quality. The decoder then upsamples the features through transposed convolutional layers to produce the final output image. Detailed generator architecture is provided in~\ref{appendix:generator_model}.
+        \item \textbf{Generator-A}: This generator is responsible for creating images in Domain-A(Optimal). It takes images from Domain-B as input, performing image translation conditioned on these images. The architecture follows an encoder-decoder framework, starting with a convolutional layer that downscales the input. This is followed by a series of \textbf{nine residual blocks} for 256×256 input images, consisting two convolutional layers with 3×3 filters. Each layer uses Instance Normalization to standardize the inputs, helping the model generalize better to different domains. The stride is set to 1×1, ensuring that the spatial dimensions of the input are preserved. The input to each residual block is added back to the output, creating a skip connection that allows the network to retain low-level features while learning more complex ones. Importantly, the second convolutional layer does not use a ReLU activation, following the official CycleGAN paper~\cite{zhu2017unpaired} implementation for better image quality. The decoder then upsamples the features through transposed convolutional layers to produce the final output image. Detailed generator architecture is provided in Appendix~\ref{appendix:generator_model}.
         \item \textbf{Generator-B}: Conversely, Generator-B generates images in Domain-B(with bad influences) and takes images from Domain-A as input. It uses the same architectural principles as Generator-A, ensuring a consistent translation process.
     \end{itemize}
 
@@ -1053,7 +1054,7 @@ These transformations were selected to ensure that they would not adversely affe
     \item \textbf{Discriminator Models}:
     Each generator is paired with a corresponding discriminator:
     \begin{itemize}
-        \item \textbf{Discriminator-A}: This model evaluates real images from Domain-A alongside the images generated by Generator-A, predicting whether each image is real or fake. It employs a PatchGAN approach~\cite{isola2017image}, processing $70 \times 70$ image patches with several convolutional layers, Instance Normalization, and LeakyReLU activations. The final layer outputs a probability map indicating the likelihood of each patch being real. An in-depth description of the generator architecture can be found in~\ref{appendix:discriminator_model}. 
+        \item \textbf{Discriminator-A}: This model evaluates real images from Domain-A alongside the images generated by Generator-A, predicting whether each image is real or fake. It employs a PatchGAN approach~\cite{isola2017image}, processing $70 \times 70$ image patches with several convolutional layers, Instance Normalization, and LeakyReLU activations. The final layer outputs a probability map indicating the likelihood of each patch being real. An in-depth description of the generator architecture can be found in Appendix~\ref{appendix:discriminator_model}. 
         \item \textbf{Discriminator-B}: Similarly, this discriminator assesses real images from Domain-B and those produced by Generator-B. It shares the same network architecture as Discriminator-A, ensuring consistency in evaluations.
     \end{itemize}
 
@@ -1117,7 +1118,7 @@ An image pool is maintained for the discriminators to stabilize the training, wh
 
 The following table summarizes the hyperparameters used in the training procedure:
 
-\begin{table}[H]
+\begin{table}
     \centering
     \caption{Training Hyperparameters}
     \label{tab:hyperparameters}
@@ -1126,21 +1127,13 @@ The following table summarizes the hyperparameters used in the training procedur
         \textbf{Hyperparameter} & \textbf{Value} & \textbf{Description} \\ 
         \midrule
         Epochs & 100 & Total number of training epochs \\ 
-        \midrule
-        Batch size & 1 & Number of images processed per step \\ 
-        \midrule
-        Learning rate (Generator) & 0.0002 & Learning rate for the generator \\ 
-        \midrule
-        Learning rate (Discriminators) & 0.0002 & Learning rate for the discriminators \\ 
-        \midrule
-        Momentum (\( \beta_1 \)) & 0.5 & Momentum term for the Adam optimizer \\ 
-        \midrule
-        Cycle-consistency loss & 10x adversarial loss & Weight assigned to the cycle-consistency loss \\ 
-        \midrule
-        Identity loss & 5x cycle-consistency loss & Weight assigned to the identity loss \\ 
-        \midrule
-        Image pool size & 50 & Number of fake images stored in the image pool \\ 
-        \midrule
+        Batch size & 1 & Number of images processed per step \\
+        Learning rate(Generator) & 0.0002 & Learning rate for the generator \\
+        Learning rate(Discriminator) & 0.0002 & Learning rate for the discriminators \\
+        Momentum (\( \beta_1 \)) & 0.5 & Momentum term for the Adam optimizer \\
+        Cycle-consistency loss & 10x adversarial loss & Weight assigned to the cycle-consistency loss \\
+        Identity loss & 5x cycle-consistency loss & Weight assigned to the identity loss \\
+        Image pool size & 50 & Number of fake images stored in the image pool \\
         Training steps per epoch & \( \frac{N_{images}}{B} \) & Number of training steps per epoch based on dataset size \\ 
         \bottomrule
     \end{tabularx}
@@ -1154,8 +1147,9 @@ The goal is to achieve stable adversarial training where the generator produces 
 Stable Diffusion WebUI, particularly the \texttt{AUTOMATIC1111} version, offers an easy-to-use interface for generating images using Stable Diffusion models. It supports a range of image manipulation tasks, including text-to-image, image-to-image, inpainting, and more, making it suitable for various creative and technical purposes. For this thesis, the Image-to-Image (\texttt{img2img}) functionality was used to generate synthetic images using real data. The requirements necessary for setting up the Stable Diffusion model are outlined in Appendix~\ref{appendix:stable_diffusion}.
 
 
-\subsubsection{Using the img2img Tab in Stable Diffusion WebUI}
-To generate synthetic images, begin by uploading an existing image (such as a nut) into the \texttt{img2img} tab. Once uploaded, select the appropriate checkpoint model, such as \texttt{sd\_xl\_base\_1.0\_0.9vae.safetensors} as shown in Figure~\ref{checkpoint}, ensuring compatibility with the model and task.
+\textbf{Using the img2img Tab in Stable Diffusion WebUI}
+
+To generate synthetic images, begin by uploading a real image, for example an image of a Nut or Candle into the \texttt{img2img} tab. Once uploaded, select the appropriate checkpoint model, such as \texttt{sd\_xl\_base\_1.0\_0.9vae.safetensors} as shown in Figure~\ref{checkpoint}, ensuring compatibility with the model and task.
 \begin{figure}
 	\centering
 	\includegraphics[scale=.9]{../media/stable_diffusion_checkpoint.PNG}
@@ -1163,7 +1157,7 @@ To generate synthetic images, begin by uploading an existing image (such as a nu
 	\label{checkpoint}
 \end{figure}
 
-\paragraph{Key Settings and Configuration}
+\textbf{Key Settings and Configuration}
 
 \begin{itemize}
     \item \textbf{Sampling Method (\(M_{\text{sam}}\)):} Determines the strategy for generating the image. \textit{DPM++ 2M Karras} was selected for its ability to decrease step sizes towards the end, enhancing image quality.
@@ -1194,8 +1188,9 @@ Figure~\ref{fig:webui_screenshot} shows the Stable Diffusion WebUI interface wit
 \subsection{Evaluation Metrics}
 In image processing and analysis, assessing the quality of generated images is vital for understanding the performance of different algorithms and models. To achieve this, a variety of metrics are employed to quantify image quality, focusing on aspects such as similarity, distortion, and overall perceptual fidelity. Metrics like Oriented FAST and Rotated BRIEF(ORB), Structural Similarity Index(SSIM), Mean Squared Error(MSE), Peak Signal-to-Noise Ratio(PSNR), and perceptual loss using VGG16 facilitate comparisons between original and synthetic images, as well as the similarity between different generated images. This aids in optimizing techniques and ensuring that the generated results align with established quality standards. The following sections will explain these metrics in detail.
 
-\subsubsection{ORB}
-ORB by OpenCV is a feature detector and descriptor that efficiently identifies and describes keypoints in images, as developed by Ethan Rublee \textit{et al.} in their 2011 paper, \textbf{'ORB: An efficient alternative to SIFT or SURF'}~\cite{ORB}, making it particularly useful for image matching and object recognition tasks. The process begins with ORB detecting keypoints using the FAST algorithm, followed by generating binary descriptors through the BRIEF technique.
+\textbf{ORB}
+
+ORB by OpenCV is a feature detector and descriptor that efficiently identifies and describes keypoints in images, as developed by Ethan Rublee \textit{et al.} in their 2011 paper, \textbf{"ORB: An efficient alternative to SIFT or SURF"}~\cite{ORB}, making it particularly useful for image matching and object recognition tasks. The process begins with ORB detecting keypoints using the FAST algorithm, followed by generating binary descriptors through the BRIEF technique.
 
 When comparing two images, ORB employs the Hamming distance metric to assess similarity by calculating the number of differing bits between the binary descriptors of matched features. A lower Hamming distance(\(d_H\)) indicates a closer match, which is essential for determining the degree of similarity between the images.
 
@@ -1203,7 +1198,8 @@ To enhance matching efficiency, ORB can be combined with a brute force matcher, 
 
 To calculate the overall ORB score, the number of good matches (i.e., matches with a Hamming distance below the threshold) is divided by the total number of matched descriptors. This score provides a quantitative measure of how similar the two images are overall, reflecting the effectiveness of the feature matching process.
 
-\subsubsection{SSIM}
+\textbf{SSIM}
+
 SSIM is a perceptual metric used to assess the quality of images by quantifying the degradation caused by processing tasks such as compression and transmission. Unlike traditional metrics that primarily rely on pixel-wise comparisons, SSIM evaluates changes in structural information, which reflects the way humans perceive visual information. The index incorporates three key components: luminance, contrast, and structural similarity.
 
 \begin{itemize}
@@ -1216,7 +1212,8 @@ SSIM is a perceptual metric used to assess the quality of images by quantifying 
 
 The SSIM index produces a value between -1 and 1, where SSIM = 1 indicates perfect similarity between two images, and SSIM = -1 indicates significant differences. Due to its sensitivity to perceptual characteristics, SSIM is widely employed in various applications, including image compression, quality assessment, and computer vision tasks, as it correlates well with human visual perception.
 
-\subsubsection{MSE}
+\textbf{MSE}
+
 MSE is a widely used metric to quantify the difference between the original and generated images. It calculates the average of the squares of the differences between corresponding pixel values. The formula for MSE is given by:
 
 \begin{equation}
@@ -1227,7 +1224,8 @@ where \( N \) is the total number of pixels, \( I_{original}(i) \) is the pixel 
 
 A lower MSE value indicates a closer resemblance between the two images, meaning better image quality. Ideally, an MSE = 0 represents perfect similarity between the images. However, MSE can sometimes be misleading as it does not consider perceptual factors, meaning that images with similar MSE values may not necessarily appear similar to human observers.
 
-\subsubsection{PSNR}
+\textbf{PSNR}
+
 PSNR is another commonly used metric for assessing image quality, especially in the context of lossy compression. PSNR is derived from MSE and provides a measure of the maximum possible power of a signal (the original image) relative to the power of the noise (the error introduced by compression). The formula for PSNR is given by:
 
 \begin{equation}
@@ -1238,12 +1236,13 @@ where \( MAX_I \) is the maximum possible pixel value of the image (typically 25
 
 PSNR is expressed in decibels (dB), and a higher PSNR value indicates better image quality, as it signifies a lower level of noise. An optimum PSNR value is generally considered to be PSNR = 30 dB or higher for good quality images, with values above PSNR = 40 dB indicating very high quality. While PSNR is easy to compute and widely used, it also has limitations, as it does not align perfectly with human visual perception, and higher PSNR values do not always guarantee higher visual quality.
 
-\subsubsection{Perceptual Loss using VGG16}
+\textbf{Perceptual Loss using VGG16}
+
 Perceptual loss measures the differences between two images based on high-level features extracted by a pre-trained deep convolutional neural network, specifically VGG16~\cite{VGG16}. Developed by Oxford's Visual Geometry Group, VGG16 consists of 16 layers, where the early layers focus on extracting low-level features (such as edges and textures), while the deeper layers capture high-level features (like shapes and object parts).
 
 In the context of calculating perceptual loss between two images, the features from both the real and generated images are extracted using VGG16. The process involves loading the pre-trained model and preprocessing the images to match VGG16's input requirements. Once the features are extracted, the perceptual loss is computed by comparing these feature representations, providing a measure of similarity that aligns more closely with human visual perception. An optimal perceptual loss value is typically low, indicating a closer match between the images, which is essential for effective image quality assessment
 
-\subsubsection{Comparing Two Sets of Images Using VGG16 Feature Extraction and a Classifier}
+\textbf{Comparing Two Sets of Images Using VGG16 Feature Extraction and a Classifier}
 
 This method evaluates the similarity between two sets of images: real images and those generated by a model (Stable Diffusion). By employing the pre-trained network VGG16 as a feature extractor, this technique captures essential semantic information while focusing on high-level features instead of pixel-wise differences.
 
@@ -1263,7 +1262,7 @@ This method evaluates the similarity between two sets of images: real images and
 \subsection{Anomaly Detection on Nuts Dataset}
 This section discusses the evaluation of an anomaly detection model using the Nuts dataset, which consists of images categorized into OK (good) and NOK (not okay) classes captured under various conditions. As summarized in Table~\ref{tab:nuts-dataset}, the dataset includes a variety of images captured under both optimal conditions and those affected by different influences. The evaluation involves three distinct approaches to training the model, each with a different composition of training datasets. The model's performance will be assessed using a consistent test dataset, with key metrics analyzed to gauge the effectiveness of each approach.
 
-This test dataset comprises:
+This test dataset as given in Table~\ref{tab:test-dataset-composition} comprises:
 
 \begin{itemize}
     \item All 48 NOK images captured under optimal conditions.
@@ -1292,10 +1291,12 @@ This test dataset comprises:
 
 The following descriptions detail the training datasets utilized for each approach and how the model's performance was evaluated.
 
-\subsubsection{First Approach: Training with Only Good Optimal Images}
+\textbf{First Approach: Training with Only Good Optimal Images}
+
 In the first approach, only the 121 OK images captured under optimal conditions were used as the training dataset. No images with bad influences were included during training. The objective of this approach was to observe the anomaly detector’s performance when trained on ideal images and tested with both optimal and bad influence images in the test dataset.
 
-\textbf{Training Dataset:}
+Images used for training in the first approach is given in Table~\ref{tab:first-approach}.
+
 \begin{table}
     \centering
     \caption{Training Dataset Composition for First Approach}
@@ -1309,10 +1310,12 @@ In the first approach, only the 121 OK images captured under optimal conditions 
     \end{tabular}
 \end{table}
 
-\subsubsection{Second Approach: Adding Real Bad Influence Images}
+\textbf{Second Approach: Adding Real Bad Influence Images}
+
 In the second approach, the remaining 245 OK images with bad influences (from the total 305) were added to the 121 OK optimal images from the first approach. This aims to evaluate if the inclusion of real bad influence images improves the performance of the anomaly detector.
 
-\textbf{Training Dataset:}
+Images used for training in the second approach are provided in Table~\ref{tab:second-approach}.
+
 \begin{table} 
     \centering
     \caption{Training Dataset Composition for Second Approach}
@@ -1328,10 +1331,12 @@ In the second approach, the remaining 245 OK images with bad influences (from th
 \end{table}
 
 
-\subsubsection{Third Approach: Incorporating Synthetic Bad Influence Images}
+\textbf{Third Approach: Incorporating Synthetic Bad Influence Images}
+
 In the third approach, instead of using real bad influence images, 245 synthetically generated images (using Stable Diffusion) were added to the 121 OK optimal real images. This approach tests whether synthetically generated images can achieve similar results to real images in anomaly detection.
 
-\textbf{Training Dataset:}
+Images used for training in the third approach are listed in Table~\ref{tab:third-approach}
+
 \begin{table} 
     \centering
     \caption{Training Dataset Composition for Third Approach}
@@ -1346,7 +1351,7 @@ In the third approach, instead of using real bad influence images, 245 synthetic
     \end{tabular}
 \end{table}
 
-\subsubsection{Implementation Details}
+\textbf{Implementation Details}
 
 The implemented anomaly detection method utilizes a convolutional autoencoder to reconstruct input images and assess their similarity to the original data. A convolutional autoencoder learns efficient representations through an encoder-decoder architecture, compressing the input into a lower-dimensional latent space and reconstructing it from this representation.
 
@@ -1360,12 +1365,12 @@ Finally, the model's effectiveness is evaluated on separate test datasets contai
 
 \chapter{Results and Discussions}
 \label{chapter4}
+This chapter presents the results and discussion of experiments conducted using CycleGAN on two datasets: Nuts and Candles. These datasets were selected due to their larger size compared to the PCB and BNI datasets, allowing for more robust evaluation of the CycleGAN model. The results for the Nuts dataset are presented first, followed by the Candles dataset. Throughout the discussion, specific challenges encountered during the training process across both datasets will be highlighted. Next, the results from Stable Diffusion are presented, focusing on the impact of denoising strength on the generated images. The generated images for all four datasets are then presented and discussed in terms of their quality and realism. Subsequently, key evaluation metrics are discussed to assess the image quality and similarity between the real and generated images. Finally, the performance of the anomaly detector was evaluated using the generated images from Stable Diffusion.
 \section{CycleGAN Experiments}
-This section presents the results and discussion of experiments conducted using CycleGAN on two datasets: Nuts and Candles. These datasets were selected due to their larger size compared to the PCB and BNI datasets, allowing for more robust evaluation of the CycleGAN model. The results for the nuts dataset are presented first, followed by the candles dataset. Throughout the discussion, specific challenges encountered during the training process across both datasets will be highlighted. Next, the results from Stable Diffusion are presented, focusing on the impact of denoising strength on the generated images. The generated images for all four datasets are then presented and discussed in terms of their quality and realism. Subsequently, key evaluation metrics are discussed to assess the image quality and similarity between the real and generated images. Finally, the performance of the anomaly detector was evaluated using the generated images from Stable Diffusion.
 
 \subsection{Experiments with Nuts Dataset}
 \label{sec:cyclegan_nuts}
-The experiments involving the nuts dataset aimed to translate images from optimal setups to those influenced by various camera-induced factors. Specifically, this dataset encompasses four distinct types of influences: \textbf{Shadow}, \textbf{Random Placement}, \textbf{High Gain Factor}, and \textbf{Plexiglas Effect}, as discussed in Chapter~\ref{sec:nuts_dataset}.
+The experiments involving the Nuts dataset aimed to translate images from optimal setups to those influenced by various camera-induced factors. Specifically, this dataset encompasses four distinct types of influences: \textbf{Shadow}, \textbf{Random Placement}, \textbf{High Gain Factor}, and \textbf{Plexiglas Effect}, as discussed in Chapter~\ref{sec:nuts_dataset}.
 
 Following this, the results presented are some of the intermediate results obtained during the training of the CycleGAN model. Certain hyperparameters, as detailed in Table~\ref{tab:hyperparameters}, were modified to evaluate their impact on the results. Intermediate results were saved after each epoch to facilitate the assessment of model performance throughout the training process, and any changes to hyperparameters for specific results will be noted.
 
@@ -1373,7 +1378,7 @@ Following this, the results presented are some of the intermediate results obtai
 
 Figure~\ref{fig:shadow_effect_result} illustrates the image translation from optimal setup to shadow effect, obtained during CycleGAN training at the 13th epoch. Figure~\ref{fig:shadow_effect_result} (a) presents five images from the optimal setup (Domain A) alongside the corresponding translated images that exhibit the shadow effect. Figure~\ref{fig:shadow_effect_result} (b) provides a reference image displaying the original shadow effect for comparison.
 
-The translated images effectively capture the background and shadow characteristics seen in the reference image, with the nuts appearing realistic. The hyperparameter settings for this experiment align with those outlined in Table~\ref{tab:hyperparameters}, indicating that the results were derived under the original configuration.
+The translated images effectively capture the background and shadow characteristics seen in the reference image, with the Nuts appearing realistic. The hyperparameter settings for this experiment align with those outlined in Table~\ref{tab:hyperparameters}, indicating that the results were derived under the original configuration.
 
 \begin{figure}
     \centering
@@ -1443,15 +1448,15 @@ Despite the incorporation of these modifications, the results demonstrate only a
 
 One significant limitation of CycleGAN is its inherent inability to manage tasks that require specific spatial arrangements of objects within an image. When CycleGAN processes images from Domain A, it primarily focuses on preserving the core features of the original images while incorporating artifacts from Domain B. Consequently, any modifications made during this translation are constrained by the existing structures within Domain A.
 
-In the context of random object placement effect, the challenge stems from the fact that the training dataset for Domain A does not include any images of nuts arranged randomly. As a result, it lacks the capability to generate images that accurately depict the random placement of nuts.
+In the context of random object placement effect, the challenge stems from the fact that the training dataset for Domain A does not include any images of Nuts arranged randomly. As a result, it lacks the capability to generate images that accurately depict the random placement of Nuts.
 
 \subsection{Experiments with Candles Dataset}
 
-The candles dataset was utilized to examine the translation of images from optimal setups to those impacted by different environmental and camera-induced influences like \textbf{Scattered Sunlight}, \textbf{Random Object Placement}, \textbf{Camera Elevation (Up)}, and \textbf{Camera Elevation (Down)}, as discussed in Chapter~\ref{sec:candles_dataset}.
+The Candles dataset was utilized to examine the translation of images from optimal setups to those impacted by different environmental and camera-induced influences like \textbf{Scattered Sunlight}, \textbf{Random Object Placement}, \textbf{Camera Elevation (Up)}, and \textbf{Camera Elevation (Down)}, as discussed in Chapter~\ref{sec:candles_dataset}.
 
-However, one of the challenges encountered with this dataset is that the visual differences between the various influences are not as pronounced as those observed in the nuts dataset. This lack of clear distinction between influences made the analysis of generated images more difficult. As a result, the outputs produced by CycleGAN were harder to evaluate for accuracy and realism. Despite this, intermediate results saved after specific epochs during training revealed some promising translations, although the overall visual quality and differentiation were still not as satisfactory as expected.
+However, one of the challenges encountered with this dataset is that the visual differences between the various influences are not as pronounced as those observed in the Nuts dataset. This lack of clear distinction between influences made the analysis of generated images more difficult. As a result, the outputs produced by CycleGAN were harder to evaluate for accuracy and realism. Despite this, intermediate results saved after specific epochs during training revealed some promising translations, although the overall visual quality and differentiation were still not as satisfactory as expected.
 
-The same hyperparameters, as detailed in Table~\ref{tab:hyperparameters}, were used for training the candles dataset. The discriminator model's complexity was intentionally reduced to diminish its capacity for distinguishing between real and generated images. Specifically, the original discriminator architecture as in Appendix~\ref{appendix:discriminator_model} was modified by decreasing the number of convolutional filters in the initial layers from 64, 128, and 256 to 32, 64, and 128, respectively and by removing the final layer that utilized 512 filters. This simplification aimed to establish a better balance between the generator and discriminator during adversarial training, enhancing the generator's ability to produce more realistic outputs. Key components such as LeakyReLU activations and Instance Normalization were retained to stabilize training and improve convergence. Results were obtained at different epochs, with intermediate outputs saved throughout the training process, allowing for an assessment of the generated images over time. 
+The same hyperparameters, as detailed in Table~\ref{tab:hyperparameters}, were used for training the Candles dataset. The discriminator model's complexity was intentionally reduced to diminish its capacity for distinguishing between real and generated images. Specifically, the original discriminator architecture as in Appendix~\ref{appendix:discriminator_model} was modified by decreasing the number of convolutional filters in the initial layers from 64, 128, and 256 to 32, 64, and 128, respectively and by removing the final layer that utilized 512 filters. This simplification aimed to establish a better balance between the generator and discriminator during adversarial training, enhancing the generator's ability to produce more realistic outputs. Key components such as LeakyReLU activations and Instance Normalization were retained to stabilize training and improve convergence. Results were obtained at different epochs, with intermediate outputs saved throughout the training process, allowing for an assessment of the generated images over time. 
 
 \textbf{Scattered Sunlight Effect}
 
@@ -1561,7 +1566,7 @@ While CycleGAN offers a powerful framework for unpaired image-to-image translati
 
 One of the key challenges encountered during the training of CycleGAN was~\textbf{mode collapse}. This problem, common in adversarial training, occurs when the generator produces a restricted range of outputs, failing to capture the full diversity of the training data. This results in repetitive or similar images regardless of the variations in the input, leading to a significant reduction in the overall output quality. As evidenced by the results, Candle images generated under different conditions, such as the Scattered Sunlight Effect and variations in Camera Elevation, exhibited striking similarities, suggesting that the model experienced mode collapse at various stages of training. This issue can often be attributed to the inherent instability of GAN architectures, wherein the delicate balance between the generator and discriminator is disrupted, causing the generator to latch onto specific modes of the data distribution while neglecting others. Factors such as discriminator overfitting and catastrophic forgetting can exacerbate this issue, ultimately hindering the generator's ability to produce varied and realistic outputs~\cite{modecollapse}.
 
-Another significant challenge arose from the~\textbf{nature of the data}. Generative models, including CycleGAN, typically require large and diverse datasets to generalize well and produce varied results. However, in this case, the datasets were limited both in size and diversity. The nuts and candles datasets, although containing different samples, lacked significant variation in appearance. Many images of nuts and candles looked similar in terms of color, shape, and background. Although data augmentation techniques were applied to increase the diversity of the dataset, the inherent similarity between the images meant that these augmentations were not particularly helpful in improving the model’s ability to capture meaningful variations.
+Another significant challenge arose from the~\textbf{nature of the data}. Generative models, including CycleGAN, typically require large and diverse datasets to generalize well and produce varied results. However, in this case, the datasets were limited both in size and diversity. The Nuts and Candles datasets, although containing different samples, lacked significant variation in appearance. Many images of Nuts and Candles looked similar in terms of color, shape, and background. Although data augmentation techniques were applied to increase the diversity of the dataset, the inherent similarity between the images meant that these augmentations were not particularly helpful in improving the model’s ability to capture meaningful variations.
 
 A further notable challenge was the~\textbf{instability of the training process}. Even though the losses showed a gradual decline over time, there were consistent fluctuations and occasional spikes in both generator and discriminator losses. This instability in the training dynamics is a characteristic of GAN models, where the adversarial nature of the training can lead to periods of rapid improvement followed by sudden regressions. In this case, the instability made it difficult to reach a point where the generator and discriminator could both perform optimally. This unstable training environment, combined with the limited and homogeneous data, ultimately hindered the ability of CycleGAN to produce realistic and varied outputs across different conditions.
 
@@ -1569,7 +1574,7 @@ A further notable challenge was the~\textbf{instability of the training process}
 
 Initially, the goal was to introduce various camera influences into the images using generative models, particularly CycleGAN, for image-to-image translation. Although CycleGAN was capable of generating images with these camera influences, its limitations, including mode collapse and training instability, resulted in images that lacked the necessary quality and realism. As a result, these images could not be reliably used to train the anomaly detector effectively.
 
-Consequently, Stable Diffusion, specifically the~\texttt{img2img} functionality was used to generate synthetic images. While direct image-to-image translation from optimal images to images with bad influences was not possible with Stable Diffusion, this approach allowed for the generation of synthetic images that incorporated the necessary camera influences. By uploading each real image with bad camera influence from the nuts dataset and setting a low denoising strength (e.g., $s_{\text{den}} = 0.2$) and all the other configurations as mentioned in Chapter~\ref{sec:stable_diffusion}, it was possible to generate similar images with subtle variations in texture, which were considered more suitable for testing. This approach was applied to all the images from the Domain B dataset of nuts, creating a set of synthetic images corresponding to each real image. These synthetic images were integrated into the anomaly detection process to test whether they could replicate the performance improvements observed when real images with bad influences were used.
+Consequently, Stable Diffusion, specifically the~\texttt{img2img} functionality was used to generate synthetic images. While direct image-to-image translation from optimal images to images with bad influences was not possible with Stable Diffusion, this approach allowed for the generation of synthetic images that incorporated the necessary camera influences. By uploading each real image with bad camera influence from the Nuts dataset and setting a low denoising strength (e.g., $s_{\text{den}} = 0.2$) and all the other configurations as mentioned in Chapter~\ref{sec:stable_diffusion}, it was possible to generate similar images with subtle variations in texture, which were considered more suitable for testing. This approach was applied to all the images from the Domain B dataset of Nuts, creating a set of synthetic images corresponding to each real image. These synthetic images were integrated into the anomaly detection process to test whether they could replicate the performance improvements observed when real images with bad influences were used.
 
 Thus, while the initial objective was to use generative models to introduce various artifacts, Stable Diffusion offered a more practical way to generate image variations. Although we still need to collect real images with bad influences, the advantage of Stable Diffusion is that it requires only a limited quantity of these images compared to CycleGAN, which necessitates a larger dataset for good results. This makes the synthetic image generation process more efficient.
 
@@ -1910,7 +1915,7 @@ In this evaluation, the generated images using Stable diffusion(img2img) from th
 
 \subsection{Nuts}
 
-The comparison of the nuts dataset between the real image (Real) and the generated image (Generated\_1) as given in Figure~\ref{fig:comparison_metrics_real_generated_nut}, highlights effective image synthesis, with ORB = 0.9697 and SSIM = 0.9420, indicating strong feature retention and structural similarity. An MSE = 18.3361 suggests minor pixel differences, while a PSNR = 33.5168 reflects high visual quality. A Perceptual Loss \( P_L = 0.0625 \) further demonstrates that the generated image retains significant perceptual characteristics of the real image.
+The comparison of the Nuts dataset between the real image (Real) and the generated image (Generated\_1) as given in Figure~\ref{fig:comparison_metrics_real_generated_nut}, highlights effective image synthesis, with ORB = 0.9697 and SSIM = 0.9420, indicating strong feature retention and structural similarity. An MSE = 18.3361 suggests minor pixel differences, while a PSNR = 33.5168 reflects high visual quality. A Perceptual Loss \( P_L = 0.0625 \) further demonstrates that the generated image retains significant perceptual characteristics of the real image.
 
 In contrast, the comparison between the two generated images (Generated\_1 and Generated\_2) as in Figure~\ref{fig:comparison_metrics_two_generated_nut}, shows perfect feature matching with an ORB = 1.0000 and high structural similarity (SSIM = 0.9678). An MSE = 6.2752 indicates minimal pixel discrepancies, and a PSNR = 38.1736 points to exceptional image quality. The lower Perceptual Loss \( P_L = 0.0551 \) confirms that both generated images are highly similar. Overall, while the generated image is similar to the real one, the two generated images are even more closely aligned.
 
@@ -1993,7 +1998,7 @@ In contrast, the comparison between the two generated images (Generated\_1 and G
 
 \subsection{Candles}
 
-The analysis of the candle dataset shows a similar trend to that observed in the nuts dataset. The metric values presented in the Figure~\ref{fig:comparison_real_generated_1_1_candle}, indicate a strong similarity between the real and generated images. Notably, the two generated images exhibit even higher similarity at pixel level as per the metric values in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_candle}
+The analysis of the candle dataset shows a similar trend to that observed in the Nuts dataset. The metric values presented in the Figure~\ref{fig:comparison_real_generated_1_1_candle}, indicate a strong similarity between the real and generated images. Notably, the two generated images exhibit even higher similarity at pixel level as per the metric values in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_candle}
 
 \begin{figure}
     \begin{minipage}[H]{\linewidth}
@@ -2075,7 +2080,7 @@ The analysis of the candle dataset shows a similar trend to that observed in the
 
 \subsection{BNIs}
 
-The analysis of the BNI dataset reveals a slightly different trend compared to the nuts and candle datasets. As shown in Figure~\ref{fig:comparison_real_generated_1_1_bni}, an ORB = 0.9754 indicates strong feature matching between the real and generated images. However, a value of SSIM = 0.8312, which is notably lower than in previous datasets, suggests that while key features are preserved, there are more structural differences between the real and generated images. This is further supported by the relatively high MSE = 118.6083 and a PSNR = 26.8631, indicating increased pixel discrepancies and lower image quality. The perceptual loss \( P_L = 0.1834 \) also reflects greater deviation in perceptual characteristics between the real and generated BNI images.
+The analysis of the BNI dataset reveals a slightly different trend compared to the Nuts and Candle datasets. As shown in Figure~\ref{fig:comparison_real_generated_1_1_bni}, an ORB = 0.9754 indicates strong feature matching between the real and generated images. However, a value of SSIM = 0.8312, which is notably lower than in previous datasets, suggests that while key features are preserved, there are more structural differences between the real and generated images. This is further supported by the relatively high MSE = 118.6083 and a PSNR = 26.8631, indicating increased pixel discrepancies and lower image quality. The perceptual loss \( P_L = 0.1834 \) also reflects greater deviation in perceptual characteristics between the real and generated BNI images.
 
 In contrast, the comparison of two generated images as in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_bni} shows a closer alignment. ORB = 0.9647 and SSIM = 0.8621, reflecting better structural similarity. Additionally, the MSE drops and and the PSNR improves(MSE = 87.2969, PSNR = 28.1942) indicating fewer pixel-level discrepancies. The perceptual loss also decreases to \( P_L = 0.1371 \), highlighting the greater similarity between the two generated images, although the differences are still more pronounced compared to previous datasets.
 
@@ -2239,7 +2244,7 @@ The comparison between the two generated images in Figure~\ref{fig:comparison_ge
 \end{figure}
 
 
-The BNI and PCB datasets, as discussed in Chapter~\ref{sec:generated_images}, are more complex compared to the nuts and candles datasets, primarily due to their fine details such as text, labels, and small components. This intricacy is reflected not only in the visual analysis of the generated images, where elements like words, markings, and small circuits are not accurately reproduced, but also in the metric values. In both the BNI and PCB datasets, while the overall shape and structure of objects remain consistent, the finer details are lost in the synthetic images. This contrasts with the nuts and candles datasets, where the generated images exhibited stronger similarity both visually and metrically, as evidenced by higher ORB, SSIM, and PSNR values. The lower SSIM and higher MSE values for BNI and PCB highlight the difficulty in preserving the intricate details of these datasets, making them more challenging to synthesize accurately compared to the relatively simpler datasets like Nuts and Candles.
+The BNI and PCB datasets, as discussed in Chapter~\ref{sec:generated_images}, are more complex compared to the Nuts and Candles datasets, primarily due to their fine details such as text, labels, and small components. This intricacy is reflected not only in the visual analysis of the generated images, where elements like words, markings, and small circuits are not accurately reproduced, but also in the metric values. In both the BNI and PCB datasets, while the overall shape and structure of objects remain consistent, the finer details are lost in the synthetic images. This contrasts with the Nuts and Candles datasets, where the generated images exhibited stronger similarity both visually and metrically, as evidenced by higher ORB, SSIM, and PSNR values. The lower SSIM and higher MSE values for BNI and PCB highlight the difficulty in preserving the intricate details of these datasets, making them more challenging to synthesize accurately compared to the relatively simpler datasets like Nuts and Candles.
 
 \section{Anomaly Detection Results on the Nuts Dataset}
 
@@ -2287,7 +2292,7 @@ Third approach, which involved the use of synthetic images with bad influences, 
 
 The balanced accuracy(\( B_A \)) metric, which accounts for both the recall of normal and anomalous images, provides a more comprehensive view of the model's performance. In the first approach, the balanced accuracy was \( B_A = 0.68 \), reflecting the model's poor recall for normal images. In both second and third approaches, the balanced accuracy improved to \( B_A = 0.78 \), showing that the addition of real or synthetic bad influence images helped balance the model's performance across both normal and anomalous classes. However, even with this improvement, the overall accuracy did not rise significantly because the model continued to misclassify a substantial number of anomalous images as normal.
 
-The reason for this limitation in accuracy improvement lies in the nature of the data. Some anomalous nut images closely resemble OK images with some bad influences like background, lighting and shadows. The anomalies, such as subtle shape imperfections in the nuts, can be difficult for the model to distinguish from normal variations, especially when the defects are minor. As a result, even with the inclusion of real or synthetic bad influence images, the model still faces challenges in reliably identifying these visually subtle anomalies, leading to a plateau in accuracy improvements.
+The reason for this limitation in accuracy improvement lies in the nature of the data. Some anomalous nut images closely resemble OK images with some bad influences like background, lighting and shadows. The anomalies, such as subtle shape imperfections in the Nuts, can be difficult for the model to distinguish from normal variations, especially when the defects are minor. As a result, even with the inclusion of real or synthetic bad influence images, the model still faces challenges in reliably identifying these visually subtle anomalies, leading to a plateau in accuracy improvements.
 
 \begin{figure}
     \centering

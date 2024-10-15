@@ -33,21 +33,87 @@ K.~El~Emam, L.~Mosquera and R.~Hoptroff, \emph{Practical synthetic data
   generation: balancing privacy and the broad availability of data}.\hskip 1em
   plus 0.5em minus 0.4em\relax O'Reilly Media, 2020.
 
+\bibitem{wuttke2024}
+\BIBentryALTinterwordspacing
+L.~Wuttke, ``Machine learning vs. deep learning: What’s the difference?''
+  April 2024. [Online]. Available:
+  \url{https://datasolut.com/machine-learning-vs-deep-learning/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{hardesty2017explained}
+L.~Hardesty, ``Explained: neural networks,'' \emph{MIT News}, vol.~14, 2017.
+
+\bibitem{luhaniwal2019}
+\BIBentryALTinterwordspacing
+V.~Luhaniwal, ``Forward propagation in neural networks — simplified (math and
+  code version),'' May 2019. [Online]. Available:
+  \url{https://towardsdatascience.com/forward-propagation-in-neural-networks-simplified-math-and-code-version-bbcfef6f9250}
+\BIBentrySTDinterwordspacing
+
+\bibitem{rumelhart1986learning}
+D.~E. Rumelhart, G.~E. Hinton and R.~J. Williams, ``Learning representations by
+  back-propagating errors,'' \emph{nature}, vol. 323, no. 6088, pp. 533--536,
+  1986.
+
 \bibitem{tu2007learning}
 Z.~Tu, ``Learning generative models via discriminative approaches,'' in
   \emph{2007 IEEE Conference on Computer Vision and Pattern Recognition}.\hskip
   1em plus 0.5em minus 0.4em\relax IEEE, 2007, pp. 1--8.
+
+\bibitem{deng2016deep}
+L.~Deng and N.~Jaitly, ``Deep discriminative and generative models for speech
+  pattern recognition,'' in \emph{Handbook of pattern recognition and computer
+  vision}.\hskip 1em plus 0.5em minus 0.4em\relax World Scientific, 2016, pp.
+  27--52.
+
+\bibitem{wikipedia2024}
+{Wikipedia contributors}, ``Discriminative model --- wikipedia{,} the free
+  encyclopedia,'' \url{https://en.wikipedia.org/wiki/Discriminative_model},
+  last edited: 4 October 2024.
 
 \bibitem{Nanda:2024}
 N.~Arun, ``Generative vs discriminative models: Differences & use cases,''
   \url{https://www.datacamp.com/blog/generative-vs-discriminative-models}, Sep.
   2020.
 
+\bibitem{zheng2023toward}
+C.~Zheng, G.~Wu and C.~Li, ``Toward understanding generative data
+  augmentation,'' \emph{Advances in neural information processing systems},
+  vol.~36, pp. 54\,046--54\,060, 2023.
+
+\bibitem{ng2001discriminative}
+A.~Ng and M.~Jordan, ``On discriminative vs. generative classifiers: A
+  comparison of logistic regression and naive bayes,'' \emph{Advances in neural
+  information processing systems}, vol.~14, 2001.
+
+\bibitem{raghunathan2021synthetic}
+T.~E. Raghunathan, ``Synthetic data,'' \emph{Annual review of statistics and
+  its application}, vol.~8, no.~1, pp. 129--140, 2021.
+
 \bibitem{Karen:2020}
 K.~Walker, ``Synthetic data: Unlocking the power of data and skills for machine
   learning,''
   \url{https://dataingovernment.blog.gov.uk/2020/08/20/synthetic-data-unlocking-the-power-of-data-and-skills-for-machine-learning/},
   2020.
+
+\bibitem{anderson2022synthetic}
+J.~W. Anderson, M.~Ziolkowski, K.~Kennedy and A.~W. Apon, ``Synthetic image
+  data for deep learning,'' \emph{arXiv preprint arXiv:2212.06232}, 2022.
+
+\bibitem{schonfeld2022improving}
+E.~Sch{\"o}nfeld, ``Improving quality and controllability in gan-based image
+  synthesis,'' 2022.
+
+\bibitem{wang2023diffusion}
+B.~Wang and J.~J. Vastola, ``Diffusion models generate images like painters: an
+  analytical theory of outline first, details later,'' \emph{arXiv preprint
+  arXiv:2303.02490}, 2023.
+
+\bibitem{cai2019multi}
+L.~Cai, H.~Gao and S.~Ji, ``Multi-stage variational auto-encoders for
+  coarse-to-fine image generation,'' in \emph{Proceedings of the 2019 SIAM
+  international conference on data mining}.\hskip 1em plus 0.5em minus
+  0.4em\relax SIAM, 2019, pp. 630--638.
 
 \bibitem{goodfellow2014generative}
 I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
@@ -58,6 +124,12 @@ I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
 K.~Wang, C.~Gou, Y.~Duan, Y.~Lin, X.~Zheng and F.-Y. Wang, ``Generative
   adversarial networks: introduction and outlook,'' \emph{IEEE/CAA Journal of
   Automatica Sinica}, vol.~4, no.~4, pp. 588--598, 2017.
+
+\bibitem{lee2022generator}
+G.~Lee, H.~Kim, J.~Kim, S.~Kim, J.-W. Ha and Y.~Choi, ``Generator knows what
+  discriminator should learn in unconditional gans,'' in \emph{European
+  Conference on Computer Vision}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer, 2022, pp. 406--422.
 
 \bibitem{radford2015unsupervised}
 A.~Radford, ``Unsupervised representation learning with deep convolutional
@@ -78,9 +150,15 @@ X.~Mao, Q.~Li, H.~Xie, R.~Y. Lau, Z.~Wang and S.~Paul~Smolley, ``Least squares
 T.~Karras, ``Progressive growing of gans for improved quality, stability, and
   variation,'' \emph{arXiv preprint arXiv:1710.10196}, 2017.
 
-\bibitem{unknown}
-F.~Eckerli and J.~Osterrieder, ``Generative adversarial networks in finance: an
-  overview,'' 06 2021.
+\bibitem{eckerli2106generative}
+F.~Eckerli and J.~Osterrieder, ``Generative adversarial networks in finance: An
+  overview. arxiv 2021,'' \emph{arXiv preprint arXiv:2106.06364}.
+
+\bibitem{gauthier2014conditional}
+J.~Gauthier, ``Conditional generative adversarial nets for convolutional face
+  generation,'' \emph{Class project for Stanford CS231N: convolutional neural
+  networks for visual recognition, Winter semester}, vol. 2014, no.~5, p.~2,
+  2014.
 
 \bibitem{isola2017image}
 P.~Isola, J.-Y. Zhu, T.~Zhou and A.~A. Efros, ``Image-to-image translation with
@@ -119,6 +197,11 @@ J.~Ho, A.~Jain and P.~Abbeel, ``Denoising diffusion probabilistic models,''
   \emph{Advances in neural information processing systems}, vol.~33, pp.
   6840--6851, 2020.
 
+\bibitem{yainnoware2022}
+Yainnoware, ``Decoding the math behind9 diffusion models,''
+  \url{https://yainnoware.blogspot.com/2022/11/decoding-math-behind-diffusion-models.html},
+  November 20 2022.
+
 \bibitem{DALL_E}
 A.~Ramesh, M.~Pavlov, G.~Goh, S.~Gray, C.~Voss, A.~Radford, M.~Chen and
   I.~Sutskever, ``Zero-shot text-to-image generation,'' in \emph{International
@@ -135,6 +218,10 @@ A.~Radford, J.~W. Kim, C.~Hallacy, A.~Ramesh, G.~Goh, S.~Agarwal, G.~Sastry,
 \bibitem{ViT}
 D.~Alexey, ``An image is worth 16x16 words: Transformers for image recognition
   at scale,'' \emph{arXiv preprint arXiv: 2010.11929}, 2020.
+
+\bibitem{openai2021}
+OpenAI, ``Dall·e: Creating images from text,''
+  \url{https://openai.com/index/dall-e/}, January 2021.
 
 \bibitem{Improved_denoising_diffusion}
 A.~Q. Nichol and P.~Dhariwal, ``Improved denoising diffusion probabilistic
@@ -185,6 +272,16 @@ MidJourney, ``Midjourney: Surrealistic text-to-image generation,'' 2022,
 A.~Borji, ``Generated faces in the wild: Quantitative comparison of stable
   diffusion, midjourney and dall-e 2,'' \emph{arXiv preprint arXiv:2210.00586},
   2022.
+
+\bibitem{panza2023anomaly}
+M.~A. Panza, M.~Pota and M.~Esposito, ``Anomaly detection methods for
+  industrial applications: A comparative study,'' \emph{Electronics}, vol.~12,
+  no.~18, p. 3971, 2023.
+
+\bibitem{torabi2023practical}
+H.~Torabi, S.~L. Mirtaheri and S.~Greco, ``Practical autoencoder based anomaly
+  detection by using vector reconstruction error,'' \emph{Cybersecurity},
+  vol.~6, no.~1, p.~1, 2023.
 
 \bibitem{Khandelwal:2021}
 K.~Renu, ``Anomaly detection using autoencoders,''

@@ -5,18 +5,18 @@
 \contentsline {table}{\numberline {3.2}{\ignorespaces Candles Dataset Summary}}{20}{table.caption.19}%
 \contentsline {table}{\numberline {3.3}{\ignorespaces BNI Dataset Summary}}{22}{table.caption.25}%
 \contentsline {table}{\numberline {3.4}{\ignorespaces Printed Circuit Boards (PCB) Dataset Summary}}{25}{table.caption.31}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Training Hyperparameters}}{30}{table.caption.42}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Test Dataset Composition}}{36}{table.caption.61}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Training Dataset Composition for First Approach}}{37}{table.caption.64}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Training Dataset Composition for Second Approach}}{37}{table.caption.67}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Training Dataset Composition for Third Approach}}{37}{table.caption.70}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Training Hyperparameters}}{30}{table.caption.36}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Test Dataset Composition}}{36}{table.caption.39}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Training Dataset Composition for First Approach}}{36}{table.caption.40}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Training Dataset Composition for Second Approach}}{36}{table.caption.41}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Training Dataset Composition for Third Approach}}{37}{table.caption.42}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Metric Values across Different Approaches}}{61}{table.caption.96}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of Metric Values across Different Approaches}}{61}{table.caption.66}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A.1}{\ignorespaces Model Summary - Generator Model}}{65}{table.A.1}%
-\contentsline {table}{\numberline {A.2}{\ignorespaces Model Details}}{66}{table.caption.97}%
-\contentsline {table}{\numberline {A.3}{\ignorespaces Model Summary - Discriminator Model}}{67}{table.caption.98}%
-\contentsline {table}{\numberline {A.4}{\ignorespaces Model Details}}{67}{table.caption.99}%
+\contentsline {table}{\numberline {A.2}{\ignorespaces Model Details}}{66}{table.caption.67}%
+\contentsline {table}{\numberline {A.3}{\ignorespaces Model Summary - Discriminator Model}}{67}{table.caption.68}%
+\contentsline {table}{\numberline {A.4}{\ignorespaces Model Details}}{67}{table.caption.69}%
 \addvspace {10\p@ }
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
