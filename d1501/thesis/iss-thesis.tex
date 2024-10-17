@@ -1192,9 +1192,9 @@ In image processing and analysis, assessing the quality of generated images is v
 
 ORB by OpenCV is a feature detector and descriptor that efficiently identifies and describes keypoints in images, as developed by Ethan Rublee \textit{et al.} in their 2011 paper, \textbf{"ORB: An efficient alternative to SIFT or SURF"}~\cite{ORB}, making it particularly useful for image matching and object recognition tasks. The process begins with ORB detecting keypoints using the FAST algorithm, followed by generating binary descriptors through the BRIEF technique.
 
-When comparing two images, ORB employs the Hamming distance metric to assess similarity by calculating the number of differing bits between the binary descriptors of matched features. A lower Hamming distance(\(d_H\)) indicates a closer match, which is essential for determining the degree of similarity between the images.
+When comparing two images, ORB employs the Hamming distance metric to assess similarity by calculating the number of differing bits between the binary descriptors of matched features. A lower Hamming distance \(d_{\mathrm{H}}\) indicates a closer match, which is essential for determining the degree of similarity between the images.
 
-To enhance matching efficiency, ORB can be combined with a brute force matcher, which exhaustively compares each feature descriptor from one image with those from another to identify the best matches based on the lowest Hamming distance. An optimal Hamming distance threshold is crucial for improving matching accuracy; typically, values around \(d_H\) = 20 to 30 are considered ideal, as they indicate strong matches while minimizing the risk of false positives.
+To enhance matching efficiency, ORB can be combined with a brute force matcher, which exhaustively compares each feature descriptor from one image with those from another to identify the best matches based on the lowest Hamming distance. An optimal Hamming distance threshold is crucial for improving matching accuracy; typically, values around \(d_{\mathrm{H}} = 20\) to \(30\) are considered ideal, as they indicate strong matches while minimizing the risk of false positives.
 
 To calculate the overall ORB score, the number of good matches (i.e., matches with a Hamming distance below the threshold) is divided by the total number of matched descriptors. This score provides a quantitative measure of how similar the two images are overall, reflecting the effectiveness of the feature matching process.
 
@@ -1210,17 +1210,17 @@ SSIM is a perceptual metric used to assess the quality of images by quantifying 
     \item \textbf{Structural Similarity}: This component examines the relationship between the pixels in both images, focusing on patterns of pixel intensities rather than individual pixel values.
 \end{itemize}
 
-The SSIM index produces a value between -1 and 1, where SSIM = 1 indicates perfect similarity between two images, and SSIM = -1 indicates significant differences. Due to its sensitivity to perceptual characteristics, SSIM is widely employed in various applications, including image compression, quality assessment, and computer vision tasks, as it correlates well with human visual perception.
+The SSIM index produces a value between $-1$ and $1$, where $\text{SSIM} = 1$ indicates perfect similarity between two images, and $\text{SSIM} = -1$ indicates significant differences. Due to its sensitivity to perceptual characteristics, SSIM is widely employed in various applications, including image compression, quality assessment, and computer vision tasks, as it correlates well with human visual perception.
 
 \textbf{MSE}
 
 MSE is a widely used metric to quantify the difference between the original and generated images. It calculates the average of the squares of the differences between corresponding pixel values. The formula for MSE is given by:
 
 \begin{equation}
-MSE = \frac{1}{N} \sum_{i=1}^{N} (I_{original}(i) - I_{generated}(i))^2
+\text{MSE} = \frac{1}{N} \sum_{i=1}^{N} \left(I_{\text{original}}(i) - I_{\text{generated}}(i)\right)^2
 \end{equation}
 
-where \( N \) is the total number of pixels, \( I_{original}(i) \) is the pixel value at position \( i \) in the original image, and \( I_{generated}(i) \) is the pixel value at the same position in the generated image.
+where \( N \) is the total number of pixels, \( I_{\text{original}}(i) \) is the pixel value at position \( i \) in the original image, and \( I_{\text{generated}}(i) \) is the pixel value at the same position in the generated image.
 
 A lower MSE value indicates a closer resemblance between the two images, meaning better image quality. Ideally, an MSE = 0 represents perfect similarity between the images. However, MSE can sometimes be misleading as it does not consider perceptual factors, meaning that images with similar MSE values may not necessarily appear similar to human observers.
 
@@ -1229,12 +1229,12 @@ A lower MSE value indicates a closer resemblance between the two images, meaning
 PSNR is another commonly used metric for assessing image quality, especially in the context of lossy compression. PSNR is derived from MSE and provides a measure of the maximum possible power of a signal (the original image) relative to the power of the noise (the error introduced by compression). The formula for PSNR is given by:
 
 \begin{equation}
-PSNR = 10 \cdot \log_{10}\left(\frac{MAX_I^2}{MSE}\right)
+\text{PSNR} = 10 \cdot \log_{10}\left(\frac{I_{\text{max}}^2}{\text{MSE}}\right)
 \end{equation}
 
-where \( MAX_I \) is the maximum possible pixel value of the image (typically 255 for 8-bit images).
+where \( I_{\text{max}} \) is the maximum possible pixel value of the image (typically 255 for 8-bit images).
 
-PSNR is expressed in decibels (dB), and a higher PSNR value indicates better image quality, as it signifies a lower level of noise. An optimum PSNR value is generally considered to be PSNR = 30 dB or higher for good quality images, with values above PSNR = 40 dB indicating very high quality. While PSNR is easy to compute and widely used, it also has limitations, as it does not align perfectly with human visual perception, and higher PSNR values do not always guarantee higher visual quality.
+PSNR is expressed in decibels (dB), and a higher PSNR value indicates better image quality, as it signifies a lower level of noise. An optimum PSNR value is generally considered to be $\text{PSNR} = 30\,\text{dB}$ or higher for good quality images, with values above $\text{PSNR} = 40\,\text{dB}$ indicating very high quality. While PSNR is easy to compute and widely used, it also has limitations, as it does not align perfectly with human visual perception, and higher PSNR values do not always guarantee higher visual quality.
 
 \textbf{Perceptual Loss using VGG16}
 
@@ -1372,17 +1372,17 @@ This chapter presents the results and discussion of experiments conducted using 
 \label{sec:cyclegan_nuts}
 The experiments involving the Nuts dataset aimed to translate images from optimal setups to those influenced by various camera-induced factors. Specifically, this dataset encompasses four distinct types of influences: \textbf{Shadow}, \textbf{Random Placement}, \textbf{High Gain Factor}, and \textbf{Plexiglas Effect}, as discussed in Chapter~\ref{sec:nuts_dataset}.
 
-Following this, the results presented are some of the intermediate results obtained during the training of the CycleGAN model. Certain hyperparameters, as detailed in Table~\ref{tab:hyperparameters}, were modified to evaluate their impact on the results. Intermediate results were saved after each epoch to facilitate the assessment of model performance throughout the training process, and any changes to hyperparameters for specific results will be noted.
+Presented below are the results obtained during the training of the CycleGAN model. Certain hyperparameters, as detailed in Table~\ref{tab:hyperparameters}, were modified to evaluate their impact on the results. Intermediate results were saved after each epoch to facilitate the assessment of model performance throughout the training process, and any changes to hyperparameters for specific results will be noted.
 
 \textbf{Shadow Effect}
 
-Figure~\ref{fig:shadow_effect_result} illustrates the image translation from optimal setup to shadow effect, obtained during CycleGAN training at the 13th epoch. Figure~\ref{fig:shadow_effect_result} (a) presents five images from the optimal setup (Domain A) alongside the corresponding translated images that exhibit the shadow effect. Figure~\ref{fig:shadow_effect_result} (b) provides a reference image displaying the original shadow effect for comparison.
+Figure~\ref{fig:shadow_effect_result} illustrates the image translation from optimal setup to shadow effect, obtained during CycleGAN training at the 13th epoch. Figure~\ref{fig:shadow_effect_result} a) presents five images in the first row from the optimal setup (Domain A) and their corresponding translated images (Domain B) in the second row that exhibit the shadow effect. Figure~\ref{fig:shadow_effect_result} b) provides a reference image displaying the original shadow effect for comparison.
 
 The translated images effectively capture the background and shadow characteristics seen in the reference image, with the Nuts appearing realistic. The hyperparameter settings for this experiment align with those outlined in Table~\ref{tab:hyperparameters}, indicating that the results were derived under the original configuration.
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{1.0\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/Shadow.png}
         \caption*{(a)}
@@ -1393,19 +1393,19 @@ The translated images effectively capture the background and shadow characterist
         \includegraphics[width=\textwidth]{../media/shadow_real.png}
         \caption*{(b)}
     \end{subfigure}
-    \caption{Results of CycleGAN image translation showcasing the shadow effect. (a) Translated images from optimal setups. (b) Reference image of the original shadow effect.}
+    \caption{Results of CycleGAN image translation showcasing the shadow effect. a) Translated images from optimal setups to images influenced by the shadow effect. b) Reference image of the original shadow effect.}
     \label{fig:shadow_effect_result}
 \end{figure}
 
 \textbf{High Gain Factor Effect}
 
-Figure~\ref{fig:high_gain_factor_result} illustrates the impact of translating images from the optimal setup to those influenced by a high gain factor, captured during CycleGAN training at the 61st epoch. Figure~\ref{fig:high_gain_factor_result} (a) displays a series of images from the optimal setup, along with the corresponding translated images that exhibit the high gain factor effect. Figure~\ref{fig:high_gain_factor_result} (b) presents a real image as a reference highlighting the high gain factor effect. 
+Figure~\ref{fig:high_gain_factor_result} illustrates the impact of translating images from the optimal setup to those influenced by a high gain factor, captured during CycleGAN training at the 61st epoch. Figure~\ref{fig:high_gain_factor_result}~a) displays a series of images from the optimal setup, along with the corresponding translated images that exhibit the high gain factor effect. Figure~\ref{fig:high_gain_factor_result} b) presents a real image as a reference highlighting the high gain factor effect. 
 
 The results show a visible high gain factor effect, yet the realism in nut appearance is lacking, indicating that the translation process may not fully capture the nuances of the high gain factor influence. Again, the original model architecture, training procedure and same hyperparameter values as in Table~\ref{tab:hyperparameters} were used in this experiment.
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{1.0\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/high_gain.png}
         \caption*{(a)}
@@ -1416,20 +1416,20 @@ The results show a visible high gain factor effect, yet the realism in nut appea
         \includegraphics[width=\textwidth]{../media/high_gain_real.png}
         \caption*{(b)}
     \end{subfigure}
-    \caption{Results of CycleGAN image translation highlighting the high gain factor effect. (a) Translated images from the optimal setup to images influenced by the high gain factor. (b) Reference image demonstrating the high gain factor effect.}
+    \caption{Results of CycleGAN image translation highlighting the high gain factor effect. a) Translated images from the optimal setup to images influenced by the high gain factor. b) Reference image demonstrating the high gain factor effect.}
     \label{fig:high_gain_factor_result}
 \end{figure}
 
 \textbf{Plexiglas Effect}
 
-Figure~\ref{fig:plexiglas_result} illustrates the results of translating images from the optimal setup to those with Plexiglas effect, obtained during CycleGAN training. Figure~\ref{fig:plexiglas_result} (a) presents the translated images showcasing the Plexiglas effect, while Figure~\ref{fig:plexiglas_result} (b) provides a reference image(real) that highlights the Plexiglas effect. 
+Figure~\ref{fig:plexiglas_result} illustrates the results of translating images from the optimal setup to those with Plexiglas effect, obtained during CycleGAN training. Figure~\ref{fig:plexiglas_result} a) presents the translated images showcasing the Plexiglas effect, while Figure~\ref{fig:plexiglas_result} b) provides a reference image (real) that highlights the Plexiglas effect. 
 
-For this experiment, the model complexity of both the generator and discriminator was reduced by simplifying their architecture. In the generator model, six ResNet blocks were used instead of the typical nine. Additionally, the learning rate of the discriminator was decreased from 0.0002 to 0.0001 to prevent it from becoming too dominant(loss value becoming zero) over the generator during training.
+For this experiment, the model complexity of both the generator and discriminator was reduced by simplifying their architecture. In the generator model, six ResNet blocks were used instead of the typical nine. Additionally, the learning rate of the discriminator was decreased from 0.0002 to 0.0001 to prevent it from becoming too dominant (loss value becoming zero) over the generator during training.
 
-Despite the incorporation of these modifications, the results demonstrate only a minimal Plexiglas effect, lacking the intended visual appeal and clarity.
+With the incorporation of these modifications, the results clearly show the Plexiglas effect as seen in the original image in Figure~\ref{fig:plexiglas_result} b) but lack image quality.
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{1.0\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/plexiglas.png}
         \caption*{(a)}
@@ -1440,7 +1440,7 @@ Despite the incorporation of these modifications, the results demonstrate only a
         \includegraphics[width=\textwidth]{../media/plexiglas_real.png}
         \caption*{(b)}
     \end{subfigure}
-    \caption{Results of CycleGAN image translation showcasing the Plexiglas effect. (a) Translated images from the optimal setup to images influenced by the Plexiglas effect. (b) Reference image illustrating the Plexiglas effect.}
+    \caption{Results of CycleGAN image translation showcasing the Plexiglas effect. a) Translated images from the optimal setup to images influenced by the Plexiglas effect. b) Reference image illustrating the Plexiglas effect.}
     \label{fig:plexiglas_result}
 \end{figure}
 
@@ -1456,15 +1456,15 @@ The Candles dataset was utilized to examine the translation of images from optim
 
 However, one of the challenges encountered with this dataset is that the visual differences between the various influences are not as pronounced as those observed in the Nuts dataset. This lack of clear distinction between influences made the analysis of generated images more difficult. As a result, the outputs produced by CycleGAN were harder to evaluate for accuracy and realism. Despite this, intermediate results saved after specific epochs during training revealed some promising translations, although the overall visual quality and differentiation were still not as satisfactory as expected.
 
-The same hyperparameters, as detailed in Table~\ref{tab:hyperparameters}, were used for training the Candles dataset. The discriminator model's complexity was intentionally reduced to diminish its capacity for distinguishing between real and generated images. Specifically, the original discriminator architecture as in Appendix~\ref{appendix:discriminator_model} was modified by decreasing the number of convolutional filters in the initial layers from 64, 128, and 256 to 32, 64, and 128, respectively and by removing the final layer that utilized 512 filters. This simplification aimed to establish a better balance between the generator and discriminator during adversarial training, enhancing the generator's ability to produce more realistic outputs. Key components such as LeakyReLU activations and Instance Normalization were retained to stabilize training and improve convergence. Results were obtained at different epochs, with intermediate outputs saved throughout the training process, allowing for an assessment of the generated images over time. 
+The same hyperparameters, as detailed in Table~\ref{tab:hyperparameters}, were used for training the Candles dataset. The discriminator model's complexity was intentionally reduced to diminish its capacity for distinguishing between real and generated images. Specifically, the original discriminator architecture as in Appendix~\ref{appendix:discriminator_model} was modified by decreasing the number of convolutional filters in the initial layers from 64, 128, and 256 to 32, 64, and 128, respectively and by removing the final layer that utilized 512 filters. This simplification aimed to establish a better balance between the generator and discriminator during adversarial training, enhancing the generator's ability to produce more realistic outputs. Key components such as LeakyReLU activations and Instance Normalization were retained as recommended in~\cite{zhu2017unpaired} to stabilize training and improve convergence. Results were obtained at different epochs, with intermediate outputs saved throughout the training process, allowing for an assessment of the generated images over time. 
 
 \textbf{Scattered Sunlight Effect}
 
-Figure~\ref{fig:scattered_sunlight_result} illustrates the image translation from optimal setups to those influenced by scattered sunlight, obtained during CycleGAN training at the 56th epoch. 
+Figure~\ref{fig:scattered_sunlight_result} illustrates how images from optimal setups are translated into those affected by scattered sunlight, with results obtained during CycleGAN training at the 56th epoch. 
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{1.0\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/candles_sunlight.png}
         \caption*{(a)}
@@ -1475,17 +1475,17 @@ Figure~\ref{fig:scattered_sunlight_result} illustrates the image translation fro
         \includegraphics[width=\textwidth]{../media/candles_sunlight_real.png}
         \caption*{(b)}
     \end{subfigure}
-    \caption{Results of CycleGAN image translation showcasing the scattered sunlight effect. (a) Translated images from the optimal setup to images influenced by scattered sunlight. (b) Reference image illustrating the original scattered sunlight effect.}
+    \caption{Results of CycleGAN image translation showcasing the scattered sunlight effect. a) Translated images from the optimal setup to images influenced by scattered sunlight. b) Reference image illustrating the original scattered sunlight effect.}
     \label{fig:scattered_sunlight_result}
 \end{figure}
 
-\textbf{Camera Elevation(Down)}
+\textbf{Camera Elevation (Down)}
 
-Figure~\ref{fig:camera_elevation_down_result} illustrates the image translation from optimal setups to those influenced by camera elevation (down), obtained at the 67th epoch during training. 
+Figure~\ref{fig:camera_elevation_down_result} focuses on the translation of images from optimal setups to those impacted by a downward camera elevation effect, showcasing results achieved at the 67th epoch.
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{1.0\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/candles_bright.png}
         \caption*{(a)}
@@ -1496,17 +1496,17 @@ Figure~\ref{fig:camera_elevation_down_result} illustrates the image translation 
         \includegraphics[width=\textwidth]{../media/candles_bright_real.png}
         \caption*{(b)}
     \end{subfigure}
-    \caption{Results of CycleGAN image translation showcasing the camera elevation (down) effect. (a) Translated images from the optimal setup to images influenced by camera elevation (down). (b) Reference image illustrating the original camera elevation (down) effect.}
+    \caption{Results of CycleGAN image translation showcasing the camera elevation (down) effect. a) Translated images from the optimal setup to images influenced by camera elevation (down). b) Reference image illustrating the original camera elevation (down) effect.}
     \label{fig:camera_elevation_down_result}
 \end{figure}
 
-\textbf{Camera Elevation(Up)}
+\textbf{Camera Elevation (Up)}
 
-Figure~\ref{fig:camera_elevation_up_result} illustrates the image translation from optimal setups to those influenced by camera elevation (up), obtained at the 84th epoch. 
+Figure~\ref{fig:camera_elevation_up_result} highlights the image translation from optimal setups to those influenced by camera elevation (up), obtained at the 84th epoch. 
 
 \begin{figure}
     \centering
-    \begin{subfigure}[b]{0.85\textwidth}
+    \begin{subfigure}[b]{1.0\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/candles_dark.png}
         \caption*{(a)}
@@ -1517,13 +1517,13 @@ Figure~\ref{fig:camera_elevation_up_result} illustrates the image translation fr
         \includegraphics[width=\textwidth]{../media/candles_dark_real.png}
         \caption*{(b)}
     \end{subfigure}
-    \caption{Results of CycleGAN image translation showcasing the camera elevation (up) effect. (a) Translated images from the optimal setup to images influenced by camera elevation (up). (b) Reference image illustrating the original camera elevation (up) effect.}
+    \caption{Results of CycleGAN image translation showcasing the camera elevation (up) effect. a) Translated images from the optimal setup to images influenced by camera elevation (up). b) Reference image illustrating the original camera elevation (up) effect.}
     \label{fig:camera_elevation_up_result}
 \end{figure}
 
 \textbf{Analysis of Results}
 
-The ~\textbf{Scattered Sunlight Effect} demonstrates the presence of bright sunlight; however, the generated images lack realism. In the case of ~\textbf{Camera Elevation (Down)}, the translated images appear slightly brighter, similar to the reference image, but do not exhibit the expected larger dimensions. Conversely, for ~\textbf{Camera Elevation (Up)}, the images appear darker but fail to convey the smaller size anticipated from this effect. As discussed in Chapter~\ref{sec:cyclegan_nuts}, CycleGAN preserves the integrity of images from Domain A while attempting to infuse artifacts from Domain B. This inherent characteristic explains the inability to achieve larger images in the case of Camera Elevation (Down) and smaller images in the case of Camera Elevation (Up). Additionally, the model is unable to generate the effect of ~\textbf{random object placement} for the same reasons. Overall, the results reveal that the generated images across all conditions are not particularly realistic, with candle threads not being generated clearly. Furthermore, the translated images in the Scattered Sunlight Effect, Camera Elevation (Down), and Camera Elevation (Up) show a notable similarity. This lack of diversity in outputs may suggest a potential modal collapse during training, leading to repetitive results across these conditions.
+The ~\textbf{Scattered Sunlight Effect} demonstrates the presence of bright sunlight; however, the generated images lack realism. In the case of ~\textbf{Camera Elevation (Down)}, the translated images appear slightly brighter, similar to the reference image, but do not exhibit the expected larger dimensions. Conversely, for \textbf{Camera Elevation (Up)}, the images appear darker but fail to convey the smaller size anticipated from this effect. As discussed in Chapter~\ref{sec:cyclegan_nuts}, CycleGAN preserves the integrity of images from Domain A while attempting to infuse artifacts from Domain B. This inherent characteristic explains the inability to achieve larger images in the case of Camera Elevation (Down) and smaller images in the case of Camera Elevation (Up). Additionally, the model is unable to generate the effect of \textbf{Random Object Placement} for the same reasons. Overall, the results reveal that the generated images across all conditions are not particularly realistic, with candle threads not being generated clearly. Furthermore, the translated images in the Scattered Sunlight Effect, Camera Elevation (Down), and Camera Elevation (Up) show a notable similarity. This lack of diversity in outputs may suggest a potential modal collapse during training, leading to repetitive results across these conditions.
 
 \subsection{Model Training Analysis}
 
@@ -1531,7 +1531,7 @@ The training process for the CycleGAN model can be evaluated by monitoring key l
 
 \textbf{Generator Loss for A to B Translation \( g\_loss\_AtoB \)}
 
-The generator loss for A to B translation, shown in Figure~\ref{g_loss}, which is an average of three components: adversarial loss, identity loss, and cycle consistency loss and it gradually decreases over the course of training, as expected. This trend indicates that the generator is progressively improving its ability to produce realistic images of Domain B from Domain A. However, the training process shows fluctuations, with occasional spikes in the loss. This suggests that while the generator improves on average, there are certain points where the quality of the generated images temporarily drops. These fluctuations could be caused by instability in adversarial training, where the discriminator becomes briefly better at identifying fake images, forcing the generator to adapt. Additionally, the results do not improve in a steady manner, with epochs of high-quality results followed by others where the quality deteriorates. This inconsistency highlights the challenges associated with training GANs. Training was stopped when the loss values began to stabilize, indicating that further improvements in quality were minimal.
+The generator loss for A to B translation, shown in Figure~\ref{g_loss}, which is an average of three components: adversarial loss, identity loss, and cycle consistency loss and it gradually decreases over the course of training, as expected. This trend indicates that the generator is progressively improving its ability to produce realistic images of Domain B from Domain A. However, the training process shows fluctuations, with occasional spikes in the loss. This suggests that while the generator improves on average, there are certain points where the quality of the generated images temporarily drops. These fluctuations could be caused by instability in adversarial training, where the discriminator becomes briefly better at identifying fake images, forcing the generator to adapt. Additionally, the results do not improve in a steady manner, with epochs of high-quality results followed by others where the quality deteriorates. This inconsistency highlights the challenges associated with training GANs~\cite{saxena2021generative}. Training was stopped when the loss values began to stabilize, indicating that further improvements in quality were minimal.
 \begin{figure}
 	\centering
 	\includegraphics[scale=.51]{../media/g_loss_atob.png}
@@ -1564,7 +1564,7 @@ The discriminator losses \( dB\_loss\_real \) and \( dB\_loss\_fake \), shown in
 
 While CycleGAN offers a powerful framework for unpaired image-to-image translation, several challenges emerged during training that impacted the quality and effectiveness of the generated images.
 
-One of the key challenges encountered during the training of CycleGAN was~\textbf{mode collapse}. This problem, common in adversarial training, occurs when the generator produces a restricted range of outputs, failing to capture the full diversity of the training data. This results in repetitive or similar images regardless of the variations in the input, leading to a significant reduction in the overall output quality. As evidenced by the results, Candle images generated under different conditions, such as the Scattered Sunlight Effect and variations in Camera Elevation, exhibited striking similarities, suggesting that the model experienced mode collapse at various stages of training. This issue can often be attributed to the inherent instability of GAN architectures, wherein the delicate balance between the generator and discriminator is disrupted, causing the generator to latch onto specific modes of the data distribution while neglecting others. Factors such as discriminator overfitting and catastrophic forgetting can exacerbate this issue, ultimately hindering the generator's ability to produce varied and realistic outputs~\cite{modecollapse}.
+One of the key challenges encountered during the training of CycleGAN was~\textbf{mode collapse}~\cite{kodali2017convergence}. This problem, common in adversarial training, occurs when the generator produces a restricted range of outputs, failing to capture the full diversity of the training data. This results in repetitive or similar images regardless of the variations in the input, leading to a significant reduction in the overall output quality. As evidenced by the results, Candle images generated under different conditions, such as the Scattered Sunlight Effect and variations in Camera Elevation, exhibited striking similarities, suggesting that the model experienced mode collapse at various stages of training. This issue can often be attributed to the inherent instability of GAN architectures, wherein the delicate balance between the generator and discriminator is disrupted, causing the generator to latch onto specific modes of the data distribution while neglecting others. Factors such as discriminator overfitting and catastrophic forgetting can exacerbate this issue, ultimately hindering the generator's ability to produce varied and realistic outputs~\cite{modecollapse}.
 
 Another significant challenge arose from the~\textbf{nature of the data}. Generative models, including CycleGAN, typically require large and diverse datasets to generalize well and produce varied results. However, in this case, the datasets were limited both in size and diversity. The Nuts and Candles datasets, although containing different samples, lacked significant variation in appearance. Many images of Nuts and Candles looked similar in terms of color, shape, and background. Although data augmentation techniques were applied to increase the diversity of the dataset, the inherent similarity between the images meant that these augmentations were not particularly helpful in improving the model’s ability to capture meaningful variations.
 
@@ -1574,7 +1574,7 @@ A further notable challenge was the~\textbf{instability of the training process}
 
 Initially, the goal was to introduce various camera influences into the images using generative models, particularly CycleGAN, for image-to-image translation. Although CycleGAN was capable of generating images with these camera influences, its limitations, including mode collapse and training instability, resulted in images that lacked the necessary quality and realism. As a result, these images could not be reliably used to train the anomaly detector effectively.
 
-Consequently, Stable Diffusion, specifically the~\texttt{img2img} functionality was used to generate synthetic images. While direct image-to-image translation from optimal images to images with bad influences was not possible with Stable Diffusion, this approach allowed for the generation of synthetic images that incorporated the necessary camera influences. By uploading each real image with bad camera influence from the Nuts dataset and setting a low denoising strength (e.g., $s_{\text{den}} = 0.2$) and all the other configurations as mentioned in Chapter~\ref{sec:stable_diffusion}, it was possible to generate similar images with subtle variations in texture, which were considered more suitable for testing. This approach was applied to all the images from the Domain B dataset of Nuts, creating a set of synthetic images corresponding to each real image. These synthetic images were integrated into the anomaly detection process to test whether they could replicate the performance improvements observed when real images with bad influences were used.
+Consequently, Stable Diffusion, specifically the~\texttt{img2img} functionality was used to generate synthetic images. While direct image-to-image translation from optimal images to images with bad influences was not possible with Stable Diffusion, this approach allowed for the generation of synthetic images that incorporated the necessary camera influences. By uploading each real image with bad camera influence from the Nuts dataset and setting a low denoising strength $s_{\text{den}} = 0.2$ and all the other configurations as mentioned in Chapter~\ref{sec:stable_diffusion}, it was possible to generate similar images with subtle variations in texture, which were considered more suitable for testing. This approach was applied to all the images from the Domain B dataset of Nuts, creating a set of synthetic images corresponding to each real image. These synthetic images were integrated into the anomaly detection process to test whether they could replicate the performance improvements observed when real images with bad influences were used.
 
 Thus, while the initial objective was to use generative models to introduce various artifacts, Stable Diffusion offered a more practical way to generate image variations. Although we still need to collect real images with bad influences, the advantage of Stable Diffusion is that it requires only a limited quantity of these images compared to CycleGAN, which necessitates a larger dataset for good results. This makes the synthetic image generation process more efficient.
 
@@ -1586,54 +1586,55 @@ For this analysis, a single original image was used as a base, and images were g
 \begin{figure}
     \centering
     % First Row
-    \begin{subfigure}{0.14\textwidth}
+    \begin{subfigure}[t]{0.23\textwidth} % Add [t] for vertical alignment
         \centering
         \includegraphics[width=\linewidth]{../media/image_original.png} % Replace with the actual filename
         \caption{Original Image}
     \end{subfigure}
-    \begin{subfigure}{0.14\textwidth}
+    \begin{subfigure}[t]{0.23\textwidth} % Increase image size and align with [t]
         \centering
         \includegraphics[width=\linewidth]{../media/image_0.0.png} % Replace with the actual filename
-        \caption{Denoising 0.0}
+        \caption{Denoising\hspace{0.2em}Strength $s_{\text{den}} = 0.0$}
     \end{subfigure}
-    \begin{subfigure}{0.14\textwidth}
+    \begin{subfigure}[t]{0.23\textwidth} % Increase image size and align with [t]
         \centering
         \includegraphics[width=\linewidth]{../media/image_0.1.png} % Replace with the actual filename
-        \caption{Denoising 0.1}
+        \caption{Denoising\hspace{0.2em}Strength $s_{\text{den}} = 0.1$}
     \end{subfigure}
-    \begin{subfigure}{0.14\textwidth}
+    \begin{subfigure}[t]{0.23\textwidth} % Increase image size and align with [t]
         \centering
         \includegraphics[width=\linewidth]{../media/image_0.2.png} % Replace with the actual filename
-        \caption{Denoising 0.2}
+        \caption{Denoising\hspace{0.2em}Strength $s_{\text{den}} = 0.2$}
     \end{subfigure}
     
     % Second Row
-    \begin{subfigure}{0.14\textwidth}
+    \begin{subfigure}{0.23\textwidth} % Increase image size
         \centering
         \includegraphics[width=\linewidth]{../media/image_0.3.png} % Replace with the actual filename
-        \caption{Denoising 0.3}
+        \caption{Denoising\hspace{0.2em}Strength $s_{\text{den}} = 0.3$}
     \end{subfigure}
-    \begin{subfigure}{0.14\textwidth}
+    \begin{subfigure}{0.23\textwidth} % Increase image size
         \centering
         \includegraphics[width=\linewidth]{../media/image_0.5.png} % Replace with the actual filename
-        \caption{Denoising 0.5}
+        \caption{Denoising\hspace{0.2em}Strength $s_{\text{den}} = 0.5$}
     \end{subfigure}
-    \begin{subfigure}{0.14\textwidth}
+    \begin{subfigure}{0.23\textwidth} % Increase image size
         \centering
         \includegraphics[width=\linewidth]{../media/image_0.75.png} % Replace with the actual filename
-        \caption{Denoising 0.75}
+        \caption{Denoising\hspace{0.2em}Strength $s_{\text{den}} = 0.75$}
     \end{subfigure}
-    
-    \caption{Generated images at varying denoising strengths.}
+		\caption{Generated images at varying denoising strengths.}
     \label{fig:denoising_effect}
 \end{figure}
+
+
 At a denoising strength $s_{\text{den}} = 0.0$, the generated image closely mirrors the original, maintaining its features and details. However, as the denoising strength increases, noticeable changes in texture and structure emerge. For instance, at a denoising strength $s_{\text{den}} = 0.1$, the output begins to exhibit slight variations.
 
 At a denoising strength $s_{\text{den}} = 0.5$, the generated image becomes significantly more abstract, with the original image’s details becoming increasingly obscured. Finally, at a denoising strength $s_{\text{den}} = 0.75$, the output diverges dramatically from the original, resulting in an image that preserves subtle features of its source while introducing a new, creative interpretation.
 
 For the experiments, a denoising strength $s_{\text{den}} = 0.2$ was selected, as it introduced subtle but meaningful variations to the images while still preserving the key characteristics of the original. This balance allowed for slight texture changes that could simulate real-world variations without drastically altering the content of the images.
 
-\subsection{Generated Images Using Stable Diffusion(\texttt{img2img})}
+\subsection{Generated Images Using Stable Diffusion}
 \label{sec:generated_images}
 Below are the generated images for each of the four datasets using Stable Diffusion. These images include examples from both optimal setups and those affected by various camera-induced influences, demonstrating how the model introduces subtle variations while maintaining the essential characteristics of the original images.
 
@@ -1874,12 +1875,12 @@ Figure~\ref{fig:generated_images_pcb} shows the comparison of real and generated
     \centering
 
     % First Pair: Optimal Real and Generated
-    \begin{subfigure}[t]{0.24\textwidth}
+    \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/diff_pcb_optimal_real.png}
     \end{subfigure}%
     \hspace{0.02\textwidth}
-    \begin{subfigure}[t]{0.24\textwidth}
+    \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/diff_pcb_optimal_fake.png}
     \end{subfigure}
@@ -1888,12 +1889,12 @@ Figure~\ref{fig:generated_images_pcb} shows the comparison of real and generated
     \vspace{0.3cm} % Space between pairs
 
     % Second Pair: Bad Influence Real and Generated
-    \begin{subfigure}[t]{0.24\textwidth}
+    \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/diff_pcb_bad_real.png}
     \end{subfigure}%
     \hspace{0.02\textwidth}
-    \begin{subfigure}[t]{0.24\textwidth}
+    \begin{subfigure}[t]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{../media/diff_pcb_bad_fake.png}
     \end{subfigure}
@@ -1911,13 +1912,58 @@ In contrast, the BNI and PCB datasets present more challenges due to the presenc
 
 \section{Evaluation Metrics for Assessing Image Quality and Similarity}
 
-In this evaluation, the generated images using Stable diffusion(img2img) from the Nuts, Candles, BNI, and PCB datasets are assessed using various metrics. Comparisons are made between real and generated images to evaluate how accurately the synthetic images replicate the original. Additionally, since multiple synthetic images are generated from a single real image using the Stable Diffusion img2img method, a pair of generated images are also being compared to analyze the differences and assess how much variation exists between the generated outputs.
+In this evaluation, images generated using CycleGAN are compared to real images to assess the quality and fidelity of the synthetic outputs. Following this, the generated images using Stable diffusion (img2img) from the Nuts, Candles, BNI, and PCB datasets are assessed using various metrics. Comparisons are made between real and generated images to evaluate how accurately the synthetic images replicate the original. Additionally, since multiple synthetic images are generated from a single real image using the Stable Diffusion img2img method, a pair of generated images are also being compared to analyze the differences and assess how much variation exists between the generated outputs. 
 
-\subsection{Nuts}
+\subsection{Analysis of CycleGAN-Generated Images}
+For CycleGAN, the image-to-image translation process involves transforming nut images captured under optimal conditions into nut images affected by various bad influences. In this framework, images from Domain A (optimal setup) remain intact, while artifacts and features from Domain B images are applied to these optimal images. Consequently, the generated images retain the shape and characteristics of Domain A nut images but incorporate elements such as shadow effects from Domain B. To evaluate the metrics for CycleGAN-generated images, a real image from Domain B that closely resembles the generated image was selected. This real image as shown in Figure~\ref{fig:comparison_metrics_real_generated_nut_cycleGAN} a) was compared to one of the generated outputs as given in Figure~\ref{fig:comparison_metrics_real_generated_nut_cycleGAN} b), which was created using a model saved at the 11th epoch during training.
 
-The comparison of the Nuts dataset between the real image (Real) and the generated image (Generated\_1) as given in Figure~\ref{fig:comparison_metrics_real_generated_nut}, highlights effective image synthesis, with ORB = 0.9697 and SSIM = 0.9420, indicating strong feature retention and structural similarity. An MSE = 18.3361 suggests minor pixel differences, while a PSNR = 33.5168 reflects high visual quality. A Perceptual Loss \( P_L = 0.0625 \) further demonstrates that the generated image retains significant perceptual characteristics of the real image.
+The comparison of the generated images from CycleGAN with their corresponding real counterparts reveals some notable discrepancies in quality. Specifically, the evaluation metrics indicate an $\text{ORB} = 0.6000$ and $\text{SSIM} = 0.7936$, which signify a moderate level of feature retention and structural similarity between the real and generated images. However, the $\text{MSE} = 1105.6633$ and  $\text{PSNR} = 17.2401\,\mathrm{dB}$ suggest significant pixel differences and lower visual fidelity. Furthermore, a Perceptual Loss \( P_{\text{L}} = 0.6042 \) indicates that the generated images fail to retain essential perceptual characteristics of the real images. These factors collectively indicate that the CycleGAN-generated images are not suitable for evaluating the anomaly detector and are consequently not used in the evaluation process, as their reduced similarity to the real images could lead to misleading assessments of the model's performance.
 
-In contrast, the comparison between the two generated images (Generated\_1 and Generated\_2) as in Figure~\ref{fig:comparison_metrics_two_generated_nut}, shows perfect feature matching with an ORB = 1.0000 and high structural similarity (SSIM = 0.9678). An MSE = 6.2752 indicates minimal pixel discrepancies, and a PSNR = 38.1736 points to exceptional image quality. The lower Perceptual Loss \( P_L = 0.0551 \) confirms that both generated images are highly similar. Overall, while the generated image is similar to the real one, the two generated images are even more closely aligned.
+\begin{figure}
+    \begin{minipage}[H]{\linewidth}
+        \centering
+        \begin{minipage}[H]{0.5\linewidth} % Left side for images
+            \centering
+            \begin{subfigure}[t]{0.48\linewidth}
+                \centering
+                \includegraphics[width=\linewidth]{../media/CycleGAN_real.png}
+                \caption{Real Image}
+            \end{subfigure}% 
+            \hfill
+            \begin{subfigure}[t]{0.48\linewidth}
+                \centering
+                \includegraphics[width=\linewidth]{../media/CycleGAN_generated.png}
+                \caption{CycleGAN-Generated Image}
+            \end{subfigure}
+        \end{minipage}%
+        \hfill
+        \begin{minipage}[H]{0.5\linewidth} % Right side for table
+            \centering
+            \small
+            \begin{tabular}{p{3cm} p{2cm}}
+                \toprule
+                \textbf{Metric} & \textbf{Value} \\ 
+                \midrule
+                ORB             & 0.6000        \\ 
+                SSIM            & 0.7936        \\ 
+                MSE             & 1105.6633     \\ 
+                PSNR in dB      & 17.2401       \\ 
+                Perceptual Loss \( P_{\text{L}} \)  & 0.6042        \\ 
+                \bottomrule
+            \end{tabular}
+        \end{minipage}%
+        \caption{Comparison of real a) and CycleGAN-generated nut image b) with corresponding metric values.}
+        \label{fig:comparison_metrics_real_generated_nut_cycleGAN}
+    \end{minipage}
+\end{figure}
+
+\subsection{Assessment of Outputs from Stable Diffusion}
+
+\textbf{Nuts Dataset}
+
+The comparison of the Nuts dataset between the real image (Real) and the generated image (Generated\_1) as given in Figure~\ref{fig:comparison_metrics_real_generated_nut}, highlights effective image synthesis, with $\text{ORB} = 0.9697$ and $\text{SSIM} = 0.9420$, indicating strong feature retention and structural similarity. An $\text{MSE} = 18.3361$ suggests minor pixel differences, while a $\text{PSNR} = 33.5168\,\mathrm{dB}$ reflects high visual quality. A Perceptual Loss \( P_{\text{L}} = 0.0625 \) further demonstrates that the generated image retains significant perceptual characteristics of the real image.
+
+In contrast, the comparison between the two generated images (Generated\_1 and Generated\_2) as in Figure~\ref{fig:comparison_metrics_two_generated_nut}, shows perfect feature matching with an $\text{ORB} = 1.0000$ and high structural similarity ($\text{SSIM} = 0.9678$). An $\text{MSE} = 6.2752$ indicates minimal pixel discrepancies, and a $\text{PSNR} = 38.1736\,\mathrm{dB}$ points to exceptional image quality. The lower Perceptual Loss \( P_{\text{L}} = 0.0551 \) confirms that both generated images are highly similar. Overall, while the generated image is similar to the real one, the two generated images are even more closely aligned.
 
 \begin{figure}
     \begin{minipage}[H]{\linewidth}
@@ -1933,7 +1979,7 @@ In contrast, the comparison between the two generated images (Generated\_1 and G
             \begin{subfigure}[t]{0.48\linewidth}
                 \centering
                 \includegraphics[width=\linewidth]{../media/nut_generated_1_1.png}
-                \caption{Generated}
+                \caption{Generated\_1}
             \end{subfigure}
         \end{minipage}%
         \hfill
@@ -1947,12 +1993,12 @@ In contrast, the comparison between the two generated images (Generated\_1 and G
                 ORB             & 0.9697        \\
                 SSIM            & 0.9420        \\
                 MSE             & 18.3361       \\
-                PSNR            & 33.5168       \\
-                Perceptual Loss & 0.0625        \\
+                PSNR in dB      & 33.5168       \\
+                Perceptual Loss \( P_{\text{L}} \) & 0.0625        \\
                 \bottomrule
             \end{tabular}
         \end{minipage}%
-        \caption{Metric values for real and generated nut images}
+        \caption{Metric values for real a) and generated b) nut images}
         \label{fig:comparison_metrics_real_generated_nut}
     \end{minipage}
 \end{figure}
@@ -1985,8 +2031,8 @@ In contrast, the comparison between the two generated images (Generated\_1 and G
                 ORB             & 1.0000        \\
                 SSIM            & 0.9678        \\
                 MSE             & 6.2752        \\
-                PSNR            & 38.1736       \\
-                Perceptual Loss & 0.0551        \\
+                PSNR in dB      & 38.1736       \\
+                Perceptual Loss \( P_{\text{L}} \) & 0.0551        \\
                 \bottomrule
             \end{tabular}
         \end{minipage}%
@@ -1996,7 +2042,7 @@ In contrast, the comparison between the two generated images (Generated\_1 and G
 \end{figure}
 
 
-\subsection{Candles}
+\textbf{Candles Dataset}
 
 The analysis of the candle dataset shows a similar trend to that observed in the Nuts dataset. The metric values presented in the Figure~\ref{fig:comparison_real_generated_1_1_candle}, indicate a strong similarity between the real and generated images. Notably, the two generated images exhibit even higher similarity at pixel level as per the metric values in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_candle}
 
@@ -2014,7 +2060,7 @@ The analysis of the candle dataset shows a similar trend to that observed in the
             \begin{subfigure}[t]{0.48\linewidth}
                 \centering
                 \includegraphics[width=\linewidth]{../media/candle_generated_1_1.png}
-                \caption{Generated}
+                \caption{Generated\_1}
             \end{subfigure}
         \end{minipage}%
         \hfill
@@ -2028,12 +2074,12 @@ The analysis of the candle dataset shows a similar trend to that observed in the
                 ORB             & 0.9492        \\
                 SSIM            & 0.9365        \\
                 MSE             & 19.7778       \\
-                PSNR            & 35.1349       \\
-                Perceptual Loss & 0.0849        \\
+                PSNR in dB      & 35.1349       \\
+                Perceptual Loss \( P_{\text{L}} \) & 0.0849        \\
                 \bottomrule
             \end{tabular}
         \end{minipage}%
-        \caption{Metric values for real and generated candle images}
+        \caption{Metric values for real a) and generated b) candle images}
         \label{fig:comparison_real_generated_1_1_candle}
     \end{minipage}
 \end{figure}
@@ -2067,8 +2113,8 @@ The analysis of the candle dataset shows a similar trend to that observed in the
                 ORB             & 0.9474        \\
                 SSIM            & 0.9525        \\
                 MSE             & 12.2984       \\
-                PSNR            & 36.9554       \\
-                Perceptual Loss & 0.0708        \\
+                PSNR in dB      & 36.9554       \\
+                Perceptual Loss \( P_{\text{L}} \) & 0.0708        \\
                 \bottomrule
             \end{tabular}
         \end{minipage}%
@@ -2078,11 +2124,12 @@ The analysis of the candle dataset shows a similar trend to that observed in the
 \end{figure}
 
 
-\subsection{BNIs}
+\textbf{BNI Dataset}
 
-The analysis of the BNI dataset reveals a slightly different trend compared to the Nuts and Candle datasets. As shown in Figure~\ref{fig:comparison_real_generated_1_1_bni}, an ORB = 0.9754 indicates strong feature matching between the real and generated images. However, a value of SSIM = 0.8312, which is notably lower than in previous datasets, suggests that while key features are preserved, there are more structural differences between the real and generated images. This is further supported by the relatively high MSE = 118.6083 and a PSNR = 26.8631, indicating increased pixel discrepancies and lower image quality. The perceptual loss \( P_L = 0.1834 \) also reflects greater deviation in perceptual characteristics between the real and generated BNI images.
+The analysis of the BNI dataset reveals a slightly different trend compared to the Nuts and Candle datasets. As shown in Figure~\ref{fig:comparison_real_generated_1_1_bni}, an $\text{ORB} = 0.9754$ indicates strong feature matching between the real and generated images. However, a value of $\text{SSIM} = 0.8312$, which is notably lower than in previous datasets, suggests that while key features are preserved, there are more structural differences between the real and generated images. This is further supported by the relatively high $\text{MSE} = 118.6083$ and a $\text{PSNR} = 26.8631\, \mathrm{dB}$, indicating increased pixel discrepancies and lower image quality. The perceptual loss $P_{\text{L}} = 0.1834$ also reflects greater deviation in perceptual characteristics between the real and generated BNI images.
 
-In contrast, the comparison of two generated images as in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_bni} shows a closer alignment. ORB = 0.9647 and SSIM = 0.8621, reflecting better structural similarity. Additionally, the MSE drops and and the PSNR improves(MSE = 87.2969, PSNR = 28.1942) indicating fewer pixel-level discrepancies. The perceptual loss also decreases to \( P_L = 0.1371 \), highlighting the greater similarity between the two generated images, although the differences are still more pronounced compared to previous datasets.
+In contrast, the comparison of two generated images as in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_bni} shows a closer alignment. $\text{ORB} = 0.9647$ and $\text{SSIM} = 0.8621$ reflect better structural similarity. Additionally, the $\text{MSE}$ drops and the $\text{PSNR}$ improves ($\text{MSE} = 87.2969$, $\text{PSNR} = 28.1942\, \mathrm{dB}$), indicating fewer pixel-level discrepancies. The perceptual loss also decreases to $P_{\text{L}} = 0.1371$, highlighting the greater similarity between the two generated images, although the differences are still more pronounced compared to previous datasets.
+
 
 \begin{figure}
     \begin{minipage}[H]{\linewidth}
@@ -2098,7 +2145,7 @@ In contrast, the comparison of two generated images as in Figure~\ref{fig:compar
             \begin{subfigure}[t]{0.48\linewidth}
                 \centering
                 \includegraphics[width=\linewidth]{../media/bni_generated_1_1.png}
-                \caption{Generated}
+                \caption{Generated\_1}
             \end{subfigure}
         \end{minipage}%
         \hfill
@@ -2112,12 +2159,12 @@ In contrast, the comparison of two generated images as in Figure~\ref{fig:compar
                 ORB             & 0.9754        \\
                 SSIM            & 0.8312        \\
                 MSE             & 118.6083      \\
-                PSNR            & 26.8631       \\
+                PSNR in dB      & 26.8631       \\
                 Perceptual Loss & 0.1834        \\
                 \bottomrule
             \end{tabular}
         \end{minipage}%
-        \caption{Metric values for real and generated BNI images}
+        \caption{Metric values for real a) and generated b) BNI images}
         \label{fig:comparison_real_generated_1_1_bni}
     \end{minipage}
 \end{figure}
@@ -2151,7 +2198,7 @@ In contrast, the comparison of two generated images as in Figure~\ref{fig:compar
                 ORB             & 0.9647        \\
                 SSIM            & 0.8621        \\
                 MSE             & 87.2969       \\
-                PSNR            & 28.1942       \\
+                PSNR in dB      & 28.1942       \\
                 Perceptual Loss & 0.1371        \\
                 \bottomrule
             \end{tabular}
@@ -2162,11 +2209,12 @@ In contrast, the comparison of two generated images as in Figure~\ref{fig:compar
 \end{figure}
 
 
-\subsection{PCBs}
+\textbf{PCB Dataset}
 
-The analysis of the PCB dataset shows a similar trend to the BNI dataset. As given in Figure~\ref{fig:comparison_real_generated_1_1_pcb}, an ORB = 0.8587 indicates moderate feature matching between the real and generated images. However, SSIM = 0.7087, coupled with a high MSE = 366.2571 and a relatively low PSNR = 22.0384, suggests more significant structural and pixel-level differences. The perceptual loss of 0.2796 reflects noticeable perceptual discrepancies between the real and generated PCB images.
+The analysis of the PCB dataset shows a similar trend to the BNI dataset. As given in Figure~\ref{fig:comparison_real_generated_1_1_pcb}, an $\text{ORB} = 0.8587$ indicates moderate feature matching between the real and generated images. However, $\text{SSIM} = 0.7087$, coupled with a high $\text{MSE} = 366.2571$ and a relatively low $\text{PSNR} = 22.0384\, \mathrm{dB}$, suggests more significant structural and pixel-level differences. The perceptual loss $P_{\text{L}} = 0.2796$ reflects noticeable perceptual discrepancies between the real and generated PCB images.
 
-The comparison between the two generated images in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_pcb} shows a slight improvement. The values of ORB and SSIM increases with ORB = 0.8815 and SSIM = 0.7564, indicating better structural similarity. But the mean squared error is still high at MSE = 312.3232, the PSNR = 22.4011 showed a minor improvement, and the perceptual loss remains relatively high at \( P_L = 0.3354 \), suggesting that while the two generated images are closer, perceptual differences are still evident.
+The comparison between the two generated images in Figure~\ref{fig:comparison_generated_1_1_generated_1_2_pcb} shows a slight improvement. The values of $\text{ORB}$ and $\text{SSIM}$ increases with $\text{ORB} = 0.8815$ and $\text{SSIM} = 0.7564$, indicating better structural similarity. However, the mean squared error remains high at $\text{MSE} = 312.3232$, and the $\text{PSNR} = 22.4011\, \mathrm{dB}$ showed a minor improvement, and the perceptual loss remains relatively high at $P_{\text{L}} = 0.3354$, suggesting that while the two generated images are closer, perceptual differences are still evident.
+
 
 \begin{figure}
     \centering
@@ -2181,7 +2229,7 @@ The comparison between the two generated images in Figure~\ref{fig:comparison_ge
         \begin{subfigure}[t]{0.48\linewidth}
             \centering
             \includegraphics[width=\linewidth]{../media/pcb_generated_1_1.png}
-            \caption{Generated}
+            \caption{Generated\_1}
         \end{subfigure}
     \end{minipage}%
     \hfill
@@ -2195,12 +2243,12 @@ The comparison between the two generated images in Figure~\ref{fig:comparison_ge
             ORB             & 0.8587        \\
             SSIM            & 0.7087        \\
             MSE             & 366.2571      \\
-            PSNR            & 22.0384       \\
+            PSNR in dB      & 22.0384       \\
             Perceptual Loss & 0.2796        \\
             \bottomrule
         \end{tabular}
     \end{minipage}%
-    \caption{Comparison of real and generated PCB images along with their metric values.}
+    \caption{Comparison of real a) and generated b) PCB images along with their metric values.}
     \label{fig:comparison_real_generated_1_1_pcb}
 \end{figure}
 
@@ -2233,7 +2281,7 @@ The comparison between the two generated images in Figure~\ref{fig:comparison_ge
                 ORB             & 0.8815        \\
                 SSIM            & 0.7564        \\
                 MSE             & 312.3232      \\
-                PSNR            & 22.4011       \\
+                PSNR in dB      & 22.4011       \\
                 Perceptual Loss & 0.3354        \\
                 \bottomrule
             \end{tabular}
@@ -2248,31 +2296,39 @@ The BNI and PCB datasets, as discussed in Chapter~\ref{sec:generated_images}, ar
 
 \section{Anomaly Detection Results on the Nuts Dataset}
 
-This section presents the results of the anomaly detection on the Nuts dataset using three different approaches. These approaches were designed to assess how the anomaly detector's performance varies when trained with only optimal images, with the addition of real bad influence images, and with synthetic bad influence images.
+This section presents the results of the anomaly detection on the Nuts dataset using three different approaches. These approaches were designed to assess how the anomaly detector's performance varies when trained with only optimal images, with the addition of real bad influence images, and with synthetic bad influence images. The choice to focus solely on the Nuts dataset is based on its comprehensive representation of various influences commonly encountered in industrial environments, such as shadow effects, high gain factors, and the plexiglass effect. In contrast, other datasets do not exhibit such clear representations of these influences, limiting their utility for robust anomaly detection training and evaluation. By analyzing the performance on the Nuts dataset, more precise insights can be drawn regarding the effectiveness of the proposed methodologies before potentially extending the analysis to other datasets.
 
 \subsection{Analysis of Loss Plots}
 
-The loss plots for the three approaches as given in Figure~\ref{fig:loss_plots}, indicate significant differences in training and validation performance. The first approach(Approach\_1), which utilized only optimal images, exhibited a relatively high training loss, \( L_{\text{train},1} \), reaching a maximum of \( L_{\text{train},1} = 0.25 \), with validation loss closely following, demonstrating limited learning capability. In contrast, the second approach(Approach\_2) incorporated real bad influence images, achieving a much lower training loss of \( L_{\text{train},2} = 0.05 \), indicating improved model fitting. The validation loss also stabilized, suggesting better generalization to unseen data. The third approach(Approach\_3), which used synthetic bad influence images, showed a similar training loss pattern to the second approach but with slightly higher values, reaching a maximum of \( L_{\text{train},3} = 0.06 \). Overall, the latter two approaches performed notably better than the first.
+The loss plots in Figure~\ref{fig:loss_plots} illustrate the training and validation performance for the three approaches. While the minimum validation losses for all three approaches are relatively small ($L_{\text{val},1} = 0.0004$ for Approach\_1 and $L_{\text{val},2} = L_{\text{val},3} = 0.0002$ for Approach\_2 and Approach\_3), the key differences lie in the overall learning behavior as discussed in the following Chapter~\ref{Confusion_matrix}.
+
+In Approach\_1, which only utilized optimal images, the model's validation loss converged quickly, but the training loss ($L_{\text{train},1}$) remained relatively higher as shown in Figure~\ref{fig:loss_plots} a). This suggests that the model had limited exposure to diverse data and struggled to generalize effectively across the dataset.
+
+Approach\_2, which incorporated real bad influence images, demonstrates a stable decrease in both training loss ($L_{\text{train},2}$) and validation loss as shown in Figure~\ref{fig:loss_plots} b), reflecting better generalization as the model was exposed to a wider variety of conditions. This leads to a more balanced performance across both training and unseen data, as evidenced by the lower and more stable validation loss.
+
+Approach\_3, which used synthetic bad influence images, exhibits a loss curve that is very similar to Approach\_2 as shown in Figure~\ref{fig:loss_plots} c). The validation loss is on par with that of Approach\_2, indicating that synthetic data can effectively support the model's generalization capabilities. The final validation loss shows that synthetic images were as effective as real bad influence images in enhancing model robustness.
+
+Overall, the latter two approaches performed notably better than the first, emphasizing the necessity of incorporating diverse data, including real-world camera influences. Notably, the findings indicate that synthetic data can significantly enhance model performance, achieving results comparable to those attained with real images.
 
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.7\textwidth} % Adjusted width for the first figure
         \centering
-        \includegraphics[width=\textwidth]{../media/approach1_lossplot.PNG}
+        \includegraphics[width=\textwidth]{../media/training_validation_loss_approach_1.png}
         \caption{Approach\_1}
         \label{fig:approach1}
     \end{subfigure}
     \\ % New line
     \begin{subfigure}[b]{0.7\textwidth} % Adjusted width for the second figure
         \centering
-        \includegraphics[width=\textwidth]{../media/approach2_lossplot.PNG}
+        \includegraphics[width=\textwidth]{../media/training_validation_loss_approach_2.PNG}
         \caption{Approach\_2}
         \label{fig:approach2}
     \end{subfigure}
     \\ % New line
     \begin{subfigure}[b]{0.7\textwidth} % Adjusted width for the third figure
         \centering
-        \includegraphics[width=\textwidth]{../media/approach3_lossplot.PNG}
+        \includegraphics[width=\textwidth]{../media/training_validation_loss_approach_3.PNG}
         \caption{Approach\_3}
         \label{fig:approach3}
     \end{subfigure}
@@ -2283,14 +2339,15 @@ The loss plots for the three approaches as given in Figure~\ref{fig:loss_plots},
 
 
 \subsection{Interpretation of Confusion Matrix and Metric Results}
+\label{Confusion_matrix}
 
-The results of the anomaly detection model demonstrate distinct differences in performance across the three approaches, as reflected in the confusion matrices in Figure~\ref{fig:confusion_matrices} and metric values in Table~\ref{tab:metrics_summary}. In the first approach, where only good images captured under optimal conditions were used for training, the model struggled to correctly classify good images with bad influences, resulting in a high number of false positives. This is evident in the confusion matrix shown in Figure~\ref{fig:confusion_matrices} (a), where 48 normal images were misclassified as anomalous, contributing to the relatively low accuracy \( \text{A} = 0.73 \). The recall for normal images was particularly low at \( r_{\text{normal}} = 0.47 \), indicating that many OK images with bad influences were mistakenly labeled as anomalies.
+The results of the anomaly detection model demonstrate distinct differences in performance across the three approaches, as reflected in the confusion matrices in Figure~\ref{fig:confusion_matrices} and metric values in Table~\ref{tab:metrics_summary}. In the first approach, where only good images captured under optimal conditions were used for training, the model struggled to correctly classify good images with bad influences, resulting in a high number of false positives. This is evident in the confusion matrix shown in Figure~\ref{fig:confusion_matrices} a), where 48 normal images were misclassified as anomalous, contributing to the relatively low accuracy \( \text{A} = 0.73 \). The recall for normal images was particularly low at \( r_{\text{normal}} = 0.47 \), indicating that many OK images with bad influences were mistakenly labeled as anomalies.
 
-In the second approach, when real images with bad influences were introduced, the model’s performance improved, with the accuracy rising to \( \text{A} = 0.75 \). The recall for normal images increased significantly to \( r_{\text{normal}} = 0.97 \), showing that the model became much better at recognizing good images with bad influences as normal. However, this improvement came with a trade-off in the number of false negatives, as 56 anomalous images were misclassified as normal as shown in shown in Figure~\ref{fig:confusion_matrices} (b), reducing the recall for anomalous images to \( r_{\text{anomalous}} = 0.60 \). Despite the inclusion of real bad influence images, the accuracy did not improve substantially due to this increase in false negatives, highlighting the model's ongoing difficulty in distinguishing subtle anomalies.
+In the second approach, when real images with bad influences were introduced, the model’s performance improved, with the accuracy rising to \( \text{A} = 0.75 \). The recall for normal images increased significantly to \( r_{\text{normal}} = 0.97 \), showing that the model became much better at recognizing good images with bad influences as normal. However, this improvement came with a trade-off in the number of false negatives, as 56 anomalous images were misclassified as normal as shown in shown in Figure~\ref{fig:confusion_matrices} b), reducing the recall for anomalous images to \( r_{\text{anomalous}} = 0.60 \). Despite the inclusion of real bad influence images, the accuracy did not improve substantially due to this increase in false negatives, highlighting the model's ongoing difficulty in distinguishing subtle anomalies.
 
-Third approach, which involved the use of synthetic images with bad influences, yielded results similar to second approach, with the accuracy remaining at \( \text{A} = 0.75 \). Both the recall for normal images \( r_{\text{normal}} = 0.95 \) and anomalous images \( r_{\text{anomalous}} = 0.62 \) were comparable, suggesting that the synthetic images were effective in helping the model recognize OK images with bad influences as normal. However, the issue of misclassifying anomalous images as normal persisted, indicating that while synthetic images helped with false positives, they did not solve the challenge of false negatives.
+Third approach as shown in Figure~\ref{fig:confusion_matrices} c), which involved the use of synthetic images with bad influences, yielded results similar to second approach, with the accuracy remaining at \( \text{A} = 0.75 \). Both the recall for normal images \( r_{\text{normal}} = 0.95 \) and anomalous images \( r_{\text{anomalous}} = 0.62 \) were comparable, suggesting that the synthetic images were effective in helping the model recognize OK images with bad influences as normal. However, the issue of misclassifying anomalous images as normal persisted, indicating that while synthetic images helped with false positives, they did not solve the challenge of false negatives.
 
-The balanced accuracy(\( B_A \)) metric, which accounts for both the recall of normal and anomalous images, provides a more comprehensive view of the model's performance. In the first approach, the balanced accuracy was \( B_A = 0.68 \), reflecting the model's poor recall for normal images. In both second and third approaches, the balanced accuracy improved to \( B_A = 0.78 \), showing that the addition of real or synthetic bad influence images helped balance the model's performance across both normal and anomalous classes. However, even with this improvement, the overall accuracy did not rise significantly because the model continued to misclassify a substantial number of anomalous images as normal.
+The balanced accuracy ($B_{\text{A}}$) metric, which accounts for both the recall of normal and anomalous images, provides a more comprehensive view of the model's performance. In the first approach, the balanced accuracy was $B_{\text{A}} = 0.68$, reflecting the model's poor recall for normal images. In both second and third approaches, the balanced accuracy improved to $B_{\text{A}} = 0.78$, showing that the addition of real or synthetic bad influence images helped balance the model's performance across both normal and anomalous classes.
 
 The reason for this limitation in accuracy improvement lies in the nature of the data. Some anomalous nut images closely resemble OK images with some bad influences like background, lighting and shadows. The anomalies, such as subtle shape imperfections in the Nuts, can be difficult for the model to distinguish from normal variations, especially when the defects are minor. As a result, even with the inclusion of real or synthetic bad influence images, the model still faces challenges in reliably identifying these visually subtle anomalies, leading to a plateau in accuracy improvements.
 
@@ -2298,21 +2355,21 @@ The reason for this limitation in accuracy improvement lies in the nature of the
     \centering
     \begin{subfigure}[b]{0.55\textwidth} % Adjusted width for the first figure
         \centering
-        \includegraphics[width=\textwidth]{../media/approach1_confusion.PNG}
+        \includegraphics[width=\textwidth]{../media/confusion_matrix_approach_1.png}
         \caption{Approach\_1}
         \label{fig:confusion1}
     \end{subfigure}
     \\ % New line
     \begin{subfigure}[b]{0.55\textwidth} % Adjusted width for the second figure
         \centering
-        \includegraphics[width=\textwidth]{../media/approach2_confusion.PNG}
+        \includegraphics[width=\textwidth]{../media/confusion_matrix_approach_2.png}
         \caption{Approach\_2}
         \label{fig:confusion2}
     \end{subfigure}
     \\ % New line
     \begin{subfigure}[b]{0.55\textwidth} % Adjusted width for the third figure
         \centering
-        \includegraphics[width=\textwidth]{../media/approach3_confusion.PNG}
+        \includegraphics[width=\textwidth]{../media/confusion_matrix_approach_3.png}
         \caption{Approach\_3}
         \label{fig:confusion3}
     \end{subfigure}

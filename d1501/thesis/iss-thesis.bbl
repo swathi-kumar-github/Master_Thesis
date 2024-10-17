@@ -72,7 +72,7 @@ L.~Deng and N.~Jaitly, ``Deep discriminative and generative models for speech
   last edited: 4 October 2024.
 
 \bibitem{Nanda:2024}
-N.~Arun, ``Generative vs discriminative models: Differences & use cases,''
+N.~Arun, ``Generative vs discriminative models: Differences \& use cases,''
   \url{https://www.datacamp.com/blog/generative-vs-discriminative-models}, Sep.
   2020.
 
@@ -303,6 +303,15 @@ E.~Rublee, V.~Rabaud, K.~Konolige and G.~Bradski, ``Orb: An efficient
 \bibitem{VGG16}
 K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
   large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem{saxena2021generative}
+D.~Saxena and J.~Cao, ``Generative adversarial networks (gans) challenges,
+  solutions, and future directions,'' \emph{ACM Computing Surveys (CSUR)},
+  vol.~54, no.~3, pp. 1--42, 2021.
+
+\bibitem{kodali2017convergence}
+N.~Kodali, J.~Abernethy, J.~Hays and Z.~Kira, ``On convergence and stability of
+  gans,'' \emph{arXiv preprint arXiv:1705.07215}, 2017.
 
 \bibitem{modecollapse}
 H.~Thanh-Tung and T.~Tran, ``Catastrophic forgetting and mode collapse in

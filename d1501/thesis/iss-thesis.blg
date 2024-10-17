@@ -19,45 +19,45 @@ Warning--empty journal in schonfeld2022improving
 Warning--empty year in eckerli2106generative
 
 Done.
-You've used 55 entries,
+You've used 57 entries,
             4186 wiz_defined-function locations,
-            1113 strings with 17183 characters,
-and the built_in function-call counts, 36796 in all, are:
-= -- 2883
-> -- 910
-< -- 257
-+ -- 509
-- -- 186
-* -- 1692
-:= -- 5557
-add.period$ -- 121
-call.type$ -- 55
-change.case$ -- 56
-chr.to.int$ -- 621
-cite$ -- 57
-duplicate$ -- 2735
-empty$ -- 3145
-format.name$ -- 202
-if$ -- 8427
+            1124 strings with 17529 characters,
+and the built_in function-call counts, 38014 in all, are:
+= -- 2986
+> -- 941
+< -- 265
++ -- 524
+- -- 192
+* -- 1751
+:= -- 5759
+add.period$ -- 125
+call.type$ -- 57
+change.case$ -- 58
+chr.to.int$ -- 636
+cite$ -- 59
+duplicate$ -- 2830
+empty$ -- 3240
+format.name$ -- 210
+if$ -- 8700
 int.to.chr$ -- 0
-int.to.str$ -- 55
-missing$ -- 495
-newline$ -- 200
-num.names$ -- 55
-pop$ -- 1256
+int.to.str$ -- 57
+missing$ -- 512
+newline$ -- 206
+num.names$ -- 57
+pop$ -- 1294
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2825
+skip$ -- 2919
 stack$ -- 0
-substring$ -- 1568
-swap$ -- 2085
-text.length$ -- 50
+substring$ -- 1604
+swap$ -- 2156
+text.length$ -- 53
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 55
+type$ -- 57
 warning$ -- 2
-while$ -- 151
-width$ -- 57
-write$ -- 521
+while$ -- 157
+width$ -- 59
+write$ -- 540
 (There were 3 warnings)

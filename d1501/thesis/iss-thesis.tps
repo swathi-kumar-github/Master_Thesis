@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=iss-thesis.tex
 
 [Frame0_View0,0]
-TopLine=2271
-Cursor=131365
+TopLine=1975
+Cursor=120772
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=BibTeXView
 Document=refs.bib
 
 [Frame1_View0,0]
-TopLine=93
-Cursor=3664
+TopLine=240
+Cursor=8022
 
 [Frame2]
 Flags=0
@@ -53,10 +53,10 @@ Class=LaTeXView
 Document=iss-thesis.bbl
 
 [Frame2_View0,0]
-TopLine=36
-Cursor=1684
+TopLine=69
+Cursor=3035
 
 [SessionInfo]
 FrameCount=3
-ActiveFrame=2
+ActiveFrame=0
 

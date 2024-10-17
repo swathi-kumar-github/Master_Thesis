@@ -32,29 +32,30 @@
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Selecting Model Checkpoint}}{31}{figure.caption.37}%
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Configuration settings in the Stable Diffusion WebUI for img2img}}{32}{figure.caption.38}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Results of CycleGAN image translation showcasing the shadow effect. (a) Translated images from optimal setups. (b) Reference image of the original shadow effect.}}{40}{figure.caption.43}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Results of CycleGAN image translation highlighting the high gain factor effect. (a) Translated images from the optimal setup to images influenced by the high gain factor. (b) Reference image demonstrating the high gain factor effect.}}{41}{figure.caption.44}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Results of CycleGAN image translation showcasing the Plexiglas effect. (a) Translated images from the optimal setup to images influenced by the Plexiglas effect. (b) Reference image illustrating the Plexiglas effect.}}{42}{figure.caption.45}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Results of CycleGAN image translation showcasing the scattered sunlight effect. (a) Translated images from the optimal setup to images influenced by scattered sunlight. (b) Reference image illustrating the original scattered sunlight effect.}}{44}{figure.caption.46}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Results of CycleGAN image translation showcasing the camera elevation (down) effect. (a) Translated images from the optimal setup to images influenced by camera elevation (down). (b) Reference image illustrating the original camera elevation (down) effect.}}{45}{figure.caption.47}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Results of CycleGAN image translation showcasing the camera elevation (up) effect. (a) Translated images from the optimal setup to images influenced by camera elevation (up). (b) Reference image illustrating the original camera elevation (up) effect.}}{46}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Generator loss for A to B translation during training.}}{48}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Discriminator losses during training: (a) loss for real images and (b) loss for fake images.}}{49}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Results of CycleGAN image translation showcasing the shadow effect. a) Translated images from optimal setups to images influenced by the shadow effect. b) Reference image of the original shadow effect.}}{40}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Results of CycleGAN image translation highlighting the high gain factor effect. a) Translated images from the optimal setup to images influenced by the high gain factor. b) Reference image demonstrating the high gain factor effect.}}{41}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Results of CycleGAN image translation showcasing the Plexiglas effect. a) Translated images from the optimal setup to images influenced by the Plexiglas effect. b) Reference image illustrating the Plexiglas effect.}}{42}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Results of CycleGAN image translation showcasing the scattered sunlight effect. a) Translated images from the optimal setup to images influenced by scattered sunlight. b) Reference image illustrating the original scattered sunlight effect.}}{44}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Results of CycleGAN image translation showcasing the camera elevation (down) effect. a) Translated images from the optimal setup to images influenced by camera elevation (down). b) Reference image illustrating the original camera elevation (down) effect.}}{45}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Results of CycleGAN image translation showcasing the camera elevation (up) effect. a) Translated images from the optimal setup to images influenced by camera elevation (up). b) Reference image illustrating the original camera elevation (up) effect.}}{46}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Generator loss for A to B translation during training.}}{47}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Discriminator losses during training: (a) loss for real images and (b) loss for fake images.}}{48}{figure.caption.50}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Generated images at varying denoising strengths.}}{50}{figure.caption.51}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Comparison of real and generated images for Nuts dataset}}{52}{figure.caption.52}%
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison of real and generated images for Candles dataset}}{53}{figure.caption.53}%
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Comparison of real and generated images for BNI dataset}}{54}{figure.caption.54}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison of real and generated images for PCB dataset}}{55}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Metric values for real and generated nut images}}{56}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Metric values for two generated nut images}}{56}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Metric values for real and generated candle images}}{56}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Metric values for two generated candle images}}{57}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Metric values for real and generated BNI images}}{57}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Metric values for two generated BNI images}}{58}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Comparison of real and generated PCB images along with their metric values.}}{58}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Metric values for two generated PCB images}}{58}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Comparison of Training and Validation Loss across Different Approaches}}{60}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Comparison of Confusion Matrices across Different Approaches}}{62}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Comparison of real a) and CycleGAN-generated nut image b) with corresponding metric values.}}{57}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Metric values for real a) and generated b) nut images}}{57}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Metric values for two generated nut images}}{57}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Metric values for real a) and generated b) candle images}}{58}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Metric values for two generated candle images}}{58}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Metric values for real a) and generated b) BNI images}}{59}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Metric values for two generated BNI images}}{59}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Comparison of real a) and generated b) PCB images along with their metric values.}}{59}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Metric values for two generated PCB images}}{60}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Comparison of Training and Validation Loss across Different Approaches}}{62}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Comparison of Confusion Matrices across Different Approaches}}{64}{figure.caption.66}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
