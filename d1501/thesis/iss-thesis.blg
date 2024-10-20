@@ -10,54 +10,51 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: refs.bib
-Warning--string name "august" is undefined
---line 519 of file refs.bib
 -- IEEEtran.bst version 1.13 (2008/09/30) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in schonfeld2022improving
-Warning--empty year in eckerli2106generative
 
 Done.
-You've used 57 entries,
+You've used 91 entries,
             4186 wiz_defined-function locations,
-            1124 strings with 17529 characters,
-and the built_in function-call counts, 38014 in all, are:
-= -- 2986
-> -- 941
-< -- 265
-+ -- 524
-- -- 192
-* -- 1751
-:= -- 5759
-add.period$ -- 125
-call.type$ -- 57
-change.case$ -- 58
-chr.to.int$ -- 636
-cite$ -- 59
-duplicate$ -- 2830
-empty$ -- 3240
-format.name$ -- 210
-if$ -- 8700
+            1300 strings with 23472 characters,
+and the built_in function-call counts, 64164 in all, are:
+= -- 5126
+> -- 1564
+< -- 493
++ -- 880
+- -- 309
+* -- 2976
+:= -- 9623
+add.period$ -- 198
+call.type$ -- 91
+change.case$ -- 93
+chr.to.int$ -- 1176
+cite$ -- 92
+duplicate$ -- 4717
+empty$ -- 5339
+format.name$ -- 339
+if$ -- 14753
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 512
-newline$ -- 206
-num.names$ -- 57
-pop$ -- 1294
+int.to.str$ -- 91
+missing$ -- 826
+newline$ -- 312
+num.names$ -- 91
+pop$ -- 2026
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2919
+skip$ -- 4956
 stack$ -- 0
-substring$ -- 1604
-swap$ -- 2156
-text.length$ -- 53
+substring$ -- 2954
+swap$ -- 3701
+text.length$ -- 101
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 57
-warning$ -- 2
-while$ -- 157
-width$ -- 59
-write$ -- 540
-(There were 3 warnings)
+type$ -- 91
+warning$ -- 1
+while$ -- 278
+width$ -- 93
+write$ -- 866
+(There was 1 warning)

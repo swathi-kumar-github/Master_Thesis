@@ -28,6 +28,10 @@ Z.~Yang, F.~Zhan, K.~Liu, M.~Xu and S.~Lu, ``Ai-generated images as data
   \url{https://arxiv.org/abs/2310.01830}
 \BIBentrySTDinterwordspacing
 
+\bibitem{anderson2022synthetic}
+J.~W. Anderson, M.~Ziolkowski, K.~Kennedy and A.~W. Apon, ``Synthetic image
+  data for deep learning,'' \emph{arXiv preprint arXiv:2212.06232}, 2022.
+
 \bibitem{r2}
 K.~El~Emam, L.~Mosquera and R.~Hoptroff, \emph{Practical synthetic data
   generation: balancing privacy and the broad availability of data}.\hskip 1em
@@ -40,6 +44,11 @@ L.~Wuttke, ``Machine learning vs. deep learning: What’s the difference?''
   \url{https://datasolut.com/machine-learning-vs-deep-learning/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{maind2014research}
+S.~B. Maind, P.~Wankar \emph{et~al.}, ``Research paper on basic of artificial
+  neural network,'' \emph{International Journal on Recent and Innovation Trends
+  in Computing and Communication}, vol.~2, no.~1, pp. 96--100, 2014.
+
 \bibitem{hardesty2017explained}
 L.~Hardesty, ``Explained: neural networks,'' \emph{MIT News}, vol.~14, 2017.
 
@@ -49,6 +58,11 @@ V.~Luhaniwal, ``Forward propagation in neural networks — simplified (math and
   code version),'' May 2019. [Online]. Available:
   \url{https://towardsdatascience.com/forward-propagation-in-neural-networks-simplified-math-and-code-version-bbcfef6f9250}
 \BIBentrySTDinterwordspacing
+
+\bibitem{lecun1988theoretical}
+Y.~LeCun, D.~Touresky, G.~Hinton and T.~Sejnowski, ``A theoretical framework
+  for back-propagation,'' in \emph{Proceedings of the 1988 connectionist models
+  summer school}, vol.~1, 1988, pp. 21--28.
 
 \bibitem{rumelhart1986learning}
 D.~E. Rumelhart, G.~E. Hinton and R.~J. Williams, ``Learning representations by
@@ -94,11 +108,12 @@ T.~E. Raghunathan, ``Synthetic data,'' \emph{Annual review of statistics and
 K.~Walker, ``Synthetic data: Unlocking the power of data and skills for machine
   learning,''
   \url{https://dataingovernment.blog.gov.uk/2020/08/20/synthetic-data-unlocking-the-power-of-data-and-skills-for-machine-learning/},
-  2020.
+  August 2020.
 
-\bibitem{anderson2022synthetic}
-J.~W. Anderson, M.~Ziolkowski, K.~Kennedy and A.~W. Apon, ``Synthetic image
-  data for deep learning,'' \emph{arXiv preprint arXiv:2212.06232}, 2022.
+\bibitem{pu2016variational}
+Y.~Pu, Z.~Gan, R.~Henao, X.~Yuan, C.~Li, A.~Stevens and L.~Carin, ``Variational
+  autoencoder for deep learning of images, labels and captions,''
+  \emph{Advances in neural information processing systems}, vol.~29, 2016.
 
 \bibitem{schonfeld2022improving}
 E.~Sch{\"o}nfeld, ``Improving quality and controllability in gan-based image
@@ -120,16 +135,40 @@ I.~Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
   A.~Courville and Y.~Bengio, ``Generative adversarial nets,'' \emph{Advances
   in neural information processing systems}, vol.~27, 2014.
 
+\bibitem{giocoli2004nash}
+N.~Giocoli, ``Nash equilibrium,'' \emph{History of political economy}, vol.~36,
+  no.~4, pp. 639--666, 2004.
+
+\bibitem{zhang2022nash}
+S.~Zhang, ``On the nash equilibrium of moment-matching gans for stationary
+  gaussian processes,'' in \emph{Mathematical and Scientific Machine
+  Learning}.\hskip 1em plus 0.5em minus 0.4em\relax PMLR, 2022, pp. 113--128.
+
 \bibitem{wang2017generative}
 K.~Wang, C.~Gou, Y.~Duan, Y.~Lin, X.~Zheng and F.-Y. Wang, ``Generative
   adversarial networks: introduction and outlook,'' \emph{IEEE/CAA Journal of
   Automatica Sinica}, vol.~4, no.~4, pp. 588--598, 2017.
+
+\bibitem{georgopoulos2022cluster}
+M.~Georgopoulos, J.~Oldfield, G.~G. Chrysos and Y.~Panagakis, ``Cluster-guided
+  image synthesis with unconditional models,'' in \emph{Proceedings of the
+  IEEE/CVF Conference on Computer Vision and Pattern Recognition}, 2022, pp.
+  11\,543--11\,552.
 
 \bibitem{lee2022generator}
 G.~Lee, H.~Kim, J.~Kim, S.~Kim, J.-W. Ha and Y.~Choi, ``Generator knows what
   discriminator should learn in unconditional gans,'' in \emph{European
   Conference on Computer Vision}.\hskip 1em plus 0.5em minus 0.4em\relax
   Springer, 2022, pp. 406--422.
+
+\bibitem{devries2019evaluation}
+T.~DeVries, A.~Romero, L.~Pineda, G.~W. Taylor and M.~Drozdzal, ``On the
+  evaluation of conditional gans,'' \emph{arXiv preprint arXiv:1907.08175},
+  2019.
+
+\bibitem{mirza2014conditional}
+M.~Mirza, ``Conditional generative adversarial nets,'' \emph{arXiv preprint
+  arXiv:1411.1784}, 2014.
 
 \bibitem{radford2015unsupervised}
 A.~Radford, ``Unsupervised representation learning with deep convolutional
@@ -150,9 +189,9 @@ X.~Mao, Q.~Li, H.~Xie, R.~Y. Lau, Z.~Wang and S.~Paul~Smolley, ``Least squares
 T.~Karras, ``Progressive growing of gans for improved quality, stability, and
   variation,'' \emph{arXiv preprint arXiv:1710.10196}, 2017.
 
-\bibitem{eckerli2106generative}
-F.~Eckerli and J.~Osterrieder, ``Generative adversarial networks in finance: An
-  overview. arxiv 2021,'' \emph{arXiv preprint arXiv:2106.06364}.
+\bibitem{eckerli2021generative}
+F.~Eckerli and J.~Osterrieder, ``Generative adversarial networks in finance: an
+  overview,'' \emph{arXiv preprint arXiv:2106.06364}, 2021.
 
 \bibitem{gauthier2014conditional}
 J.~Gauthier, ``Conditional generative adversarial nets for convolutional face
@@ -181,6 +220,21 @@ E.~Baykal~Kablan, ``Regional realness-aware generative adversarial networks for
   stain normalization,'' \emph{Neural Computing and Applications}, vol.~35, 05
   2023.
 
+\bibitem{almahairi2018augmented}
+A.~Almahairi, S.~Rajeshwar, A.~Sordoni, P.~Bachman and A.~Courville,
+  ``Augmented cyclegan: Learning many-to-many mappings from unpaired data,'' in
+  \emph{International conference on machine learning}.\hskip 1em plus 0.5em
+  minus 0.4em\relax PMLR, 2018, pp. 195--204.
+
+\bibitem{dwibedi2019temporal}
+D.~Dwibedi, Y.~Aytar, J.~Tompson, P.~Sermanet and A.~Zisserman, ``Temporal
+  cycle-consistency learning,'' in \emph{Proceedings of the IEEE/CVF conference
+  on computer vision and pattern recognition}, 2019, pp. 1801--1810.
+
+\bibitem{dong2019towards}
+H.-W. Dong and Y.-H. Yang, ``Towards a deeper understanding of adversarial
+  losses,'' \emph{arXiv preprint arXiv:1901.08753}, 2019.
+
 \bibitem{VAE}
 D.~P. Kingma, M.~Welling \emph{et~al.}, ``An introduction to variational
   autoencoders,'' \emph{Foundations and Trends{\textregistered} in Machine
@@ -197,10 +251,19 @@ J.~Ho, A.~Jain and P.~Abbeel, ``Denoising diffusion probabilistic models,''
   \emph{Advances in neural information processing systems}, vol.~33, pp.
   6840--6851, 2020.
 
+\bibitem{weng2021diffusion}
+L.~Weng, ``What are diffusion models?'' \emph{lilianweng. github. io}, p.~21,
+  2021.
+
 \bibitem{yainnoware2022}
 Yainnoware, ``Decoding the math behind9 diffusion models,''
   \url{https://yainnoware.blogspot.com/2022/11/decoding-math-behind-diffusion-models.html},
   November 20 2022.
+
+\bibitem{nichol2021improved}
+A.~Q. Nichol and P.~Dhariwal, ``Improved denoising diffusion probabilistic
+  models,'' in \emph{International conference on machine learning}.\hskip 1em
+  plus 0.5em minus 0.4em\relax PMLR, 2021, pp. 8162--8171.
 
 \bibitem{DALL_E}
 A.~Ramesh, M.~Pavlov, G.~Goh, S.~Gray, C.~Voss, A.~Radford, M.~Chen and
@@ -268,10 +331,20 @@ MidJourney, ``Midjourney: Surrealistic text-to-image generation,'' 2022,
   accessed: 2022-09-15. [Online]. Available: \url{https://www.midjourney.com/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{rando2022red}
+J.~Rando, D.~Paleka, D.~Lindner, L.~Heim and F.~Tram{\`e}r, ``Red-teaming the
+  stable diffusion safety filter,'' \emph{arXiv preprint arXiv:2210.04610},
+  2022.
+
 \bibitem{stable_diffusion}
 A.~Borji, ``Generated faces in the wild: Quantitative comparison of stable
   diffusion, midjourney and dall-e 2,'' \emph{arXiv preprint arXiv:2210.00586},
   2022.
+
+\bibitem{marti2015anomaly}
+L.~Mart{\'\i}, N.~Sanchez-Pi, J.~M. Molina and A.~C.~B. Garcia, ``Anomaly
+  detection based on sensor data in petroleum industry applications,''
+  \emph{Sensors}, vol.~15, no.~2, pp. 2774--2797, 2015.
 
 \bibitem{panza2023anomaly}
 M.~A. Panza, M.~Pota and M.~Esposito, ``Anomaly detection methods for
@@ -288,10 +361,43 @@ K.~Renu, ``Anomaly detection using autoencoders,''
   \url{https://towardsdatascience.com/anomaly-detection-using-autoencoders-5b032178a1ea},
   Jan. 2021.
 
+\bibitem{michelucci2022introduction}
+U.~Michelucci, ``An introduction to autoencoders,'' \emph{arXiv preprint
+  arXiv:2201.03898}, 2022.
+
+\bibitem{bank2023autoencoders}
+D.~Bank, N.~Koenigstein and R.~Giryes, ``Autoencoders,'' \emph{Machine learning
+  for data science handbook: data mining and knowledge discovery handbook}, pp.
+  353--374, 2023.
+
+\bibitem{wang2018transferring}
+Y.~Wang, C.~Wu, L.~Herranz, J.~Van~de Weijer, A.~Gonzalez-Garcia and
+  B.~Raducanu, ``Transferring gans: generating images from limited data,'' in
+  \emph{Proceedings of the European conference on computer vision (ECCV)},
+  2018, pp. 218--234.
+
 \bibitem{tensorflow_imagedatagenerator}
 \BIBentryALTinterwordspacing
 {TensorFlow}, ``Imagedatagenerator.'' [Online]. Available:
   \url{https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/image/ImageDataGenerator}
+\BIBentrySTDinterwordspacing
+
+\bibitem{AUTOMATIC1111}
+\BIBentryALTinterwordspacing
+AUTOMATIC1111, ``Stable diffusion web ui,'' August 2022. [Online]. Available:
+  \url{https://github.com/AUTOMATIC1111/stable-diffusion-webui}
+\BIBentrySTDinterwordspacing
+
+\bibitem{lu2022dpm}
+C.~Lu, Y.~Zhou, F.~Bao, J.~Chen, C.~Li and J.~Zhu, ``Dpm-solver++: Fast solver
+  for guided sampling of diffusion probabilistic models,'' \emph{arXiv preprint
+  arXiv:2211.01095}, 2022.
+
+\bibitem{nextdiffusion}
+\BIBentryALTinterwordspacing
+N.~Diffusion, ``Transform images into stunning ai art with stable diffusion,''
+  2024, updated: 2024-05-16. [Online]. Available:
+  \url{https://www.nextdiffusion.ai/tutorials/transform-images-into-stunning-ai-art-with-stable-diffusion}
 \BIBentrySTDinterwordspacing
 
 \bibitem{ORB}
@@ -300,9 +406,75 @@ E.~Rublee, V.~Rabaud, K.~Konolige and G.~Bradski, ``Orb: An efficient
   computer vision}.\hskip 1em plus 0.5em minus 0.4em\relax Ieee, 2011, pp.
   2564--2571.
 
+\bibitem{rosten2006machine}
+E.~Rosten and T.~Drummond, ``Machine learning for high-speed corner
+  detection,'' in \emph{Computer Vision--ECCV 2006: 9th European Conference on
+  Computer Vision, Graz, Austria, May 7-13, 2006. Proceedings, Part I 9}.\hskip
+  1em plus 0.5em minus 0.4em\relax Springer, 2006, pp. 430--443.
+
+\bibitem{calonder2010brief}
+M.~Calonder, V.~Lepetit, C.~Strecha and P.~Fua, ``Brief: Binary robust
+  independent elementary features,'' in \emph{Computer Vision--ECCV 2010: 11th
+  European Conference on Computer Vision, Heraklion, Crete, Greece, September
+  5-11, 2010, Proceedings, Part IV 11}.\hskip 1em plus 0.5em minus 0.4em\relax
+  Springer, 2010, pp. 778--792.
+
+\bibitem{bookstein2002generalized}
+A.~Bookstein, V.~A. Kulyukin and T.~Raita, ``Generalized hamming distance,''
+  \emph{Information Retrieval}, vol.~5, pp. 353--375, 2002.
+
+\bibitem{norouzi2012hamming}
+M.~Norouzi, D.~J. Fleet and R.~R. Salakhutdinov, ``Hamming distance metric
+  learning,'' \emph{Advances in neural information processing systems},
+  vol.~25, 2012.
+
+\bibitem{bakurov2022structural}
+I.~Bakurov, M.~Buzzelli, R.~Schettini, M.~Castelli and L.~Vanneschi,
+  ``Structural similarity index (ssim) revisited: A data-driven approach,''
+  \emph{Expert Systems with Applications}, vol. 189, p. 116087, 2022.
+
+\bibitem{brunet2011mathematical}
+D.~Brunet, E.~R. Vrscay and Z.~Wang, ``On the mathematical properties of the
+  structural similarity index,'' \emph{IEEE Transactions on Image Processing},
+  vol.~21, no.~4, pp. 1488--1499, 2011.
+
+\bibitem{sara2019image}
+U.~Sara, M.~Akter and M.~S. Uddin, ``Image quality assessment through fsim,
+  ssim, mse and psnr—a comparative study,'' \emph{Journal of Computer and
+  Communications}, vol.~7, no.~3, pp. 8--18, 2019.
+
+\bibitem{han2022perceptual}
+M.~Han, H.~Shim and J.~Baek, ``Perceptual ct loss: implementing ct image
+  specific perceptual loss for cnn-based low-dose ct denoiser,'' \emph{IEEE
+  Access}, vol.~10, pp. 62\,412--62\,422, 2022.
+
+\bibitem{rad2019srobb}
+M.~S. Rad, B.~Bozorgtabar, U.-V. Marti, M.~Basler, H.~K. Ekenel and J.-P.
+  Thiran, ``Srobb: Targeted perceptual loss for single image
+  super-resolution,'' in \emph{Proceedings of the IEEE/CVF international
+  conference on computer vision}, 2019, pp. 2710--2719.
+
 \bibitem{VGG16}
 K.~Simonyan and A.~Zisserman, ``Very deep convolutional networks for
   large-scale image recognition,'' \emph{arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem{florkowski2021anomaly}
+M.~Florkowski, ``Anomaly detection, trend evolution, and feature extraction in
+  partial discharge patterns,'' \emph{Energies}, vol.~14, no.~13, p. 3886,
+  2021.
+
+\bibitem{lavalley2008logistic}
+M.~P. LaValley, ``Logistic regression,'' \emph{Circulation}, vol. 117, no.~18,
+  pp. 2395--2399, 2008.
+
+\bibitem{rigatti2017random}
+S.~J. Rigatti, ``Random forest,'' \emph{Journal of Insurance Medicine},
+  vol.~47, no.~1, pp. 31--39, 2017.
+
+\bibitem{abdi2010principal}
+H.~Abdi and L.~J. Williams, ``Principal component analysis,'' \emph{Wiley
+  interdisciplinary reviews: computational statistics}, vol.~2, no.~4, pp.
+  433--459, 2010.
 
 \bibitem{saxena2021generative}
 D.~Saxena and J.~Cao, ``Generative adversarial networks (gans) challenges,

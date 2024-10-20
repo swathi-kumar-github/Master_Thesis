@@ -5,29 +5,29 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Generative Model Workflow\cite {Nanda:2024}}}{5}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The image shows two scatterplots: one of original data and one of synthetic data generated from the original data. The synthetic data retains the structure of the original data but is not the same. This is a common example of how generative models can be used to create new data that is similar to the original data, but not identical~\cite {Karen:2020}}}{6}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Structure of GAN~\cite {wang2017generative}}}{7}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Conditional GAN architecture~\cite {eckerli2106generative}}}{8}{figure.caption.7}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Overview of CycleGAN architecture\cite {article}}}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Conditional GAN architecture~\cite {eckerli2021generative}}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Overview of CycleGAN architecture~\cite {article}}}{9}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.8}{\ignorespaces The forward diffusion process: gradual noise addition to transform an image \(\mathbf {x}_0\) into \(\mathbf {x}_T\)~\cite {yainnoware2022}.}}{11}{figure.caption.9}%
 \contentsline {figure}{\numberline {2.9}{\ignorespaces The reverse diffusion process: reconstructing the original image \(\mathbf {x}_0\) by denoising a noisy image \(\mathbf {x}_T\)~\cite {diffusion2}.}}{12}{figure.caption.10}%
 \contentsline {figure}{\numberline {2.10}{\ignorespaces The famous Avocado chair (Prompt: ”an armchair in the shape of an avocado”)~\cite {openai2021}}}{12}{figure.caption.11}%
 \contentsline {figure}{\numberline {2.11}{\ignorespaces Architecture of an autoencoder, consisting of an encoder that compresses the input data into a lower-dimensional latent representation and a decoder that reconstructs the input from this latent space~\cite {Khandelwal:2021}}}{15}{figure.caption.12}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Examples of Nuts captured under optimal setup conditions. (a) OK Nut, exhibiting clear features essential for quality assessment. (b) NOK Nut, showing characteristics that indicate defects. Both images are essential for training and evaluating the anomaly detection system, as they provide a clear baseline of acceptable and unacceptable product qualities.}}{18}{figure.caption.14}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Examples of Nuts affected by shadow effects. (a) OK Nut and (b) NOK Nut.}}{18}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Examples of Nuts affected by random object placement. (a) OK Nut, and (b) NOK Nut.}}{19}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Examples of nuts affected by a high gain factor. (a) OK Nut, and (b) NOK Nut.}}{19}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Examples of Nuts affected by the plexiglass effect. (a) OK Nut, and (b) NOK Nut.}}{19}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Examples of Candles captured under optimal setup conditions. (a) OK Candle, showing smooth and uniform features. (b) NOK Candle, showing defects like dents or scratches.}}{20}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Examples of Candles affected by scattered sunlight. (a) OK Candle and (b) NOK Candle, which shows an absence of the candle in the holder}}{21}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Examples of Candles affected by random object placement. (a) OK Candle and (b) NOK Candle, which shows the absence of the thread on the candle.}}{21}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Examples of Candles affected by camera elevation down. (a) OK Candle and (b) NOK Candle with dents on the candle holder.}}{22}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Examples of Candles affected by camera elevation up. (a) OK Candle and (b) NOK Candle.}}{22}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Examples of Nuts captured under optimal setup conditions. a) OK Nut, exhibiting clear features essential for quality assessment. b) NOK Nut, showing characteristics that indicate defects. Both images are essential for training and evaluating the anomaly detection system, as they provide a clear baseline of acceptable and unacceptable product qualities.}}{18}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Examples of Nuts affected by shadow effects. a) OK Nut and b) NOK Nut.}}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Examples of Nuts affected by random object placement. a) OK Nut, and b) NOK Nut.}}{19}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Examples of nuts affected by a high gain factor. a) OK Nut, and b) NOK Nut.}}{19}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Examples of Nuts affected by the plexiglass effect. a) OK Nut, and b) NOK Nut.}}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Examples of Candles captured under optimal setup conditions. a) OK Candle, showing smooth and uniform features. b) NOK Candle, showing defects like dents or scratches.}}{20}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Examples of Candles affected by scattered sunlight. a) OK Candle and b) NOK Candle, which shows an absence of the candle in the holder}}{21}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Examples of Candles affected by random object placement. a) OK Candle and b) NOK Candle, which shows the absence of the thread on the candle.}}{21}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Examples of Candles affected by camera elevation down. a) OK Candle and b) NOK Candle with dents on the candle holder.}}{22}{figure.caption.23}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Examples of Candles affected by camera elevation up. a) OK Candle and b) NOK Candle.}}{22}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Examples of BNIs captured under optimal setup conditions. (a) OK BNI, displaying intact labels and no surface defects. (b) NOK BNI, showing solidified epoxy resin on the surface.}}{23}{figure.caption.26}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Examples of BNIs affected by left inclination. (a) OK BNI and (b) NOK BNI with solidified epoxy resin on the surface.}}{23}{figure.caption.27}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Examples of BNIs affected by right inclination. (a) OK BNI and (b) NOK BNI with missing labels.}}{24}{figure.caption.28}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Examples of BNIs affected by varied lighting. (a) OK BNI and (b) NOK BNI showing traces of solidified epoxy resin.}}{24}{figure.caption.29}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Examples of BNIs affected by random placement. (a) OK BNI and (b) NOK BNI where some labels are absent.}}{25}{figure.caption.30}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Examples of PCBs captured under different setups: (a) OK PCB under optimal conditions, (b) NOK PCB under optimal conditions, (c) OK PCB under bad influence setup with additional lighting, and (d) NOK PCB under bad influence setup. The added lighting may impact the visual assessment of the PCB quality.}}{26}{figure.caption.32}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Examples of BNIs affected by left inclination. a) OK BNI and b) NOK BNI with solidified epoxy resin on the surface.}}{23}{figure.caption.27}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Examples of BNIs affected by right inclination. a) OK BNI and b) NOK BNI with missing labels.}}{24}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Examples of BNIs affected by varied lighting. a) OK BNI and b) NOK BNI showing traces of solidified epoxy resin.}}{24}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Examples of BNIs affected by random placement. a) OK BNI and b) NOK BNI where some labels are absent.}}{25}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Examples of PCBs captured under different setups: a) OK PCB under optimal conditions, b) NOK PCB under optimal conditions, c) OK PCB under bad influence setup with additional lighting, and d) NOK PCB under bad influence setup. The added lighting may impact the visual assessment of the PCB quality.}}{26}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.17}{\ignorespaces (a) The original nut image and (b) the augmented nut image with a horizontal flip applied.}}{27}{figure.caption.33}%
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Selecting Model Checkpoint}}{31}{figure.caption.37}%
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Configuration settings in the Stable Diffusion WebUI for img2img}}{32}{figure.caption.38}%
@@ -38,24 +38,26 @@
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Results of CycleGAN image translation showcasing the scattered sunlight effect. a) Translated images from the optimal setup to images influenced by scattered sunlight. b) Reference image illustrating the original scattered sunlight effect.}}{44}{figure.caption.46}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Results of CycleGAN image translation showcasing the camera elevation (down) effect. a) Translated images from the optimal setup to images influenced by camera elevation (down). b) Reference image illustrating the original camera elevation (down) effect.}}{45}{figure.caption.47}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Results of CycleGAN image translation showcasing the camera elevation (up) effect. a) Translated images from the optimal setup to images influenced by camera elevation (up). b) Reference image illustrating the original camera elevation (up) effect.}}{46}{figure.caption.48}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Generator loss for A to B translation during training.}}{47}{figure.caption.49}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Discriminator losses during training: (a) loss for real images and (b) loss for fake images.}}{48}{figure.caption.50}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Generated images at varying denoising strengths.}}{50}{figure.caption.51}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparison of real and generated images for Nuts dataset}}{52}{figure.caption.52}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison of real and generated images for Candles dataset}}{53}{figure.caption.53}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparison of real and generated images for BNI dataset}}{54}{figure.caption.54}%
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison of real and generated images for PCB dataset}}{55}{figure.caption.55}%
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Comparison of real a) and CycleGAN-generated nut image b) with corresponding metric values.}}{57}{figure.caption.56}%
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Metric values for real a) and generated b) nut images}}{57}{figure.caption.57}%
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Metric values for two generated nut images}}{57}{figure.caption.58}%
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Metric values for real a) and generated b) candle images}}{58}{figure.caption.59}%
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Metric values for two generated candle images}}{58}{figure.caption.60}%
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Metric values for real a) and generated b) BNI images}}{59}{figure.caption.61}%
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Metric values for two generated BNI images}}{59}{figure.caption.62}%
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Comparison of real a) and generated b) PCB images along with their metric values.}}{59}{figure.caption.63}%
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Metric values for two generated PCB images}}{60}{figure.caption.64}%
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Comparison of Training and Validation Loss across Different Approaches}}{62}{figure.caption.65}%
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Comparison of Confusion Matrices across Different Approaches}}{64}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Generator loss for domain A (Optimal) to domain B (Bad influences) translation during training}}{48}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Discriminator losses during training: (a) loss for real images and (b) loss for fake images from domain B}}{49}{figure.caption.50}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Generated images at varying denoising strengths.}}{51}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Comparison of real and generated images for Nuts dataset}}{53}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Comparison of real and generated images for Candles dataset}}{54}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Comparison of real and generated images for BNI dataset}}{56}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Comparison of real and generated images for PCB dataset}}{57}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Comparison of real a) and CycleGAN-generated nut image b) with corresponding metric values.}}{58}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Metric values for real a) and generated b) nut images}}{59}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Metric values for two generated nut images}}{59}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Confusion matrix illustrating the performance of the Random Forest classifier in distinguishing between real and generated images.}}{61}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces PCA plot illustrating the distribution of feature vectors from real and generated images.}}{62}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Metric values for real a) and generated b) candle images}}{62}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Metric values for two generated candle images}}{62}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Metric values for real a) and generated b) BNI images}}{63}{figure.caption.66}%
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Metric values for two generated BNI images}}{63}{figure.caption.67}%
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Comparison of real a) and generated b) PCB images along with their metric values.}}{64}{figure.caption.68}%
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Metric values for two generated PCB images}}{64}{figure.caption.69}%
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Comparison of Training and Validation Loss across Different Approaches}}{66}{figure.caption.70}%
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Comparison of Confusion Matrices across Different Approaches}}{68}{figure.caption.71}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
