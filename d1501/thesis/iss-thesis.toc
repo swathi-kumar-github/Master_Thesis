@@ -1,3 +1,4 @@
+\contentsline {section}{Abstract}{i}{section*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement and Objectives}{1}{section.1.2}%
@@ -22,7 +23,7 @@
 \contentsline {section}{\numberline {3.2}Methods}{25}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Model Selection}{25}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}CycleGAN Method}{26}{subsection.3.2.2}%
-\contentsline {subsubsection}{\nonumberline Training Procedure}{30}{subsubsection*.35}%
+\contentsline {subsubsection}{\nonumberline Training Procedure}{30}{subsubsection*.36}%
 \contentsline {subsection}{\numberline {3.2.3}Stable Diffusion WebUI}{31}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Evaluation Metrics}{32}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Anomaly Detection on Nuts Dataset}{35}{subsection.3.2.5}%
@@ -36,17 +37,17 @@
 \contentsline {subsection}{\numberline {4.2.1}Impact of Denoising Strength on Image Generation}{50}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Generated Images Using Stable Diffusion}{51}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Evaluation Metrics for Assessing Image Quality and Similarity}{52}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Analysis of CycleGAN-Generated Images}{58}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Assessment of Outputs from Stable Diffusion}{58}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Anomaly Detection Results on the Nuts Dataset}{64}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Analysis of Loss Plots}{64}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Interpretation of Confusion Matrix and Metric Results}{65}{subsection.4.4.2}%
-\contentsline {chapter}{\numberline {5}Conclusion}{69}{chapter.5}%
-\contentsline {chapter}{\numberline {A}Models}{71}{appendix.A}%
-\contentsline {section}{\numberline {A.1}CycleGAN - Generator Model}{71}{section.A.1}%
-\contentsline {section}{\numberline {A.2}CycleGAN - Discriminator Model}{73}{section.A.2}%
-\contentsline {section}{\numberline {A.3}Requirements for Stable Diffusion Setup}{73}{section.A.3}%
-\contentsline {chapter}{\nonumberline List of Figures}{75}{chapter*.76}%
-\contentsline {chapter}{\nonumberline List of Tables}{79}{chapter*.77}%
-\contentsline {chapter}{\nonumberline Bibliography}{81}{chapter*.78}%
+\contentsline {subsection}{\numberline {4.3.1}Analysis of CycleGAN-Generated Images}{60}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Assessment of Outputs from Stable Diffusion}{60}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Anomaly Detection Results on the Nuts Dataset}{66}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Analysis of Loss Plots}{66}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Interpretation of Confusion Matrix and Metric Results}{67}{subsection.4.4.2}%
+\contentsline {chapter}{\numberline {5}Conclusion}{71}{chapter.5}%
+\contentsline {chapter}{\numberline {A}Models}{73}{appendix.A}%
+\contentsline {section}{\numberline {A.1}CycleGAN - Generator Model}{73}{section.A.1}%
+\contentsline {section}{\numberline {A.2}CycleGAN - Discriminator Model}{75}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Requirements for Stable Diffusion Setup}{75}{section.A.3}%
+\contentsline {chapter}{\nonumberline List of Figures}{77}{chapter*.79}%
+\contentsline {chapter}{\nonumberline List of Tables}{81}{chapter*.80}%
+\contentsline {chapter}{\nonumberline Bibliography}{83}{chapter*.81}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

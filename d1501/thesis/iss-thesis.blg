@@ -16,45 +16,45 @@ Database file #1: refs.bib
 Warning--empty journal in schonfeld2022improving
 
 Done.
-You've used 91 entries,
+You've used 94 entries,
             4186 wiz_defined-function locations,
-            1300 strings with 23472 characters,
-and the built_in function-call counts, 64164 in all, are:
-= -- 5126
-> -- 1564
-< -- 493
-+ -- 880
-- -- 309
-* -- 2976
-:= -- 9623
-add.period$ -- 198
-call.type$ -- 91
-change.case$ -- 93
-chr.to.int$ -- 1176
-cite$ -- 92
-duplicate$ -- 4717
-empty$ -- 5339
-format.name$ -- 339
-if$ -- 14753
+            1316 strings with 24038 characters,
+and the built_in function-call counts, 66464 in all, are:
+= -- 5307
+> -- 1627
+< -- 512
++ -- 914
+- -- 320
+* -- 3083
+:= -- 9956
+add.period$ -- 205
+call.type$ -- 94
+change.case$ -- 96
+chr.to.int$ -- 1224
+cite$ -- 95
+duplicate$ -- 4883
+empty$ -- 5528
+format.name$ -- 353
+if$ -- 15287
 int.to.chr$ -- 0
-int.to.str$ -- 91
-missing$ -- 826
-newline$ -- 312
-num.names$ -- 91
-pop$ -- 2026
+int.to.str$ -- 94
+missing$ -- 854
+newline$ -- 321
+num.names$ -- 94
+pop$ -- 2097
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 4956
+skip$ -- 5133
 stack$ -- 0
-substring$ -- 2954
-swap$ -- 3701
-text.length$ -- 101
+substring$ -- 3069
+swap$ -- 3833
+text.length$ -- 104
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 91
+type$ -- 94
 warning$ -- 1
-while$ -- 278
-width$ -- 93
-write$ -- 866
+while$ -- 289
+width$ -- 96
+write$ -- 893
 (There was 1 warning)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.26)  19 OCT 2024 17:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.26)  22 OCT 2024 13:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -914,55 +914,55 @@ File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 ) (iss-thesis.aux)
 \openout1 = `iss-thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 272.
-LaTeX Font Info:    Trying to load font information for OML+txmi on input line 272.
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 271.
+LaTeX Font Info:    Trying to load font information for OML+txmi on input line 271.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 272.
-LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 272.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 271.
+LaTeX Font Info:    Trying to load font information for OMS+txsy on input line 271.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 272.
-LaTeX Font Info:    Trying to load font information for OMX+txex on input line 272.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 271.
+LaTeX Font Info:    Trying to load font information for OMX+txex on input line 271.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 272.
-LaTeX Font Info:    Trying to load font information for U+txexa on input line 272.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 271.
+LaTeX Font Info:    Trying to load font information for U+txexa on input line 271.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 272.
-LaTeX Font Info:    ... okay on input line 272.
-Package scrbase Info: activating english \abstractname on input line 272.
-Package scrbase Info: activating english \partname on input line 272.
-Package scrbase Info: activating english \chaptername on input line 272.
-Package scrbase Info: activating english \appendixname on input line 272.
-Package scrbase Info: activating english \figurename on input line 272.
-Package scrbase Info: activating english \tablename on input line 272.
-Package scrbase Info: activating english \contentsname on input line 272.
-Package scrbase Info: activating english \listfigurename on input line 272.
-Package scrbase Info: activating english \listtablename on input line 272.
-Package scrbase Info: activating english \bibname on input line 272.
-Package scrbase Info: activating english \indexname on input line 272.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 271.
+LaTeX Font Info:    ... okay on input line 271.
+Package scrbase Info: activating english \abstractname on input line 271.
+Package scrbase Info: activating english \partname on input line 271.
+Package scrbase Info: activating english \chaptername on input line 271.
+Package scrbase Info: activating english \appendixname on input line 271.
+Package scrbase Info: activating english \figurename on input line 271.
+Package scrbase Info: activating english \tablename on input line 271.
+Package scrbase Info: activating english \contentsname on input line 271.
+Package scrbase Info: activating english \listfigurename on input line 271.
+Package scrbase Info: activating english \listtablename on input line 271.
+Package scrbase Info: activating english \bibname on input line 271.
+Package scrbase Info: activating english \indexname on input line 271.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -999,7 +999,7 @@ Package caption Info: End \AtBeginDocument code.
 ! Undefined control sequence.
 <argument> \sf@counterlist 
                            
-l.272 \begin{document}
+l.271 \begin{document}
                       
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1007,7 +1007,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Package hyperref Info: Link coloring ON on input line 272.
+Package hyperref Info: Link coloring ON on input line 271.
 (iss-thesis.out) (iss-thesis.out)
 \@outlinefile=\write4
 \openout4 = `iss-thesis.out'.
@@ -1019,7 +1019,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           `bookmarkpackage=false' before \begin{document} and
 (scrreprt)           you can avoid this message adding:
 (scrreprt)             \usepackage{bookmark}
-(scrreprt)           before \begin{document} on input line 272.
+(scrreprt)           before \begin{document} on input line 271.
  (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/bookmark\bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
 
@@ -1030,47 +1030,47 @@ File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
 <university-logo.pdf, id=6, 57.21375pt x 57.21375pt>
 File: university-logo.pdf Graphic file (type pdf)
 <use university-logo.pdf>
-Package pdftex.def Info: university-logo.pdf  used on input line 278.
+Package pdftex.def Info: university-logo.pdf  used on input line 276.
 (pdftex.def)             Requested size: 56.9055pt x 56.90804pt.
 <isslogocolor.pdf, id=7, 291.0875pt x 219.82124pt>
 File: isslogocolor.pdf Graphic file (type pdf)
 <use isslogocolor.pdf>
-Package pdftex.def Info: isslogocolor.pdf  used on input line 278.
+Package pdftex.def Info: isslogocolor.pdf  used on input line 276.
 (pdftex.def)             Requested size: 79.66771pt x 60.16087pt.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <12> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 278.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 276.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <17.28> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 278.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 276.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <24.88> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 278.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 276.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <14.4> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 278.
-LaTeX Font Info:    Trying to load font information for OT1+txr on input line 278.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 276.
+LaTeX Font Info:    Trying to load font information for OT1+txr on input line 276.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsya on input line 278.
+LaTeX Font Info:    Trying to load font information for U+txsya on input line 276.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyb on input line 278.
+LaTeX Font Info:    Trying to load font information for U+txsyb on input line 276.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txmia on input line 278.
+LaTeX Font Info:    Trying to load font information for U+txmia on input line 276.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for U+txsyc on input line 278.
+LaTeX Font Info:    Trying to load font information for U+txsyc on input line 276.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\utxsyc.fd
 File: utxsyc.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Trying to load font information for T1+txtt on input line 278.
+LaTeX Font Info:    Trying to load font information for T1+txtt on input line 276.
 
 (C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
@@ -1081,18 +1081,22 @@ File: t1txtt.fd 2000/12/15 v3.1
 
 
 {C:/Users/KUMARSW/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/KUMARSW/AppData/Local/Programs/MiKTeX/fonts
-/enc/dvips/base/8r.enc} <./university-logo.pdf> <./isslogocolor.pdf>] (iss-thesis.toc
+/enc/dvips/base/8r.enc} <./university-logo.pdf> <./isslogocolor.pdf>]
 
-[1
+[1]
+
+[2
 
 
-])
+] (iss-thesis.toc
+
+[3])
 \tf@toc=\write5
 \openout5 = `iss-thesis.toc'.
 
 
 
-[2]
+[4]
 chapter 1.
 
 Class scrreprt Warning: \float@addtolists detected!
@@ -1126,28 +1130,28 @@ chapter 2.
 
 
 ]
-<../media/Discriminative Vs Generative.PNG, id=166, 330.48468pt x 270.25969pt>
+<../media/Discriminative Vs Generative.PNG, id=177, 330.48468pt x 270.25969pt>
 File: ../media/Discriminative Vs Generative.PNG Graphic file (type png)
 <use ../media/Discriminative Vs Generative.PNG>
-Package pdftex.def Info: ../media/Discriminative Vs Generative.PNG  used on input line 318.
+Package pdftex.def Info: ../media/Discriminative Vs Generative.PNG  used on input line 330.
 (pdftex.def)             Requested size: 231.33769pt x 189.18048pt.
-<../media/Discriminative_model.png, id=172, 1192.455pt x 244.915pt>
+<../media/Discriminative_model.png, id=183, 1192.455pt x 244.915pt>
 File: ../media/Discriminative_model.png Graphic file (type png)
 <use ../media/Discriminative_model.png>
-Package pdftex.def Info: ../media/Discriminative_model.png  used on input line 330.
+Package pdftex.def Info: ../media/Discriminative_model.png  used on input line 342.
 (pdftex.def)             Requested size: 357.73926pt x 73.47505pt.
 
 
 [4 <../media/Discriminative Vs Generative.PNG>]
-<../media/Generative Model.png, id=191, 1264.725pt x 381.425pt>
+<../media/Generative Model.png, id=201, 1264.725pt x 381.425pt>
 File: ../media/Generative Model.png Graphic file (type png)
 <use ../media/Generative Model.png>
-Package pdftex.def Info: ../media/Generative Model.png  used on input line 343.
+Package pdftex.def Info: ../media/Generative Model.png  used on input line 355.
 (pdftex.def)             Requested size: 379.42043pt x 114.42838pt.
-<../media/synthetic_data_image-1536x718.png, id=195, 1156.32pt x 540.51938pt>
+<../media/synthetic_data_image-1536x718.png, id=208, 1156.32pt x 540.51938pt>
 File: ../media/synthetic_data_image-1536x718.png Graphic file (type png)
 <use ../media/synthetic_data_image-1536x718.png>
-Package pdftex.def Info: ../media/synthetic_data_image-1536x718.png  used on input line 352.
+Package pdftex.def Info: ../media/synthetic_data_image-1536x718.png  used on input line 364.
 (pdftex.def)             Requested size: 346.89868pt x 162.15706pt.
 
 
@@ -1157,72 +1161,67 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [6 <../media/synthetic_data_image-1536x718.png>]
-<../media/structure of GAN1.PNG, id=232, 606.46574pt x 144.54pt>
+<../media/structure of GAN1.PNG, id=249, 606.46574pt x 144.54pt>
 File: ../media/structure of GAN1.PNG Graphic file (type png)
 <use ../media/structure of GAN1.PNG>
-Package pdftex.def Info: ../media/structure of GAN1.PNG  used on input line 367.
+Package pdftex.def Info: ../media/structure of GAN1.PNG  used on input line 379.
 (pdftex.def)             Requested size: 424.52312pt x 101.17729pt.
 
 
 [7 <../media/structure of GAN1.PNG>]
-<../media/Conditional-GAN-architecture.png, id=263, 284.39583pt x 165.95334pt>
+<../media/Conditional-GAN-architecture.png, id=280, 284.39583pt x 165.95334pt>
 File: ../media/Conditional-GAN-architecture.png Graphic file (type png)
 <use ../media/Conditional-GAN-architecture.png>
-Package pdftex.def Info: ../media/Conditional-GAN-architecture.png  used on input line 391.
+Package pdftex.def Info: ../media/Conditional-GAN-architecture.png  used on input line 403.
 (pdftex.def)             Requested size: 255.95387pt x 149.35661pt.
 
 
 [8 <../media/Conditional-GAN-architecture.png>]
-<../media/Overview-of-CycleGAN-architecture.png, id=283, 438.13687pt x 302.63063pt>
+<../media/Overview-of-CycleGAN-architecture.png, id=302, 438.13687pt x 302.63063pt>
 File: ../media/Overview-of-CycleGAN-architecture.png Graphic file (type png)
 <use ../media/Overview-of-CycleGAN-architecture.png>
-Package pdftex.def Info: ../media/Overview-of-CycleGAN-architecture.png  used on input line 412.
+Package pdftex.def Info: ../media/Overview-of-CycleGAN-architecture.png  used on input line 425.
 (pdftex.def)             Requested size: 306.69371pt x 211.83998pt.
 
 
 [9 <../media/Overview-of-CycleGAN-architecture.png>]
 
 [10]
-<../media/diffusion_forward_process.png, id=323, 513.41812pt x 97.86563pt>
+<../media/diffusion_forward_process.png, id=341, 513.41812pt x 97.86563pt>
 File: ../media/diffusion_forward_process.png Graphic file (type png)
 <use ../media/diffusion_forward_process.png>
-Package pdftex.def Info: ../media/diffusion_forward_process.png  used on input line 474.
+Package pdftex.def Info: ../media/diffusion_forward_process.png  used on input line 487.
 (pdftex.def)             Requested size: 462.07202pt x 88.07823pt.
 
-Overfull \hbox (19.42836pt too wide) in paragraph at lines 474--475
+Overfull \hbox (19.42836pt too wide) in paragraph at lines 487--488
  [][] 
  []
 
-<../media/diffusion_reverse_process.png, id=329, 484.05844pt x 92.59593pt>
+<../media/diffusion_reverse_process.png, id=347, 484.05844pt x 92.59593pt>
 File: ../media/diffusion_reverse_process.png Graphic file (type png)
 <use ../media/diffusion_reverse_process.png>
-Package pdftex.def Info: ../media/diffusion_reverse_process.png  used on input line 489.
+Package pdftex.def Info: ../media/diffusion_reverse_process.png  used on input line 502.
 (pdftex.def)             Requested size: 435.64856pt x 83.33554pt.
 
 
 [11 <../media/diffusion_forward_process.png>]
-<../media/DallE-AvacadoArmchair_1208x459.jpg, id=353, 1212.53pt x 460.72125pt>
+<../media/DallE-AvacadoArmchair_1208x459.jpg, id=371, 1212.53pt x 460.72125pt>
 File: ../media/DallE-AvacadoArmchair_1208x459.jpg Graphic file (type jpg)
 <use ../media/DallE-AvacadoArmchair_1208x459.jpg>
-Package pdftex.def Info: ../media/DallE-AvacadoArmchair_1208x459.jpg  used on input line 499.
+Package pdftex.def Info: ../media/DallE-AvacadoArmchair_1208x459.jpg  used on input line 512.
 (pdftex.def)             Requested size: 363.76181pt x 138.21744pt.
 
 
 [12 <../media/diffusion_reverse_process.png> <../media/DallE-AvacadoArmchair_1208x459.jpg>]
-LaTeX Font Info:    Trying to load font information for TS1+txr on input line 518.
-
-(C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
-File: ts1txr.fd 2000/12/15 v3.1
-)
 
 [13]
-<../media/autoencoder-architecture.png, id=395, 853.1875pt x 397.485pt>
+<../media/autoencoder-architecture.png, id=413, 853.1875pt x 397.485pt>
 File: ../media/autoencoder-architecture.png Graphic file (type png)
 <use ../media/autoencoder-architecture.png>
-Package pdftex.def Info: ../media/autoencoder-architecture.png  used on input line 527.
+Package pdftex.def Info: ../media/autoencoder-architecture.png  used on input line 540.
 (pdftex.def)             Requested size: 469.25458pt x 218.61742pt.
 
-Overfull \hbox (26.61092pt too wide) in paragraph at lines 527--528
+Overfull \hbox (26.61092pt too wide) in paragraph at lines 540--541
  [][] 
  []
 
@@ -1237,107 +1236,107 @@ Overfull \hbox (26.61092pt too wide) in paragraph at lines 527--528
 
 ]
 chapter 3.
-<../media/Nuts-Optimal-OK.png, id=429, 963.6pt x 722.7pt>
+<../media/Nuts-Optimal-OK.png, id=446, 963.6pt x 722.7pt>
 File: ../media/Nuts-Optimal-OK.png Graphic file (type png)
 <use ../media/Nuts-Optimal-OK.png>
-Package pdftex.def Info: ../media/Nuts-Optimal-OK.png  used on input line 582.
+Package pdftex.def Info: ../media/Nuts-Optimal-OK.png  used on input line 595.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Nuts-optimal-NOK.png, id=430, 963.6pt x 722.7pt>
+<../media/Nuts-optimal-NOK.png, id=447, 963.6pt x 722.7pt>
 File: ../media/Nuts-optimal-NOK.png Graphic file (type png)
 <use ../media/Nuts-optimal-NOK.png>
-Package pdftex.def Info: ../media/Nuts-optimal-NOK.png  used on input line 589.
+Package pdftex.def Info: ../media/Nuts-optimal-NOK.png  used on input line 602.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Nuts-influence-shadow-OK.png, id=432, 963.6pt x 722.7pt>
+<../media/Nuts-influence-shadow-OK.png, id=449, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-shadow-OK.png Graphic file (type png)
 <use ../media/Nuts-influence-shadow-OK.png>
-Package pdftex.def Info: ../media/Nuts-influence-shadow-OK.png  used on input line 608.
+Package pdftex.def Info: ../media/Nuts-influence-shadow-OK.png  used on input line 621.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Nuts-influence-shadow-NOK.png, id=433, 963.6pt x 722.7pt>
+<../media/Nuts-influence-shadow-NOK.png, id=450, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-shadow-NOK.png Graphic file (type png)
 <use ../media/Nuts-influence-shadow-NOK.png>
-Package pdftex.def Info: ../media/Nuts-influence-shadow-NOK.png  used on input line 614.
+Package pdftex.def Info: ../media/Nuts-influence-shadow-NOK.png  used on input line 627.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
 
 
 [17]
-<../media/Nuts-influence-random-OK.png, id=443, 963.6pt x 722.7pt>
+<../media/Nuts-influence-random-OK.png, id=460, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-random-OK.png Graphic file (type png)
 <use ../media/Nuts-influence-random-OK.png>
-Package pdftex.def Info: ../media/Nuts-influence-random-OK.png  used on input line 628.
+Package pdftex.def Info: ../media/Nuts-influence-random-OK.png  used on input line 641.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Nuts-influence-random-NOK.png, id=444, 963.6pt x 722.7pt>
+<../media/Nuts-influence-random-NOK.png, id=461, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-random-NOK.png Graphic file (type png)
 <use ../media/Nuts-influence-random-NOK.png>
-Package pdftex.def Info: ../media/Nuts-influence-random-NOK.png  used on input line 634.
+Package pdftex.def Info: ../media/Nuts-influence-random-NOK.png  used on input line 647.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Nuts-influence-highGain-OK.png, id=446, 963.6pt x 722.7pt>
+<../media/Nuts-influence-highGain-OK.png, id=463, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-highGain-OK.png Graphic file (type png)
 <use ../media/Nuts-influence-highGain-OK.png>
-Package pdftex.def Info: ../media/Nuts-influence-highGain-OK.png  used on input line 647.
+Package pdftex.def Info: ../media/Nuts-influence-highGain-OK.png  used on input line 660.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Nuts-influence-highGain-NOK.png, id=447, 963.6pt x 722.7pt>
+<../media/Nuts-influence-highGain-NOK.png, id=464, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-highGain-NOK.png Graphic file (type png)
 <use ../media/Nuts-influence-highGain-NOK.png>
-Package pdftex.def Info: ../media/Nuts-influence-highGain-NOK.png  used on input line 653.
+Package pdftex.def Info: ../media/Nuts-influence-highGain-NOK.png  used on input line 666.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
 
 
 [18 <../media/Nuts-Optimal-OK.png> <../media/Nuts-optimal-NOK.png> <../media/Nuts-influence-shadow-OK.png> <../media/Nut
 s-influence-shadow-NOK.png>]
-<../media/Nuts-influence-plexiglas-OK.png, id=462, 963.6pt x 722.7pt>
+<../media/Nuts-influence-plexiglas-OK.png, id=479, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-plexiglas-OK.png Graphic file (type png)
 <use ../media/Nuts-influence-plexiglas-OK.png>
-Package pdftex.def Info: ../media/Nuts-influence-plexiglas-OK.png  used on input line 667.
+Package pdftex.def Info: ../media/Nuts-influence-plexiglas-OK.png  used on input line 680.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Nuts-influence-plexiglas-NOK.png, id=463, 963.6pt x 722.7pt>
+<../media/Nuts-influence-plexiglas-NOK.png, id=480, 963.6pt x 722.7pt>
 File: ../media/Nuts-influence-plexiglas-NOK.png Graphic file (type png)
 <use ../media/Nuts-influence-plexiglas-NOK.png>
-Package pdftex.def Info: ../media/Nuts-influence-plexiglas-NOK.png  used on input line 673.
+Package pdftex.def Info: ../media/Nuts-influence-plexiglas-NOK.png  used on input line 686.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
 
 
 [19 <../media/Nuts-influence-random-OK.png> <../media/Nuts-influence-random-NOK.png> <../media/Nuts-influence-highGain-O
 K.png> <../media/Nuts-influence-highGain-NOK.png> <../media/Nuts-influence-plexiglas-OK.png> <../media/Nuts-influence-pl
 exiglas-NOK.png>]
-<../media/Candles-optimal-OK.png, id=479, 963.6pt x 722.7pt>
+<../media/Candles-optimal-OK.png, id=496, 963.6pt x 722.7pt>
 File: ../media/Candles-optimal-OK.png Graphic file (type png)
 <use ../media/Candles-optimal-OK.png>
-Package pdftex.def Info: ../media/Candles-optimal-OK.png  used on input line 709.
+Package pdftex.def Info: ../media/Candles-optimal-OK.png  used on input line 722.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-optimal-NOK.png, id=480, 963.6pt x 722.7pt>
+<../media/Candles-optimal-NOK.png, id=497, 963.6pt x 722.7pt>
 File: ../media/Candles-optimal-NOK.png Graphic file (type png)
 <use ../media/Candles-optimal-NOK.png>
-Package pdftex.def Info: ../media/Candles-optimal-NOK.png  used on input line 716.
+Package pdftex.def Info: ../media/Candles-optimal-NOK.png  used on input line 729.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-influence-sunlight-OK.png, id=482, 963.6pt x 722.7pt>
+<../media/Candles-influence-sunlight-OK.png, id=499, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-sunlight-OK.png Graphic file (type png)
 <use ../media/Candles-influence-sunlight-OK.png>
-Package pdftex.def Info: ../media/Candles-influence-sunlight-OK.png  used on input line 735.
+Package pdftex.def Info: ../media/Candles-influence-sunlight-OK.png  used on input line 748.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-influence-sunlight-NOK.png, id=483, 963.6pt x 722.7pt>
+<../media/Candles-influence-sunlight-NOK.png, id=500, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-sunlight-NOK.png Graphic file (type png)
 <use ../media/Candles-influence-sunlight-NOK.png>
-Package pdftex.def Info: ../media/Candles-influence-sunlight-NOK.png  used on input line 741.
+Package pdftex.def Info: ../media/Candles-influence-sunlight-NOK.png  used on input line 754.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-influence-random-OK.png, id=485, 963.6pt x 722.7pt>
+<../media/Candles-influence-random-OK.png, id=502, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-random-OK.png Graphic file (type png)
 <use ../media/Candles-influence-random-OK.png>
-Package pdftex.def Info: ../media/Candles-influence-random-OK.png  used on input line 756.
+Package pdftex.def Info: ../media/Candles-influence-random-OK.png  used on input line 769.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-influence-random-NOK.png, id=486, 963.6pt x 722.7pt>
+<../media/Candles-influence-random-NOK.png, id=503, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-random-NOK.png Graphic file (type png)
 <use ../media/Candles-influence-random-NOK.png>
-Package pdftex.def Info: ../media/Candles-influence-random-NOK.png  used on input line 762.
+Package pdftex.def Info: ../media/Candles-influence-random-NOK.png  used on input line 775.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-influence-camera-down-OK.png, id=488, 963.6pt x 722.7pt>
+<../media/Candles-influence-camera-down-OK.png, id=505, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-camera-down-OK.png Graphic file (type png)
 <use ../media/Candles-influence-camera-down-OK.png>
-Package pdftex.def Info: ../media/Candles-influence-camera-down-OK.png  used on input line 777.
+Package pdftex.def Info: ../media/Candles-influence-camera-down-OK.png  used on input line 790.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-influence-camera-down-NOK.png, id=489, 963.6pt x 722.7pt>
+<../media/Candles-influence-camera-down-NOK.png, id=506, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-camera-down-NOK.png Graphic file (type png)
 <use ../media/Candles-influence-camera-down-NOK.png>
-Package pdftex.def Info: ../media/Candles-influence-camera-down-NOK.png  used on input line 783.
+Package pdftex.def Info: ../media/Candles-influence-camera-down-NOK.png  used on input line 796.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
 
 
@@ -1345,93 +1344,93 @@ Package pdftex.def Info: ../media/Candles-influence-camera-down-NOK.png  used on
 
 [21 <../media/Candles-influence-sunlight-OK.png> <../media/Candles-influence-sunlight-NOK.png> <../media/Candles-influen
 ce-random-OK.png> <../media/Candles-influence-random-NOK.png>]
-<../media/Candles-influence-camera-up-OK.png, id=511, 963.6pt x 722.7pt>
+<../media/Candles-influence-camera-up-OK.png, id=529, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-camera-up-OK.png Graphic file (type png)
 <use ../media/Candles-influence-camera-up-OK.png>
-Package pdftex.def Info: ../media/Candles-influence-camera-up-OK.png  used on input line 798.
+Package pdftex.def Info: ../media/Candles-influence-camera-up-OK.png  used on input line 811.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/Candles-influence-camera-up-NOK.png, id=512, 963.6pt x 722.7pt>
+<../media/Candles-influence-camera-up-NOK.png, id=530, 963.6pt x 722.7pt>
 File: ../media/Candles-influence-camera-up-NOK.png Graphic file (type png)
 <use ../media/Candles-influence-camera-up-NOK.png>
-Package pdftex.def Info: ../media/Candles-influence-camera-up-NOK.png  used on input line 804.
+Package pdftex.def Info: ../media/Candles-influence-camera-up-NOK.png  used on input line 817.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
 
 
 [22 <../media/Candles-influence-camera-down-OK.png> <../media/Candles-influence-camera-down-NOK.png> <../media/Candles-i
 nfluence-camera-up-OK.png> <../media/Candles-influence-camera-up-NOK.png>]
-<../media/BNI-optimal-OK.png, id=528, 963.6pt x 722.7pt>
+<../media/BNI-optimal-OK.png, id=545, 963.6pt x 722.7pt>
 File: ../media/BNI-optimal-OK.png Graphic file (type png)
 <use ../media/BNI-optimal-OK.png>
-Package pdftex.def Info: ../media/BNI-optimal-OK.png  used on input line 838.
+Package pdftex.def Info: ../media/BNI-optimal-OK.png  used on input line 851.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-optimal-NOK.png, id=529, 963.6pt x 722.7pt>
+<../media/BNI-optimal-NOK.png, id=546, 963.6pt x 722.7pt>
 File: ../media/BNI-optimal-NOK.png Graphic file (type png)
 <use ../media/BNI-optimal-NOK.png>
-Package pdftex.def Info: ../media/BNI-optimal-NOK.png  used on input line 845.
+Package pdftex.def Info: ../media/BNI-optimal-NOK.png  used on input line 858.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-influence-left-OK.png, id=531, 963.6pt x 722.7pt>
+<../media/BNI-influence-left-OK.png, id=548, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-left-OK.png Graphic file (type png)
 <use ../media/BNI-influence-left-OK.png>
-Package pdftex.def Info: ../media/BNI-influence-left-OK.png  used on input line 864.
+Package pdftex.def Info: ../media/BNI-influence-left-OK.png  used on input line 877.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-influence-left-NOK.png, id=532, 963.6pt x 722.7pt>
+<../media/BNI-influence-left-NOK.png, id=549, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-left-NOK.png Graphic file (type png)
 <use ../media/BNI-influence-left-NOK.png>
-Package pdftex.def Info: ../media/BNI-influence-left-NOK.png  used on input line 870.
+Package pdftex.def Info: ../media/BNI-influence-left-NOK.png  used on input line 883.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-influence-right-OK.png, id=534, 963.6pt x 722.7pt>
+<../media/BNI-influence-right-OK.png, id=551, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-right-OK.png Graphic file (type png)
 <use ../media/BNI-influence-right-OK.png>
-Package pdftex.def Info: ../media/BNI-influence-right-OK.png  used on input line 884.
+Package pdftex.def Info: ../media/BNI-influence-right-OK.png  used on input line 897.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-influence-right-NOK.png, id=535, 963.6pt x 722.7pt>
+<../media/BNI-influence-right-NOK.png, id=552, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-right-NOK.png Graphic file (type png)
 <use ../media/BNI-influence-right-NOK.png>
-Package pdftex.def Info: ../media/BNI-influence-right-NOK.png  used on input line 890.
+Package pdftex.def Info: ../media/BNI-influence-right-NOK.png  used on input line 903.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
 
 
 [23 <../media/BNI-optimal-OK.png> <../media/BNI-optimal-NOK.png> <../media/BNI-influence-left-OK.png> <../media/BNI-infl
 uence-left-NOK.png>]
-<../media/BNI-influence-lighting-OK.png, id=550, 963.6pt x 722.7pt>
+<../media/BNI-influence-lighting-OK.png, id=567, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-lighting-OK.png Graphic file (type png)
 <use ../media/BNI-influence-lighting-OK.png>
-Package pdftex.def Info: ../media/BNI-influence-lighting-OK.png  used on input line 904.
+Package pdftex.def Info: ../media/BNI-influence-lighting-OK.png  used on input line 917.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-influence-lighting-NOK.png, id=551, 963.6pt x 722.7pt>
+<../media/BNI-influence-lighting-NOK.png, id=568, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-lighting-NOK.png Graphic file (type png)
 <use ../media/BNI-influence-lighting-NOK.png>
-Package pdftex.def Info: ../media/BNI-influence-lighting-NOK.png  used on input line 910.
+Package pdftex.def Info: ../media/BNI-influence-lighting-NOK.png  used on input line 923.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-influence-random-OK.png, id=553, 963.6pt x 722.7pt>
+<../media/BNI-influence-random-OK.png, id=570, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-random-OK.png Graphic file (type png)
 <use ../media/BNI-influence-random-OK.png>
-Package pdftex.def Info: ../media/BNI-influence-random-OK.png  used on input line 924.
+Package pdftex.def Info: ../media/BNI-influence-random-OK.png  used on input line 937.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/BNI-influence-random-NOK.png, id=554, 963.6pt x 722.7pt>
+<../media/BNI-influence-random-NOK.png, id=571, 963.6pt x 722.7pt>
 File: ../media/BNI-influence-random-NOK.png Graphic file (type png)
 <use ../media/BNI-influence-random-NOK.png>
-Package pdftex.def Info: ../media/BNI-influence-random-NOK.png  used on input line 930.
+Package pdftex.def Info: ../media/BNI-influence-random-NOK.png  used on input line 943.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/PCB-optimal-OK.png, id=557, 963.6pt x 722.7pt>
+<../media/PCB-optimal-OK.png, id=574, 963.6pt x 722.7pt>
 File: ../media/PCB-optimal-OK.png Graphic file (type png)
 <use ../media/PCB-optimal-OK.png>
-Package pdftex.def Info: ../media/PCB-optimal-OK.png  used on input line 960.
+Package pdftex.def Info: ../media/PCB-optimal-OK.png  used on input line 973.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/PCB-optimal-NOK.png, id=558, 963.6pt x 722.7pt>
+<../media/PCB-optimal-NOK.png, id=575, 963.6pt x 722.7pt>
 File: ../media/PCB-optimal-NOK.png Graphic file (type png)
 <use ../media/PCB-optimal-NOK.png>
-Package pdftex.def Info: ../media/PCB-optimal-NOK.png  used on input line 967.
+Package pdftex.def Info: ../media/PCB-optimal-NOK.png  used on input line 980.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/PCB-influence-OK.png, id=559, 963.6pt x 722.7pt>
+<../media/PCB-influence-OK.png, id=576, 963.6pt x 722.7pt>
 File: ../media/PCB-influence-OK.png Graphic file (type png)
 <use ../media/PCB-influence-OK.png>
-Package pdftex.def Info: ../media/PCB-influence-OK.png  used on input line 974.
+Package pdftex.def Info: ../media/PCB-influence-OK.png  used on input line 987.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
-<../media/PCB-influence-NOK.png, id=560, 963.6pt x 722.7pt>
+<../media/PCB-influence-NOK.png, id=577, 963.6pt x 722.7pt>
 File: ../media/PCB-influence-NOK.png Graphic file (type png)
 <use ../media/PCB-influence-NOK.png>
-Package pdftex.def Info: ../media/PCB-influence-NOK.png  used on input line 981.
+Package pdftex.def Info: ../media/PCB-influence-NOK.png  used on input line 994.
 (pdftex.def)             Requested size: 144.53375pt x 108.40031pt.
 
 
@@ -1439,23 +1438,28 @@ Package pdftex.def Info: ../media/PCB-influence-NOK.png  used on input line 981.
 > <../media/BNI-influence-lighting-NOK.png>]
 
 [25 <../media/BNI-influence-random-OK.png> <../media/BNI-influence-random-NOK.png>]
+LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1022.
+
+(C:\Users\KUMARSW\AppData\Local\Programs\MiKTeX\tex/latex/txfonts\ts1txr.fd
+File: ts1txr.fd 2000/12/15 v3.1
+)
 
 [26 <../media/PCB-optimal-OK.png> <../media/PCB-optimal-NOK.png> <../media/PCB-influence-OK.png> <../media/PCB-influence
 -NOK.png>]
-<../media/Original1.png, id=596, 513.92pt x 513.92pt>
+<../media/Original1.png, id=615, 513.92pt x 513.92pt>
 File: ../media/Original1.png Graphic file (type png)
 <use ../media/Original1.png>
-Package pdftex.def Info: ../media/Original1.png  used on input line 1036.
+Package pdftex.def Info: ../media/Original1.png  used on input line 1049.
 (pdftex.def)             Requested size: 77.08467pt x 77.08467pt.
-<../media/augmented_horizontal_flip.png, id=597, 513.92pt x 513.92pt>
+<../media/augmented_horizontal_flip.png, id=616, 513.92pt x 513.92pt>
 File: ../media/augmented_horizontal_flip.png Graphic file (type png)
 <use ../media/augmented_horizontal_flip.png>
-Package pdftex.def Info: ../media/augmented_horizontal_flip.png  used on input line 1042.
+Package pdftex.def Info: ../media/augmented_horizontal_flip.png  used on input line 1055.
 (pdftex.def)             Requested size: 77.08467pt x 77.08467pt.
 
 
 [27 <../media/Original1.png (PNG copy)> <../media/augmented_horizontal_flip.png (PNG copy)>]
-Underfull \hbox (badness 2213) in paragraph at lines 1072--1073
+Underfull \hbox (badness 2213) in paragraph at lines 1085--1086
 []\T1/txr/bx/n/12 Discriminator-B\T1/txr/m/n/12 : Sim-i-larly, this dis-crim-i-na-tor as-sesses real im-ages from
  []
 
@@ -1464,39 +1468,39 @@ Underfull \hbox (badness 2213) in paragraph at lines 1072--1073
 [28]
 
 [29]
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1153
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1166
 []|\T1/txr/m/n/12 Total num-ber of train-ing
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1153
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1166
 []|\T1/txr/m/n/12 Momentum term for the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1153--1153
+Underfull \hbox (badness 10000) in paragraph at lines 1166--1166
 []|\T1/txr/m/n/12 Number of fake im-ages
  []
 
 
 
 [30]
-<../media/stable_diffusion_checkpoint.PNG, id=638, 391.4625pt x 102.3825pt>
+<../media/stable_diffusion_checkpoint.PNG, id=656, 391.4625pt x 102.3825pt>
 File: ../media/stable_diffusion_checkpoint.PNG Graphic file (type png)
 <use ../media/stable_diffusion_checkpoint.PNG>
-Package pdftex.def Info: ../media/stable_diffusion_checkpoint.PNG  used on input line 1169.
+Package pdftex.def Info: ../media/stable_diffusion_checkpoint.PNG  used on input line 1182.
 (pdftex.def)             Requested size: 352.31299pt x 92.14339pt.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <8> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 1177.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 1190.
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <6> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 1177.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 1190.
 
 
 [31 <../media/stable_diffusion_checkpoint.PNG>]
-<../media/stable_diffusion_webui.PNG, id=654, 523.9575pt x 532.99126pt>
+<../media/stable_diffusion_webui.PNG, id=672, 523.9575pt x 532.99126pt>
 File: ../media/stable_diffusion_webui.PNG Graphic file (type png)
 <use ../media/stable_diffusion_webui.PNG>
-Package pdftex.def Info: ../media/stable_diffusion_webui.PNG  used on input line 1197.
+Package pdftex.def Info: ../media/stable_diffusion_webui.PNG  used on input line 1210.
 (pdftex.def)             Requested size: 314.37692pt x 319.79723pt.
 
 
@@ -1517,76 +1521,76 @@ Package pdftex.def Info: ../media/stable_diffusion_webui.PNG  used on input line
 
 ]
 chapter 4.
-<../media/Shadow.png, id=741, 375.0813pt x 224.037pt>
+<../media/Shadow.png, id=759, 375.0813pt x 224.037pt>
 File: ../media/Shadow.png Graphic file (type png)
 <use ../media/Shadow.png>
-Package pdftex.def Info: ../media/Shadow.png  used on input line 1403.
+Package pdftex.def Info: ../media/Shadow.png  used on input line 1416.
 (pdftex.def)             Requested size: 442.64366pt x 264.40237pt.
-<../media/shadow_real.png, id=742, 963.6pt x 722.7pt>
+<../media/shadow_real.png, id=760, 963.6pt x 722.7pt>
 File: ../media/shadow_real.png Graphic file (type png)
 <use ../media/shadow_real.png>
-Package pdftex.def Info: ../media/shadow_real.png  used on input line 1409.
+Package pdftex.def Info: ../media/shadow_real.png  used on input line 1422.
 (pdftex.def)             Requested size: 110.6609pt x 82.99295pt.
 
 
 [39]
 
 [40 <../media/Shadow.png> <../media/shadow_real.png>]
-<../media/high_gain.png, id=759, 370.7451pt x 221.1462pt>
+<../media/high_gain.png, id=776, 370.7451pt x 221.1462pt>
 File: ../media/high_gain.png Graphic file (type png)
 <use ../media/high_gain.png>
-Package pdftex.def Info: ../media/high_gain.png  used on input line 1428.
+Package pdftex.def Info: ../media/high_gain.png  used on input line 1441.
 (pdftex.def)             Requested size: 442.64366pt x 264.04794pt.
-<../media/high_gain_real.png, id=760, 963.6pt x 722.7pt>
+<../media/high_gain_real.png, id=777, 963.6pt x 722.7pt>
 File: ../media/high_gain_real.png Graphic file (type png)
 <use ../media/high_gain_real.png>
-Package pdftex.def Info: ../media/high_gain_real.png  used on input line 1434.
+Package pdftex.def Info: ../media/high_gain_real.png  used on input line 1447.
 (pdftex.def)             Requested size: 110.6609pt x 82.99295pt.
 
 
 [41 <../media/high_gain.png> <../media/high_gain_real.png>]
-<../media/plexiglas.png, id=773, 367.8543pt x 214.6419pt>
+<../media/plexiglas.png, id=790, 367.8543pt x 214.6419pt>
 File: ../media/plexiglas.png Graphic file (type png)
 <use ../media/plexiglas.png>
-Package pdftex.def Info: ../media/plexiglas.png  used on input line 1452.
+Package pdftex.def Info: ../media/plexiglas.png  used on input line 1465.
 (pdftex.def)             Requested size: 442.64366pt x 258.28624pt.
-<../media/plexiglas_real.png, id=774, 963.6pt x 722.7pt>
+<../media/plexiglas_real.png, id=791, 963.6pt x 722.7pt>
 File: ../media/plexiglas_real.png Graphic file (type png)
 <use ../media/plexiglas_real.png>
-Package pdftex.def Info: ../media/plexiglas_real.png  used on input line 1458.
+Package pdftex.def Info: ../media/plexiglas_real.png  used on input line 1471.
 (pdftex.def)             Requested size: 110.6609pt x 82.99295pt.
 
 
 [42 <../media/plexiglas.png> <../media/plexiglas_real.png>]
-<../media/candles_sunlight.png, id=786, 367.1316pt x 215.3646pt>
+<../media/candles_sunlight.png, id=803, 367.1316pt x 215.3646pt>
 File: ../media/candles_sunlight.png Graphic file (type png)
 <use ../media/candles_sunlight.png>
-Package pdftex.def Info: ../media/candles_sunlight.png  used on input line 1487.
+Package pdftex.def Info: ../media/candles_sunlight.png  used on input line 1500.
 (pdftex.def)             Requested size: 442.64366pt x 259.66196pt.
-<../media/candles_sunlight_real.png, id=787, 963.6pt x 722.7pt>
+<../media/candles_sunlight_real.png, id=804, 963.6pt x 722.7pt>
 File: ../media/candles_sunlight_real.png Graphic file (type png)
 <use ../media/candles_sunlight_real.png>
-Package pdftex.def Info: ../media/candles_sunlight_real.png  used on input line 1493.
+Package pdftex.def Info: ../media/candles_sunlight_real.png  used on input line 1506.
 (pdftex.def)             Requested size: 110.6609pt x 82.99295pt.
-<../media/candles_bright.png, id=789, 362.7954pt x 212.4738pt>
+<../media/candles_bright.png, id=806, 362.7954pt x 212.4738pt>
 File: ../media/candles_bright.png Graphic file (type png)
 <use ../media/candles_bright.png>
-Package pdftex.def Info: ../media/candles_bright.png  used on input line 1508.
+Package pdftex.def Info: ../media/candles_bright.png  used on input line 1521.
 (pdftex.def)             Requested size: 442.64366pt x 259.24681pt.
-<../media/candles_bright_real.png, id=790, 963.6pt x 722.7pt>
+<../media/candles_bright_real.png, id=807, 963.6pt x 722.7pt>
 File: ../media/candles_bright_real.png Graphic file (type png)
 <use ../media/candles_bright_real.png>
-Package pdftex.def Info: ../media/candles_bright_real.png  used on input line 1514.
+Package pdftex.def Info: ../media/candles_bright_real.png  used on input line 1527.
 (pdftex.def)             Requested size: 110.6609pt x 82.99295pt.
-<../media/candles_dark.png, id=792, 367.1316pt x 213.1965pt>
+<../media/candles_dark.png, id=809, 367.1316pt x 213.1965pt>
 File: ../media/candles_dark.png Graphic file (type png)
 <use ../media/candles_dark.png>
-Package pdftex.def Info: ../media/candles_dark.png  used on input line 1529.
+Package pdftex.def Info: ../media/candles_dark.png  used on input line 1542.
 (pdftex.def)             Requested size: 442.64366pt x 257.04791pt.
-<../media/candles_dark_real.png, id=793, 963.6pt x 722.7pt>
+<../media/candles_dark_real.png, id=810, 963.6pt x 722.7pt>
 File: ../media/candles_dark_real.png Graphic file (type png)
 <use ../media/candles_dark_real.png>
-Package pdftex.def Info: ../media/candles_dark_real.png  used on input line 1535.
+Package pdftex.def Info: ../media/candles_dark_real.png  used on input line 1548.
 (pdftex.def)             Requested size: 110.6609pt x 82.99295pt.
 
 
@@ -1597,20 +1601,20 @@ Package pdftex.def Info: ../media/candles_dark_real.png  used on input line 1535
 [45 <../media/candles_bright.png> <../media/candles_bright_real.png>]
 
 [46 <../media/candles_dark.png> <../media/candles_dark_real.png>]
-<../media/generator_loss.png, id=823, 722.7pt x 361.35pt>
+<../media/generator_loss.png, id=840, 722.7pt x 361.35pt>
 File: ../media/generator_loss.png Graphic file (type png)
 <use ../media/generator_loss.png>
-Package pdftex.def Info: ../media/generator_loss.png  used on input line 1555.
+Package pdftex.def Info: ../media/generator_loss.png  used on input line 1568.
 (pdftex.def)             Requested size: 433.62334pt x 216.81168pt.
-<../media/discriminator_loss_real.png, id=825, 722.7pt x 361.35pt>
+<../media/discriminator_loss_real.png, id=842, 722.7pt x 361.35pt>
 File: ../media/discriminator_loss_real.png Graphic file (type png)
 <use ../media/discriminator_loss_real.png>
-Package pdftex.def Info: ../media/discriminator_loss_real.png  used on input line 1566.
+Package pdftex.def Info: ../media/discriminator_loss_real.png  used on input line 1579.
 (pdftex.def)             Requested size: 442.64366pt x 221.32191pt.
-<../media/discriminator_loss_fake.png, id=826, 722.7pt x 361.35pt>
+<../media/discriminator_loss_fake.png, id=843, 722.7pt x 361.35pt>
 File: ../media/discriminator_loss_fake.png Graphic file (type png)
 <use ../media/discriminator_loss_fake.png>
-Package pdftex.def Info: ../media/discriminator_loss_fake.png  used on input line 1572.
+Package pdftex.def Info: ../media/discriminator_loss_fake.png  used on input line 1585.
 (pdftex.def)             Requested size: 442.64366pt x 221.32191pt.
 
 
@@ -1619,68 +1623,68 @@ Package pdftex.def Info: ../media/discriminator_loss_fake.png  used on input lin
 [48 <../media/generator_loss.png>]
 
 [49 <../media/discriminator_loss_real.png> <../media/discriminator_loss_fake.png>]
-<../media/image_original.png, id=851, 513.92pt x 513.92pt>
+<../media/image_original.png, id=868, 513.92pt x 513.92pt>
 File: ../media/image_original.png Graphic file (type png)
 <use ../media/image_original.png>
-Package pdftex.def Info: ../media/image_original.png  used on input line 1609.
+Package pdftex.def Info: ../media/image_original.png  used on input line 1622.
 (pdftex.def)             Requested size: 101.80614pt x 101.80194pt.
-<../media/image_0.0.png, id=852, 513.92pt x 513.92pt>
+<../media/image_0.0.png, id=869, 513.92pt x 513.92pt>
 File: ../media/image_0.0.png Graphic file (type png)
 <use ../media/image_0.0.png>
-Package pdftex.def Info: ../media/image_0.0.png  used on input line 1614.
+Package pdftex.def Info: ../media/image_0.0.png  used on input line 1627.
 (pdftex.def)             Requested size: 101.80614pt x 101.80194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1615--1615
+Underfull \hbox (badness 10000) in paragraph at lines 1628--1628
 [][]|\T1/txr/m/n/10 De-nois-ing Strength
  []
 
-<../media/image_0.1.png, id=853, 513.92pt x 513.92pt>
+<../media/image_0.1.png, id=870, 513.92pt x 513.92pt>
 File: ../media/image_0.1.png Graphic file (type png)
 <use ../media/image_0.1.png>
-Package pdftex.def Info: ../media/image_0.1.png  used on input line 1619.
+Package pdftex.def Info: ../media/image_0.1.png  used on input line 1632.
 (pdftex.def)             Requested size: 101.80614pt x 101.80194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1620--1620
+Underfull \hbox (badness 10000) in paragraph at lines 1633--1633
 [][]|\T1/txr/m/n/10 De-nois-ing Strength
  []
 
-<../media/image_0.2.png, id=854, 513.92pt x 513.92pt>
+<../media/image_0.2.png, id=871, 513.92pt x 513.92pt>
 File: ../media/image_0.2.png Graphic file (type png)
 <use ../media/image_0.2.png>
-Package pdftex.def Info: ../media/image_0.2.png  used on input line 1624.
+Package pdftex.def Info: ../media/image_0.2.png  used on input line 1637.
 (pdftex.def)             Requested size: 101.80614pt x 101.80194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1625--1625
+Underfull \hbox (badness 10000) in paragraph at lines 1638--1638
 [][]|\T1/txr/m/n/10 De-nois-ing Strength
  []
 
-<../media/image_0.3.png, id=855, 513.92pt x 513.92pt>
+<../media/image_0.3.png, id=872, 513.92pt x 513.92pt>
 File: ../media/image_0.3.png Graphic file (type png)
 <use ../media/image_0.3.png>
-Package pdftex.def Info: ../media/image_0.3.png  used on input line 1631.
+Package pdftex.def Info: ../media/image_0.3.png  used on input line 1644.
 (pdftex.def)             Requested size: 101.80614pt x 101.80194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1632--1632
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
 [][]|\T1/txr/m/n/10 De-nois-ing Strength
  []
 
-<../media/image_0.5.png, id=856, 513.92pt x 513.92pt>
+<../media/image_0.5.png, id=873, 513.92pt x 513.92pt>
 File: ../media/image_0.5.png Graphic file (type png)
 <use ../media/image_0.5.png>
-Package pdftex.def Info: ../media/image_0.5.png  used on input line 1636.
+Package pdftex.def Info: ../media/image_0.5.png  used on input line 1649.
 (pdftex.def)             Requested size: 101.80614pt x 101.80194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1637--1637
+Underfull \hbox (badness 10000) in paragraph at lines 1650--1650
 [][]|\T1/txr/m/n/10 De-nois-ing Strength
  []
 
-<../media/image_0.75.png, id=857, 513.92pt x 513.92pt>
+<../media/image_0.75.png, id=874, 513.92pt x 513.92pt>
 File: ../media/image_0.75.png Graphic file (type png)
 <use ../media/image_0.75.png>
-Package pdftex.def Info: ../media/image_0.75.png  used on input line 1641.
+Package pdftex.def Info: ../media/image_0.75.png  used on input line 1654.
 (pdftex.def)             Requested size: 101.80614pt x 101.80194pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1642--1642
+Underfull \hbox (badness 10000) in paragraph at lines 1655--1655
 [][]|\T1/txr/m/n/10 De-nois-ing Strength
  []
 
@@ -1691,203 +1695,239 @@ Underfull \hbox (badness 10000) in paragraph at lines 1642--1642
 [51 <../media/image_original.png (PNG copy)> <../media/image_0.0.png (PNG copy)> <../media/image_0.1.png (PNG copy)> <..
 /media/image_0.2.png (PNG copy)> <../media/image_0.3.png (PNG copy)> <../media/image_0.5.png (PNG copy)> <../media/image
 _0.75.png (PNG copy)>]
-<../media/diff_nuts_optimal_real.png, id=868, 513.92pt x 513.92pt>
+<../media/diff_nuts_optimal_real.png, id=886, 513.92pt x 513.92pt>
 File: ../media/diff_nuts_optimal_real.png Graphic file (type png)
 <use ../media/diff_nuts_optimal_real.png>
-Package pdftex.def Info: ../media/diff_nuts_optimal_real.png  used on input line 1667.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_optimal_fake.png, id=869, 513.92pt x 513.92pt>
+Package pdftex.def Info: ../media/diff_nuts_optimal_real.png  used on input line 1681.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_nuts_optimal_fake.png, id=887, 513.92pt x 513.92pt>
 File: ../media/diff_nuts_optimal_fake.png Graphic file (type png)
 <use ../media/diff_nuts_optimal_fake.png>
-Package pdftex.def Info: ../media/diff_nuts_optimal_fake.png  used on input line 1672.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_shadow_real.png, id=870, 513.92pt x 513.92pt>
+Package pdftex.def Info: ../media/diff_nuts_optimal_fake.png  used on input line 1686.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_nuts_shadow_real.png, id=888, 513.92pt x 513.92pt>
 File: ../media/diff_nuts_shadow_real.png Graphic file (type png)
 <use ../media/diff_nuts_shadow_real.png>
-Package pdftex.def Info: ../media/diff_nuts_shadow_real.png  used on input line 1681.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_shadow_fake.png, id=871, 513.92pt x 513.92pt>
+Package pdftex.def Info: ../media/diff_nuts_shadow_real.png  used on input line 1695.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_nuts_shadow_fake.png, id=889, 513.92pt x 513.92pt>
 File: ../media/diff_nuts_shadow_fake.png Graphic file (type png)
 <use ../media/diff_nuts_shadow_fake.png>
-Package pdftex.def Info: ../media/diff_nuts_shadow_fake.png  used on input line 1686.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_random_real.png, id=872, 513.92pt x 513.92pt>
+Package pdftex.def Info: ../media/diff_nuts_shadow_fake.png  used on input line 1700.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_nuts_random_real.png, id=890, 513.92pt x 513.92pt>
 File: ../media/diff_nuts_random_real.png Graphic file (type png)
 <use ../media/diff_nuts_random_real.png>
-Package pdftex.def Info: ../media/diff_nuts_random_real.png  used on input line 1695.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_random_fake.png, id=873, 513.92pt x 513.92pt>
+Package pdftex.def Info: ../media/diff_nuts_random_real.png  used on input line 1709.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_nuts_random_fake.png, id=891, 513.92pt x 513.92pt>
 File: ../media/diff_nuts_random_fake.png Graphic file (type png)
 <use ../media/diff_nuts_random_fake.png>
-Package pdftex.def Info: ../media/diff_nuts_random_fake.png  used on input line 1700.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_high_real.png, id=874, 513.92pt x 513.92pt>
-File: ../media/diff_nuts_high_real.png Graphic file (type png)
-<use ../media/diff_nuts_high_real.png>
-Package pdftex.def Info: ../media/diff_nuts_high_real.png  used on input line 1709.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_high_fake.png, id=875, 513.92pt x 513.92pt>
-File: ../media/diff_nuts_high_fake.png Graphic file (type png)
-<use ../media/diff_nuts_high_fake.png>
-Package pdftex.def Info: ../media/diff_nuts_high_fake.png  used on input line 1714.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_plexi_real.png, id=876, 513.92pt x 513.92pt>
-File: ../media/diff_nuts_plexi_real.png Graphic file (type png)
-<use ../media/diff_nuts_plexi_real.png>
-Package pdftex.def Info: ../media/diff_nuts_plexi_real.png  used on input line 1723.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_nuts_plexi_fake.png, id=877, 513.92pt x 513.92pt>
-File: ../media/diff_nuts_plexi_fake.png Graphic file (type png)
-<use ../media/diff_nuts_plexi_fake.png>
-Package pdftex.def Info: ../media/diff_nuts_plexi_fake.png  used on input line 1728.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-
-
-LaTeX Warning: Float too large for page by 38.1272pt on input line 1734.
-
-<../media/diff_candles_optimal_real.png, id=879, 513.92pt x 513.92pt>
-File: ../media/diff_candles_optimal_real.png Graphic file (type png)
-<use ../media/diff_candles_optimal_real.png>
-Package pdftex.def Info: ../media/diff_candles_optimal_real.png  used on input line 1744.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_optimal_fake.png, id=880, 513.92pt x 513.92pt>
-File: ../media/diff_candles_optimal_fake.png Graphic file (type png)
-<use ../media/diff_candles_optimal_fake.png>
-Package pdftex.def Info: ../media/diff_candles_optimal_fake.png  used on input line 1749.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_sunlight_real.png, id=881, 513.92pt x 513.92pt>
-File: ../media/diff_candles_sunlight_real.png Graphic file (type png)
-<use ../media/diff_candles_sunlight_real.png>
-Package pdftex.def Info: ../media/diff_candles_sunlight_real.png  used on input line 1758.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_sunlight_fake.png, id=882, 513.92pt x 513.92pt>
-File: ../media/diff_candles_sunlight_fake.png Graphic file (type png)
-<use ../media/diff_candles_sunlight_fake.png>
-Package pdftex.def Info: ../media/diff_candles_sunlight_fake.png  used on input line 1763.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_down_real.png, id=883, 513.92pt x 513.92pt>
-File: ../media/diff_candles_down_real.png Graphic file (type png)
-<use ../media/diff_candles_down_real.png>
-Package pdftex.def Info: ../media/diff_candles_down_real.png  used on input line 1772.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_down_fake.png, id=884, 513.92pt x 513.92pt>
-File: ../media/diff_candles_down_fake.png Graphic file (type png)
-<use ../media/diff_candles_down_fake.png>
-Package pdftex.def Info: ../media/diff_candles_down_fake.png  used on input line 1777.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_up_real.png, id=885, 513.92pt x 513.92pt>
-File: ../media/diff_candles_up_real.png Graphic file (type png)
-<use ../media/diff_candles_up_real.png>
-Package pdftex.def Info: ../media/diff_candles_up_real.png  used on input line 1786.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_up_fake.png, id=886, 513.92pt x 513.92pt>
-File: ../media/diff_candles_up_fake.png Graphic file (type png)
-<use ../media/diff_candles_up_fake.png>
-Package pdftex.def Info: ../media/diff_candles_up_fake.png  used on input line 1791.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_random_real.png, id=887, 513.92pt x 513.92pt>
-File: ../media/diff_candles_random_real.png Graphic file (type png)
-<use ../media/diff_candles_random_real.png>
-Package pdftex.def Info: ../media/diff_candles_random_real.png  used on input line 1800.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-<../media/diff_candles_random_fake.png, id=888, 513.92pt x 513.92pt>
-File: ../media/diff_candles_random_fake.png Graphic file (type png)
-<use ../media/diff_candles_random_fake.png>
-Package pdftex.def Info: ../media/diff_candles_random_fake.png  used on input line 1805.
-(pdftex.def)             Requested size: 106.23691pt x 106.23256pt.
-
-LaTeX Warning: Float too large for page by 38.1272pt on input line 1811.
-
-<../media/diff_bni_optimal_real.png, id=890, 513.92pt x 513.92pt>
-File: ../media/diff_bni_optimal_real.png Graphic file (type png)
-<use ../media/diff_bni_optimal_real.png>
-Package pdftex.def Info: ../media/diff_bni_optimal_real.png  used on input line 1822.
-(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_optimal_fake.png, id=891, 513.92pt x 513.92pt>
-File: ../media/diff_bni_optimal_fake.png Graphic file (type png)
-<use ../media/diff_bni_optimal_fake.png>
-Package pdftex.def Info: ../media/diff_bni_optimal_fake.png  used on input line 1827.
-(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_left_real.png, id=892, 513.92pt x 513.92pt>
-File: ../media/diff_bni_left_real.png Graphic file (type png)
-<use ../media/diff_bni_left_real.png>
-Package pdftex.def Info: ../media/diff_bni_left_real.png  used on input line 1836.
-(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_left_fake.png, id=893, 513.92pt x 513.92pt>
-File: ../media/diff_bni_left_fake.png Graphic file (type png)
-<use ../media/diff_bni_left_fake.png>
-Package pdftex.def Info: ../media/diff_bni_left_fake.png  used on input line 1841.
-(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_right_real.png, id=894, 513.92pt x 513.92pt>
-File: ../media/diff_bni_right_real.png Graphic file (type png)
-<use ../media/diff_bni_right_real.png>
-Package pdftex.def Info: ../media/diff_bni_right_real.png  used on input line 1850.
-(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_right_fake.png, id=895, 513.92pt x 513.92pt>
-File: ../media/diff_bni_right_fake.png Graphic file (type png)
-<use ../media/diff_bni_right_fake.png>
-Package pdftex.def Info: ../media/diff_bni_right_fake.png  used on input line 1855.
+Package pdftex.def Info: ../media/diff_nuts_random_fake.png  used on input line 1714.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
 
-LaTeX Warning: Float too large for page by 11.95958pt on input line 1859.
+
+LaTeX Warning: Float too large for page by 11.95958pt on input line 1718.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \c@subfigure@save 
-l.1862 \begin{figure}\ContinuedFloat
+l.1721 \begin{figure}\ContinuedFloat
                                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-<../media/diff_bni_light_real.png, id=896, 513.92pt x 513.92pt>
-File: ../media/diff_bni_light_real.png Graphic file (type png)
-<use ../media/diff_bni_light_real.png>
-Package pdftex.def Info: ../media/diff_bni_light_real.png  used on input line 1868.
+<../media/diff_nuts_high_real.png, id=892, 513.92pt x 513.92pt>
+File: ../media/diff_nuts_high_real.png Graphic file (type png)
+<use ../media/diff_nuts_high_real.png>
+Package pdftex.def Info: ../media/diff_nuts_high_real.png  used on input line 1727.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_light_fake.png, id=897, 513.92pt x 513.92pt>
-File: ../media/diff_bni_light_fake.png Graphic file (type png)
-<use ../media/diff_bni_light_fake.png>
-Package pdftex.def Info: ../media/diff_bni_light_fake.png  used on input line 1873.
+<../media/diff_nuts_high_fake.png, id=893, 513.92pt x 513.92pt>
+File: ../media/diff_nuts_high_fake.png Graphic file (type png)
+<use ../media/diff_nuts_high_fake.png>
+Package pdftex.def Info: ../media/diff_nuts_high_fake.png  used on input line 1732.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_random_real.png, id=898, 513.92pt x 513.92pt>
-File: ../media/diff_bni_random_real.png Graphic file (type png)
-<use ../media/diff_bni_random_real.png>
-Package pdftex.def Info: ../media/diff_bni_random_real.png  used on input line 1882.
+<../media/diff_nuts_plexi_real.png, id=894, 513.92pt x 513.92pt>
+File: ../media/diff_nuts_plexi_real.png Graphic file (type png)
+<use ../media/diff_nuts_plexi_real.png>
+Package pdftex.def Info: ../media/diff_nuts_plexi_real.png  used on input line 1741.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_bni_random_fake.png, id=899, 513.92pt x 513.92pt>
-File: ../media/diff_bni_random_fake.png Graphic file (type png)
-<use ../media/diff_bni_random_fake.png>
-Package pdftex.def Info: ../media/diff_bni_random_fake.png  used on input line 1887.
+<../media/diff_nuts_plexi_fake.png, id=895, 513.92pt x 513.92pt>
+File: ../media/diff_nuts_plexi_fake.png Graphic file (type png)
+<use ../media/diff_nuts_plexi_fake.png>
+Package pdftex.def Info: ../media/diff_nuts_plexi_fake.png  used on input line 1746.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
 ! Missing number, treated as zero.
 <to be read again> 
                    \c@subfigure@save 
-l.1891     \caption{
+l.1750     \caption{
+                    Comparison of real and generated images for Nuts dataset}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<../media/diff_candles_optimal_real.png, id=897, 513.92pt x 513.92pt>
+File: ../media/diff_candles_optimal_real.png Graphic file (type png)
+<use ../media/diff_candles_optimal_real.png>
+Package pdftex.def Info: ../media/diff_candles_optimal_real.png  used on input line 1764.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_optimal_fake.png, id=898, 513.92pt x 513.92pt>
+File: ../media/diff_candles_optimal_fake.png Graphic file (type png)
+<use ../media/diff_candles_optimal_fake.png>
+Package pdftex.def Info: ../media/diff_candles_optimal_fake.png  used on input line 1769.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_sunlight_real.png, id=899, 513.92pt x 513.92pt>
+File: ../media/diff_candles_sunlight_real.png Graphic file (type png)
+<use ../media/diff_candles_sunlight_real.png>
+Package pdftex.def Info: ../media/diff_candles_sunlight_real.png  used on input line 1778.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_sunlight_fake.png, id=900, 513.92pt x 513.92pt>
+File: ../media/diff_candles_sunlight_fake.png Graphic file (type png)
+<use ../media/diff_candles_sunlight_fake.png>
+Package pdftex.def Info: ../media/diff_candles_sunlight_fake.png  used on input line 1783.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_down_real.png, id=901, 513.92pt x 513.92pt>
+File: ../media/diff_candles_down_real.png Graphic file (type png)
+<use ../media/diff_candles_down_real.png>
+Package pdftex.def Info: ../media/diff_candles_down_real.png  used on input line 1792.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_down_fake.png, id=902, 513.92pt x 513.92pt>
+File: ../media/diff_candles_down_fake.png Graphic file (type png)
+<use ../media/diff_candles_down_fake.png>
+Package pdftex.def Info: ../media/diff_candles_down_fake.png  used on input line 1797.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+
+LaTeX Warning: Float too large for page by 11.95958pt on input line 1801.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \c@subfigure@save 
+l.1804 \begin{figure}\ContinuedFloat
+                                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<../media/diff_candles_up_real.png, id=903, 513.92pt x 513.92pt>
+File: ../media/diff_candles_up_real.png Graphic file (type png)
+<use ../media/diff_candles_up_real.png>
+Package pdftex.def Info: ../media/diff_candles_up_real.png  used on input line 1810.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_up_fake.png, id=904, 513.92pt x 513.92pt>
+File: ../media/diff_candles_up_fake.png Graphic file (type png)
+<use ../media/diff_candles_up_fake.png>
+Package pdftex.def Info: ../media/diff_candles_up_fake.png  used on input line 1815.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_random_real.png, id=905, 513.92pt x 513.92pt>
+File: ../media/diff_candles_random_real.png Graphic file (type png)
+<use ../media/diff_candles_random_real.png>
+Package pdftex.def Info: ../media/diff_candles_random_real.png  used on input line 1824.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_candles_random_fake.png, id=906, 513.92pt x 513.92pt>
+File: ../media/diff_candles_random_fake.png Graphic file (type png)
+<use ../media/diff_candles_random_fake.png>
+Package pdftex.def Info: ../media/diff_candles_random_fake.png  used on input line 1829.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+! Missing number, treated as zero.
+<to be read again> 
+                   \c@subfigure@save 
+l.1833     \caption{
+                    Comparison of real and generated images for Candles data...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<../media/diff_bni_optimal_real.png, id=908, 513.92pt x 513.92pt>
+File: ../media/diff_bni_optimal_real.png Graphic file (type png)
+<use ../media/diff_bni_optimal_real.png>
+Package pdftex.def Info: ../media/diff_bni_optimal_real.png  used on input line 1847.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_optimal_fake.png, id=909, 513.92pt x 513.92pt>
+File: ../media/diff_bni_optimal_fake.png Graphic file (type png)
+<use ../media/diff_bni_optimal_fake.png>
+Package pdftex.def Info: ../media/diff_bni_optimal_fake.png  used on input line 1852.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_left_real.png, id=910, 513.92pt x 513.92pt>
+File: ../media/diff_bni_left_real.png Graphic file (type png)
+<use ../media/diff_bni_left_real.png>
+Package pdftex.def Info: ../media/diff_bni_left_real.png  used on input line 1861.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_left_fake.png, id=911, 513.92pt x 513.92pt>
+File: ../media/diff_bni_left_fake.png Graphic file (type png)
+<use ../media/diff_bni_left_fake.png>
+Package pdftex.def Info: ../media/diff_bni_left_fake.png  used on input line 1866.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_right_real.png, id=912, 513.92pt x 513.92pt>
+File: ../media/diff_bni_right_real.png Graphic file (type png)
+<use ../media/diff_bni_right_real.png>
+Package pdftex.def Info: ../media/diff_bni_right_real.png  used on input line 1875.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_right_fake.png, id=913, 513.92pt x 513.92pt>
+File: ../media/diff_bni_right_fake.png Graphic file (type png)
+<use ../media/diff_bni_right_fake.png>
+Package pdftex.def Info: ../media/diff_bni_right_fake.png  used on input line 1880.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+
+LaTeX Warning: Float too large for page by 11.95958pt on input line 1884.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \c@subfigure@save 
+l.1887 \begin{figure}\ContinuedFloat
+                                    
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+<../media/diff_bni_light_real.png, id=914, 513.92pt x 513.92pt>
+File: ../media/diff_bni_light_real.png Graphic file (type png)
+<use ../media/diff_bni_light_real.png>
+Package pdftex.def Info: ../media/diff_bni_light_real.png  used on input line 1893.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_light_fake.png, id=915, 513.92pt x 513.92pt>
+File: ../media/diff_bni_light_fake.png Graphic file (type png)
+<use ../media/diff_bni_light_fake.png>
+Package pdftex.def Info: ../media/diff_bni_light_fake.png  used on input line 1898.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_random_real.png, id=916, 513.92pt x 513.92pt>
+File: ../media/diff_bni_random_real.png Graphic file (type png)
+<use ../media/diff_bni_random_real.png>
+Package pdftex.def Info: ../media/diff_bni_random_real.png  used on input line 1907.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+<../media/diff_bni_random_fake.png, id=917, 513.92pt x 513.92pt>
+File: ../media/diff_bni_random_fake.png Graphic file (type png)
+<use ../media/diff_bni_random_fake.png>
+Package pdftex.def Info: ../media/diff_bni_random_fake.png  used on input line 1912.
+(pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
+! Missing number, treated as zero.
+<to be read again> 
+                   \c@subfigure@save 
+l.1916     \caption{
                     Comparison of real and generated images for BNI dataset}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-<../media/diff_pcb_optimal_real.png, id=901, 513.92pt x 513.92pt>
+<../media/diff_pcb_optimal_real.png, id=919, 513.92pt x 513.92pt>
 File: ../media/diff_pcb_optimal_real.png Graphic file (type png)
 <use ../media/diff_pcb_optimal_real.png>
-Package pdftex.def Info: ../media/diff_pcb_optimal_real.png  used on input line 1905.
+Package pdftex.def Info: ../media/diff_pcb_optimal_real.png  used on input line 1930.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_pcb_optimal_fake.png, id=902, 513.92pt x 513.92pt>
+<../media/diff_pcb_optimal_fake.png, id=920, 513.92pt x 513.92pt>
 File: ../media/diff_pcb_optimal_fake.png Graphic file (type png)
 <use ../media/diff_pcb_optimal_fake.png>
-Package pdftex.def Info: ../media/diff_pcb_optimal_fake.png  used on input line 1910.
+Package pdftex.def Info: ../media/diff_pcb_optimal_fake.png  used on input line 1935.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_pcb_bad_real.png, id=903, 513.92pt x 513.92pt>
+<../media/diff_pcb_bad_real.png, id=921, 513.92pt x 513.92pt>
 File: ../media/diff_pcb_bad_real.png Graphic file (type png)
 <use ../media/diff_pcb_bad_real.png>
-Package pdftex.def Info: ../media/diff_pcb_bad_real.png  used on input line 1919.
+Package pdftex.def Info: ../media/diff_pcb_bad_real.png  used on input line 1944.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
-<../media/diff_pcb_bad_fake.png, id=904, 513.92pt x 513.92pt>
+<../media/diff_pcb_bad_fake.png, id=922, 513.92pt x 513.92pt>
 File: ../media/diff_pcb_bad_fake.png Graphic file (type png)
 <use ../media/diff_pcb_bad_fake.png>
-Package pdftex.def Info: ../media/diff_pcb_bad_fake.png  used on input line 1924.
+Package pdftex.def Info: ../media/diff_pcb_bad_fake.png  used on input line 1949.
 (pdftex.def)             Requested size: 199.1883pt x 199.18898pt.
 
 
@@ -1895,224 +1935,226 @@ Package pdftex.def Info: ../media/diff_pcb_bad_fake.png  used on input line 1924
 
 [53 <../media/diff_nuts_optimal_real.png (PNG copy)> <../media/diff_nuts_optimal_fake.png (PNG copy)> <../media/diff_nut
 s_shadow_real.png (PNG copy)> <../media/diff_nuts_shadow_fake.png (PNG copy)> <../media/diff_nuts_random_real.png (PNG c
-opy)> <../media/diff_nuts_random_fake.png (PNG copy)> <../media/diff_nuts_high_real.png (PNG copy)> <../media/diff_nuts_
-high_fake.png (PNG copy)> <../media/diff_nuts_plexi_real.png (PNG copy)> <../media/diff_nuts_plexi_fake.png (PNG copy)>]
+opy)> <../media/diff_nuts_random_fake.png (PNG copy)>]
 
+[54 <../media/diff_nuts_high_real.png (PNG copy)> <../media/diff_nuts_high_fake.png (PNG copy)> <../media/diff_nuts_plex
+i_real.png (PNG copy)> <../media/diff_nuts_plexi_fake.png (PNG copy)>]
 
-[54 <../media/diff_candles_optimal_real.png (PNG copy)> <../media/diff_candles_optimal_fake.png (PNG copy)> <../media/di
+[55 <../media/diff_candles_optimal_real.png (PNG copy)> <../media/diff_candles_optimal_fake.png (PNG copy)> <../media/di
 ff_candles_sunlight_real.png (PNG copy)> <../media/diff_candles_sunlight_fake.png (PNG copy)> <../media/diff_candles_dow
-n_real.png (PNG copy)> <../media/diff_candles_down_fake.png (PNG copy)> <../media/diff_candles_up_real.png (PNG copy)> <
-../media/diff_candles_up_fake.png (PNG copy)> <../media/diff_candles_random_real.png (PNG copy)> <../media/diff_candles_
-random_fake.png (PNG copy)>]
+n_real.png (PNG copy)> <../media/diff_candles_down_fake.png (PNG copy)>]
 
-[55 <../media/diff_bni_optimal_real.png (PNG copy)> <../media/diff_bni_optimal_fake.png (PNG copy)> <../media/diff_bni_l
+[56 <../media/diff_candles_up_real.png (PNG copy)> <../media/diff_candles_up_fake.png (PNG copy)> <../media/diff_candles
+_random_real.png (PNG copy)> <../media/diff_candles_random_fake.png (PNG copy)>]
+
+[57 <../media/diff_bni_optimal_real.png (PNG copy)> <../media/diff_bni_optimal_fake.png (PNG copy)> <../media/diff_bni_l
 eft_real.png (PNG copy)> <../media/diff_bni_left_fake.png (PNG copy)> <../media/diff_bni_right_real.png (PNG copy)> <../
 media/diff_bni_right_fake.png (PNG copy)>]
 
-[56 <../media/diff_bni_light_real.png (PNG copy)> <../media/diff_bni_light_fake.png (PNG copy)> <../media/diff_bni_rando
+[58 <../media/diff_bni_light_real.png (PNG copy)> <../media/diff_bni_light_fake.png (PNG copy)> <../media/diff_bni_rando
 m_real.png (PNG copy)> <../media/diff_bni_random_fake.png (PNG copy)>]
 
-[57 <../media/diff_pcb_optimal_real.png (PNG copy)> <../media/diff_pcb_optimal_fake.png (PNG copy)> <../media/diff_pcb_b
+[59 <../media/diff_pcb_optimal_real.png (PNG copy)> <../media/diff_pcb_optimal_fake.png (PNG copy)> <../media/diff_pcb_b
 ad_real.png (PNG copy)> <../media/diff_pcb_bad_fake.png (PNG copy)>]
-<../media/CycleGAN_real.png, id=939, 513.92pt x 513.92pt>
+<../media/CycleGAN_real.png, id=967, 513.92pt x 513.92pt>
 File: ../media/CycleGAN_real.png Graphic file (type png)
 <use ../media/CycleGAN_real.png>
-Package pdftex.def Info: ../media/CycleGAN_real.png  used on input line 1954.
+Package pdftex.def Info: ../media/CycleGAN_real.png  used on input line 1979.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/CycleGAN_generated.png, id=940, 513.92pt x 513.92pt>
+<../media/CycleGAN_generated.png, id=968, 513.92pt x 513.92pt>
 File: ../media/CycleGAN_generated.png Graphic file (type png)
 <use ../media/CycleGAN_generated.png>
-Package pdftex.def Info: ../media/CycleGAN_generated.png  used on input line 1960.
+Package pdftex.def Info: ../media/CycleGAN_generated.png  used on input line 1985.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1961--1961
+Underfull \hbox (badness 10000) in paragraph at lines 1986--1986
 [][]|\T1/txr/m/n/10 CycleGAN-Generated
  []
 
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <10.95> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 1970.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 1995.
 
 
-[58 <../media/CycleGAN_real.png (PNG copy)> <../media/CycleGAN_generated.png (PNG copy)>]
-<../media/nut_real_1.png, id=950, 513.92pt x 513.92pt>
+[60 <../media/CycleGAN_real.png (PNG copy)> <../media/CycleGAN_generated.png (PNG copy)>]
+<../media/nut_real_1.png, id=977, 513.92pt x 513.92pt>
 File: ../media/nut_real_1.png Graphic file (type png)
 <use ../media/nut_real_1.png>
-Package pdftex.def Info: ../media/nut_real_1.png  used on input line 2000.
+Package pdftex.def Info: ../media/nut_real_1.png  used on input line 2025.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/nut_generated_1_1.png, id=951, 513.92pt x 513.92pt>
+<../media/nut_generated_1_1.png, id=978, 513.92pt x 513.92pt>
 File: ../media/nut_generated_1_1.png Graphic file (type png)
 <use ../media/nut_generated_1_1.png>
-Package pdftex.def Info: ../media/nut_generated_1_1.png  used on input line 2006.
+Package pdftex.def Info: ../media/nut_generated_1_1.png  used on input line 2031.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
 File: ../media/nut_generated_1_1.png Graphic file (type png)
 <use ../media/nut_generated_1_1.png>
-Package pdftex.def Info: ../media/nut_generated_1_1.png  used on input line 2038.
+Package pdftex.def Info: ../media/nut_generated_1_1.png  used on input line 2063.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/nut_generated_1_2.png, id=952, 513.92pt x 513.92pt>
+<../media/nut_generated_1_2.png, id=979, 513.92pt x 513.92pt>
 File: ../media/nut_generated_1_2.png Graphic file (type png)
 <use ../media/nut_generated_1_2.png>
-Package pdftex.def Info: ../media/nut_generated_1_2.png  used on input line 2044.
+Package pdftex.def Info: ../media/nut_generated_1_2.png  used on input line 2069.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
 
 
-[59 <../media/nut_real_1.png (PNG copy)> <../media/nut_generated_1_1.png (PNG copy)> <../media/nut_generated_1_2.png (PN
+[61 <../media/nut_real_1.png (PNG copy)> <../media/nut_generated_1_1.png (PNG copy)> <../media/nut_generated_1_2.png (PN
 G copy)>]
-<../media/confusion_matrix.png, id=963, 434.1018pt x 341.8371pt>
+<../media/confusion_matrix.png, id=990, 434.1018pt x 341.8371pt>
 File: ../media/confusion_matrix.png Graphic file (type png)
 <use ../media/confusion_matrix.png>
-Package pdftex.def Info: ../media/confusion_matrix.png  used on input line 2112.
+Package pdftex.def Info: ../media/confusion_matrix.png  used on input line 2137.
 (pdftex.def)             Requested size: 303.8692pt x 239.28432pt.
 
 
-[60]
-<../media/feature_distribution_pca.png, id=971, 504.4446pt x 408.5664pt>
+[62]
+<../media/feature_distribution_pca.png, id=999, 504.4446pt x 408.5664pt>
 File: ../media/feature_distribution_pca.png Graphic file (type png)
 <use ../media/feature_distribution_pca.png>
-Package pdftex.def Info: ../media/feature_distribution_pca.png  used on input line 2128.
+Package pdftex.def Info: ../media/feature_distribution_pca.png  used on input line 2153.
 (pdftex.def)             Requested size: 353.10881pt x 285.99452pt.
-<../media/candle_real_1.png, id=974, 513.92pt x 513.92pt>
+<../media/candle_real_1.png, id=1002, 513.92pt x 513.92pt>
 File: ../media/candle_real_1.png Graphic file (type png)
 <use ../media/candle_real_1.png>
-Package pdftex.def Info: ../media/candle_real_1.png  used on input line 2147.
+Package pdftex.def Info: ../media/candle_real_1.png  used on input line 2172.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/candle_generated_1_1.png, id=975, 513.92pt x 513.92pt>
+<../media/candle_generated_1_1.png, id=1003, 513.92pt x 513.92pt>
 File: ../media/candle_generated_1_1.png Graphic file (type png)
 <use ../media/candle_generated_1_1.png>
-Package pdftex.def Info: ../media/candle_generated_1_1.png  used on input line 2153.
+Package pdftex.def Info: ../media/candle_generated_1_1.png  used on input line 2178.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
 File: ../media/candle_generated_1_1.png Graphic file (type png)
 <use ../media/candle_generated_1_1.png>
-Package pdftex.def Info: ../media/candle_generated_1_1.png  used on input line 2186.
+Package pdftex.def Info: ../media/candle_generated_1_1.png  used on input line 2211.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/candle_generated_1_2.png, id=976, 513.92pt x 513.92pt>
+<../media/candle_generated_1_2.png, id=1004, 513.92pt x 513.92pt>
 File: ../media/candle_generated_1_2.png Graphic file (type png)
 <use ../media/candle_generated_1_2.png>
-Package pdftex.def Info: ../media/candle_generated_1_2.png  used on input line 2192.
+Package pdftex.def Info: ../media/candle_generated_1_2.png  used on input line 2217.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/bni_real_1.png, id=979, 513.92pt x 513.92pt>
+<../media/bni_real_1.png, id=1007, 513.92pt x 513.92pt>
 File: ../media/bni_real_1.png Graphic file (type png)
 <use ../media/bni_real_1.png>
-Package pdftex.def Info: ../media/bni_real_1.png  used on input line 2232.
+Package pdftex.def Info: ../media/bni_real_1.png  used on input line 2257.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/bni_generated_1_1.png, id=980, 513.92pt x 513.92pt>
+<../media/bni_generated_1_1.png, id=1008, 513.92pt x 513.92pt>
 File: ../media/bni_generated_1_1.png Graphic file (type png)
 <use ../media/bni_generated_1_1.png>
-Package pdftex.def Info: ../media/bni_generated_1_1.png  used on input line 2238.
+Package pdftex.def Info: ../media/bni_generated_1_1.png  used on input line 2263.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
 
 
-[61 <../media/confusion_matrix.png>]
+[63 <../media/confusion_matrix.png>]
 
-[62 <../media/feature_distribution_pca.png> <../media/candle_real_1.png (PNG copy)> <../media/candle_generated_1_1.png (
+[64 <../media/feature_distribution_pca.png> <../media/candle_real_1.png (PNG copy)> <../media/candle_generated_1_1.png (
 PNG copy)> <../media/candle_generated_1_2.png (PNG copy)>]
 File: ../media/bni_generated_1_1.png Graphic file (type png)
 <use ../media/bni_generated_1_1.png>
-Package pdftex.def Info: ../media/bni_generated_1_1.png  used on input line 2271.
+Package pdftex.def Info: ../media/bni_generated_1_1.png  used on input line 2296.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/bni_generated_1_2.png, id=995, 513.92pt x 513.92pt>
+<../media/bni_generated_1_2.png, id=1023, 513.92pt x 513.92pt>
 File: ../media/bni_generated_1_2.png Graphic file (type png)
 <use ../media/bni_generated_1_2.png>
-Package pdftex.def Info: ../media/bni_generated_1_2.png  used on input line 2277.
+Package pdftex.def Info: ../media/bni_generated_1_2.png  used on input line 2302.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/pcb_real_1.png, id=998, 513.92pt x 513.92pt>
+<../media/pcb_real_1.png, id=1026, 513.92pt x 513.92pt>
 File: ../media/pcb_real_1.png Graphic file (type png)
 <use ../media/pcb_real_1.png>
-Package pdftex.def Info: ../media/pcb_real_1.png  used on input line 2316.
+Package pdftex.def Info: ../media/pcb_real_1.png  used on input line 2341.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/pcb_generated_1_1.png, id=999, 513.92pt x 513.92pt>
+<../media/pcb_generated_1_1.png, id=1027, 513.92pt x 513.92pt>
 File: ../media/pcb_generated_1_1.png Graphic file (type png)
 <use ../media/pcb_generated_1_1.png>
-Package pdftex.def Info: ../media/pcb_generated_1_1.png  used on input line 2322.
+Package pdftex.def Info: ../media/pcb_generated_1_1.png  used on input line 2347.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
 File: ../media/pcb_generated_1_1.png Graphic file (type png)
 <use ../media/pcb_generated_1_1.png>
-Package pdftex.def Info: ../media/pcb_generated_1_1.png  used on input line 2354.
+Package pdftex.def Info: ../media/pcb_generated_1_1.png  used on input line 2379.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
-<../media/pcb_generated_1_2.png, id=1000, 513.92pt x 513.92pt>
+<../media/pcb_generated_1_2.png, id=1028, 513.92pt x 513.92pt>
 File: ../media/pcb_generated_1_2.png Graphic file (type png)
 <use ../media/pcb_generated_1_2.png>
-Package pdftex.def Info: ../media/pcb_generated_1_2.png  used on input line 2360.
+Package pdftex.def Info: ../media/pcb_generated_1_2.png  used on input line 2385.
 (pdftex.def)             Requested size: 106.23352pt x 106.23256pt.
 
 
-[63 <../media/bni_real_1.png (PNG copy)> <../media/bni_generated_1_1.png (PNG copy)> <../media/bni_generated_1_2.png (PN
+[65 <../media/bni_real_1.png (PNG copy)> <../media/bni_generated_1_1.png (PNG copy)> <../media/bni_generated_1_2.png (PN
 G copy)>]
 
-[64 <../media/pcb_real_1.png (PNG copy)> <../media/pcb_generated_1_1.png (PNG copy)> <../media/pcb_generated_1_2.png (PN
+[66 <../media/pcb_real_1.png (PNG copy)> <../media/pcb_generated_1_1.png (PNG copy)> <../media/pcb_generated_1_2.png (PN
 G copy)>]
-<../media/training_validation_loss_approach_1.png, id=1019, 740.0448pt x 406.3983pt>
+<../media/training_validation_loss_approach_1.png, id=1046, 740.0448pt x 406.3983pt>
 File: ../media/training_validation_loss_approach_1.png Graphic file (type png)
 <use ../media/training_validation_loss_approach_1.png>
-Package pdftex.def Info: ../media/training_validation_loss_approach_1.png  used on input line 2408.
+Package pdftex.def Info: ../media/training_validation_loss_approach_1.png  used on input line 2433.
 (pdftex.def)             Requested size: 309.8492pt x 170.15282pt.
-<../media/training_validation_loss_approach_2.PNG, id=1020, 740.2857pt x 406.3983pt>
+<../media/training_validation_loss_approach_2.PNG, id=1047, 740.2857pt x 406.3983pt>
 File: ../media/training_validation_loss_approach_2.PNG Graphic file (type png)
 <use ../media/training_validation_loss_approach_2.PNG>
-Package pdftex.def Info: ../media/training_validation_loss_approach_2.PNG  used on input line 2415.
+Package pdftex.def Info: ../media/training_validation_loss_approach_2.PNG  used on input line 2440.
 (pdftex.def)             Requested size: 309.8492pt x 170.09702pt.
-<../media/training_validation_loss_approach_3.PNG, id=1021, 740.2857pt x 406.3983pt>
+<../media/training_validation_loss_approach_3.PNG, id=1048, 740.2857pt x 406.3983pt>
 File: ../media/training_validation_loss_approach_3.PNG Graphic file (type png)
 <use ../media/training_validation_loss_approach_3.PNG>
-Package pdftex.def Info: ../media/training_validation_loss_approach_3.PNG  used on input line 2422.
+Package pdftex.def Info: ../media/training_validation_loss_approach_3.PNG  used on input line 2447.
 (pdftex.def)             Requested size: 309.8492pt x 170.09702pt.
-
-
-[65]
-
-[66 <../media/training_validation_loss_approach_1.png> <../media/training_validation_loss_approach_2.PNG> <../media/trai
-ning_validation_loss_approach_3.PNG>]
-<../media/confusion_matrix_approach_1.png, id=1040, 578.16pt x 433.62pt>
-File: ../media/confusion_matrix_approach_1.png Graphic file (type png)
-<use ../media/confusion_matrix_approach_1.png>
-Package pdftex.def Info: ../media/confusion_matrix_approach_1.png  used on input line 2449.
-(pdftex.def)             Requested size: 243.45535pt x 182.58893pt.
-<../media/confusion_matrix_approach_2.png, id=1041, 578.16pt x 433.62pt>
-File: ../media/confusion_matrix_approach_2.png Graphic file (type png)
-<use ../media/confusion_matrix_approach_2.png>
-Package pdftex.def Info: ../media/confusion_matrix_approach_2.png  used on input line 2456.
-(pdftex.def)             Requested size: 243.45535pt x 182.58893pt.
-<../media/confusion_matrix_approach_3.png, id=1042, 578.16pt x 433.62pt>
-File: ../media/confusion_matrix_approach_3.png Graphic file (type png)
-<use ../media/confusion_matrix_approach_3.png>
-Package pdftex.def Info: ../media/confusion_matrix_approach_3.png  used on input line 2463.
-(pdftex.def)             Requested size: 243.45535pt x 182.58893pt.
 
 
 [67]
 
-[68 <../media/confusion_matrix_approach_1.png> <../media/confusion_matrix_approach_2.png> <../media/confusion_matrix_app
+[68 <../media/training_validation_loss_approach_1.png> <../media/training_validation_loss_approach_2.PNG> <../media/trai
+ning_validation_loss_approach_3.PNG>]
+<../media/confusion_matrix_approach_1.png, id=1068, 578.16pt x 433.62pt>
+File: ../media/confusion_matrix_approach_1.png Graphic file (type png)
+<use ../media/confusion_matrix_approach_1.png>
+Package pdftex.def Info: ../media/confusion_matrix_approach_1.png  used on input line 2474.
+(pdftex.def)             Requested size: 243.45535pt x 182.58893pt.
+<../media/confusion_matrix_approach_2.png, id=1069, 578.16pt x 433.62pt>
+File: ../media/confusion_matrix_approach_2.png Graphic file (type png)
+<use ../media/confusion_matrix_approach_2.png>
+Package pdftex.def Info: ../media/confusion_matrix_approach_2.png  used on input line 2481.
+(pdftex.def)             Requested size: 243.45535pt x 182.58893pt.
+<../media/confusion_matrix_approach_3.png, id=1070, 578.16pt x 433.62pt>
+File: ../media/confusion_matrix_approach_3.png Graphic file (type png)
+<use ../media/confusion_matrix_approach_3.png>
+Package pdftex.def Info: ../media/confusion_matrix_approach_3.png  used on input line 2488.
+(pdftex.def)             Requested size: 243.45535pt x 182.58893pt.
+
+
+[69]
+
+[70 <../media/confusion_matrix_approach_1.png> <../media/confusion_matrix_approach_2.png> <../media/confusion_matrix_app
 roach_3.png>]
 chapter 5.
 
 
-[69
-
-
-]
-
-[70]
-chapter A.
 [71
 
 
 ]
 
 [72]
-Underfull \hbox (badness 10000) in paragraph at lines 2663--2664
+chapter A.
+[73
+
+
+]
+
+[74]
+Underfull \hbox (badness 10000) in paragraph at lines 2688--2689
 []\T1/txr/bx/n/12 Stable Dif-fu-sion Model: \T1/txr/m/n/12 Down-load the Sta-ble Dif-fu-sion XL (SDXL)
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2663--2664
+Underfull \hbox (badness 10000) in paragraph at lines 2688--2689
 \T1/txr/m/n/12 model from [][]$\T1/txtt/m/n/12 https : / / stability . ai$[][]\T1/txr/m/n/12 . Specif-i-cally, down-load
  the
  []
 
 
 
-[73]
+[75]
 
-[74
+[76
 
 
 ] (iss-thesis.lof
@@ -2120,17 +2162,17 @@ Underfull \vbox (badness 1484) has occurred while \output is active []
 
 
 
-[75]
+[77]
 
-[76])
+[78])
 \tf@lof=\write6
 \openout6 = `iss-thesis.lof'.
 
 
 
-[77]
+[79]
 
-[78
+[80
 
 
 ] (iss-thesis.lot)
@@ -2139,9 +2181,9 @@ Underfull \vbox (badness 1484) has occurred while \output is active []
 
  (iss-thesis.bbl
 
-[79]
+[81]
 
-[80
+[82
 
 
 ]
@@ -2154,47 +2196,47 @@ $[][]
 
 
 
-[81]
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
+[83]
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 []\T1/txr/m/n/12 K. Walker, ``Syn-thetic data: Un-lock-ing the power of data and skills
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--112
+Underfull \hbox (badness 10000) in paragraph at lines 118--122
 \T1/txr/m/n/12 for ma-chine learn-ing,'' [][]$https : / / dataingovernment . blog . gov . uk / 2020 / 08 / 20 /
- []
-
-
-
-[82]
-Underfull \hbox (badness 1077) in paragraph at lines 259--262
-[]\T1/txr/m/n/12 Yainnoware, ``De-cod-ing the math be-hind9 dif-fu-sion mod-els,'' [][]$https : / / yainnoware .
- []
-
-
-Underfull \hbox (badness 3679) in paragraph at lines 259--262
-\T1/txr/m/n/12 blogspot . com / 2022 / 11 / decoding-[]math-[]behind-[]di^^[usion-[]models . html$[][], Novem-ber 20
- []
-
-
-
-[83]
-Underfull \hbox (badness 4686) in paragraph at lines 295--297
-[]\T1/txr/m/n/12 J. Ho and T. Sal-i-mans, ``Classifier-free dif-fu-sion guid-ance,'' \T1/txr/m/it/12 arXiv preprint
  []
 
 
 
 [84]
 
-[85])
+[85]
+Underfull \hbox (badness 1077) in paragraph at lines 274--277
+[]\T1/txr/m/n/12 Yainnoware, ``De-cod-ing the math be-hind9 dif-fu-sion mod-els,'' [][]$https : / / yainnoware .
+ []
+
+
+Underfull \hbox (badness 3679) in paragraph at lines 274--277
+\T1/txr/m/n/12 blogspot . com / 2022 / 11 / decoding-[]math-[]behind-[]di^^[usion-[]models . html$[][], Novem-ber 20
+ []
+
+
+Underfull \hbox (badness 4686) in paragraph at lines 310--312
+[]\T1/txr/m/n/12 J. Ho and T. Sal-i-mans, ``Classifier-free dif-fu-sion guid-ance,'' \T1/txr/m/it/12 arXiv preprint
+ []
+
+
 
 [86]
+
+[87])
+
+[88]
 LaTeX Font Info:    Font shape `T1/txr/b/n' in size <20.74> not available
-(Font)              Font shape `T1/txr/bx/n' tried instead on input line 2692.
+(Font)              Font shape `T1/txr/bx/n' tried instead on input line 2716.
 
 
-[87
+[89
 
 
 ] (iss-thesis.aux)
@@ -2206,11 +2248,11 @@ Package rerunfilecheck Info: File `iss-thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29836 strings out of 473898
- 610130 string characters out of 5725535
+ 29849 strings out of 473898
+ 610378 string characters out of 5725535
  1952960 words of memory out of 5000000
- 51853 multiletter control sequences out of 15000+600000
- 662134 words of font info for 217 fonts, out of 8000000 for 9000
+ 51858 multiletter control sequences out of 15000+600000
+ 660758 words of font info for 215 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
  110i,20n,107p,11023b,706s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/KUMARSW/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/rtcxi.pfb><C:/Users/KUMARSW/AppData/Local/P
@@ -2224,9 +2266,9 @@ y.pfb><C:/Users/KUMARSW/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts
 al/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/KUMARSW/AppData/Local/Programs/MiKTeX/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Users/KUMARSW/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/KUMARSW/AppData/
 Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on iss-thesis.pdf (90 pages, 43495094 bytes).
+Output written on iss-thesis.pdf (94 pages, 43501714 bytes).
 PDF statistics:
- 1591 PDF objects out of 1728 (max. 8388607)
- 349 named destinations out of 1000 (max. 500000)
- 1058 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1623 PDF objects out of 1728 (max. 8388607)
+ 359 named destinations out of 1000 (max. 500000)
+ 1066 words of extra memory for PDF output out of 10000 (max. 10000000)
 
